@@ -1,0 +1,36 @@
+{
+  "seal_and_backup_seconds": 0.5973565000022063,
+  "reference_file": "format: MEMSTORE-REF v2\nstore_id: memstore-01\nseal_id: 20261017T181541Z-f47fec\nbundle_id: rhs/order/feat-f3\nsource_commit: a1b2c3d4e5f60718293a4b5c6d7e8f9012345678\nsealed_at_utc: 20261017T181541Z\ndevice_id: HANAL\nroles: pln,pmo,rsch\nfiles: 21\nmanifest_sha256: b3003c4bbbd16bb9e9f705ef19889d396de62e0b275e606bc84a11f122f286fa\nbackups: hdd-e-primary,hdd-k-secondary\n",
+  "restore_from_E": {
+    "location": "hdd-e-primary",
+    "problems": [],
+    "seconds_incl_verify": 0.11157690000254661
+  },
+  "restore_from_K": {
+    "location": "hdd-k-secondary",
+    "problems": [],
+    "seconds_incl_verify": 0.11040350000257604
+  },
+  "faults": {
+    "write_to_sealed_blocked": true,
+    "stop_on_backup_mismatch": {
+      "stopped": true,
+      "ref_created": false,
+      "reason": "백업 hdd-k-secondary 대조 실패, 참조 파일을 만들지 않음: ['크기 다름: pln/memo.jsonl']"
+    },
+    "corrupt_E_restore_E": [
+      "내용 다름: rsch/test-data/sample_2.bin"
+    ],
+    "corrupt_E_restore_K": [],
+    "find_by_marker_any_order": true,
+    "reserved_name_rejected": "Windows 예약 이름: 'pln/AUX.txt.md'",
+    "empty_bundle_manifest": {
+      "text": "MEMSTORE-MANIFEST v2\nseal_id\ttest\nbundle_id\tempty\nentries\t0\n",
+      "verify": []
+    },
+    "duplicate_path_rejected": [
+      "manifest 문법: manifest 중복 경로: a.txt"
+    ],
+    "original_crlf_preserved": true
+  }
+}

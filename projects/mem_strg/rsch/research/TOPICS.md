@@ -40,7 +40,7 @@
 | | 오래됨 표시 (staleness) | ROLLUP_CLAUDE §5. P2 답 Q5 | CLAUDE · GPT_PRO |
 | | 게시 순서 (publish) | ROLLUP_CLAUDE 정정 절. P1 답 Q7, P2 답 Q7 | CLAUDE · GPT_PRO |
 | operations 운영 | 아카이브 (archiving) | [OPERATIONS_RESPONSE_GPT_PRO](operations/OPERATIONS_RESPONSE_GPT_PRO.md) Q1 | GPT_PRO |
-| | 백업·복원·참조값 (backup-restore) | [BACKUP_RESTORE_REFERENCE_CLAUDE](operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md) (초벌 + 실측, [스크립트](operations/backup_restore_bench.py)) | CLAUDE |
+| | 백업·복원·참조값 (backup-restore) | [BACKUP_RESTORE_REFERENCE_CLAUDE](operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md) (초벌 v0.2 + 실측 v2, [스크립트 v2](operations/backup_restore_bench_v2.py) · [결과](operations/backup_restore_v2_results_20261018.json). v1 [스크립트](operations/backup_restore_bench.py)는 비교용) | CLAUDE |
 | | | OPERATIONS_RESPONSE_GPT_PRO Q2 | GPT_PRO |
 | | | [BACKUP_RESTORE_REVIEW_REQUEST_v1.0_CLAUDE](operations/BACKUP_RESTORE_REVIEW_REQUEST_v1.0_CLAUDE.md) (Pro 검토 의뢰서, 보낸 판), v0.1 (초안) | CLAUDE |
 | | | [BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO](operations/BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO.md) (Pro 검토 답. Pro가 외주 브랜치에 직접 올림, `cbed825` → main `d6f7f99`에 머지) | GPT_PRO |

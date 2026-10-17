@@ -2,7 +2,7 @@
 
 - 상태: ACTIVE · 2026-10-18
 - 현재 work act: REQ-001 — 참조값과 백업·복원(S5) 초벌에 대한 Pro 검토 답을 받음([BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO](research/operations/BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO.md), Pro가 자기 브랜치로 직접 올림). 검토 처리 전
-- 다음 한 단계: Pro 검토 답 처리(채택·정정) → 초벌 v0.2
+- 다음 한 단계: ~~Pro 검토 답 처리 → 초벌 v0.2~~ **완료** ([참조값과 백업·복원 v0.2](research/operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md), 실측 v2 통과). 다음은 아카이브 이름·목록 양식(S4) 초벌, 또는 desktop-care 보호 목록 요청(Codex 스레드가 열리면)
 - **백업 위치 (Owner 2026-10-18)**: "백업은 다른 드라이브에도 하고, 외부 드라이브에도 합니다." → 백업 실물은 두 곳에 둡니다(Owner 결정 D-a 해결)
   - 관찰 [실측, 읽기만]: HANAL의 PC 안 디스크는 C:(NVMe 1.9TB) 하나뿐입니다.
     - E: F: H: I: = 외장 HDD 2.8TB (NTFS, 항상 연결)
@@ -137,7 +137,7 @@ S0 선행 연구 모으기 · S1 저장 방식 · S2 동시 쓰기 · S3 도메�
 | --- | --- | --- |
 | S1′ | 저장 계층 재검토 (원장·투영·그래프·판정 층) | Pro P1 답으로 1차 정리. 실측 1·2 뒤 다시 봄 |
 | S4 | 아카이브 (시점·이름·목록) | **시점 결정됨**: PR 머지 때 브랜치 묶음을 고정. 이름·목록 양식만 남음 (Pro P2 Q1 INDEX 칸 참고) |
-| S5 | 참조값과 백업·복원 | **초벌 + 실측 완료** ([BACKUP_RESTORE_REFERENCE_CLAUDE](research/operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md)): 봉인·백업·빈 폴더 복원 완전 일치, 고장 5가지 모두 잡음. Pro 검토 의뢰 준비 |
+| S5 | 참조값과 백업·복원 | **초벌 v0.2 + 실측 v2** ([BACKUP_RESTORE_REFERENCE_CLAUDE](research/operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md)). Pro P3 검토 반영: 참조 파일을 Git에, 봉인 번호, 실패하면 멈춤, 봉인본에서 백업, manifest v2. 실측 고장 8가지 통과 |
 | S6 | 여러 기기·모바일 | D-b·D-d 뒤 |
 | S7 | 기존 메모 이전 | Pro P2 Q6 양식으로 도메인별 목록 |
 | S8 | 통합 설계안 | 이번에는 하지 않음 |
