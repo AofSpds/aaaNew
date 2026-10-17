@@ -2,7 +2,7 @@
 
 - 상태: ACTIVE · 2026-10-18
 - 현재 work act: REQ-001 — Pro 외주 연구 1차(P1 저장 구조·P2 운영)를 받아 검토하고 S0–S3에 정정을 반영함. 파일을 주제 폴더 5개 + 소주제 등록부로 재배치함
-- 다음 한 단계: 참조값과 백업·복원 초벌을 Pro에 검토 의뢰(Owner가 붙여 넣음) → 답 검토. 그 뒤 남은 Owner 결정을 작업 흐름에 맞춰 다시 추림
+- 다음 한 단계: 참조값과 백업·복원 초벌의 Pro 검토 의뢰서 [v1.0](research/operations/BACKUP_RESTORE_REVIEW_REQUEST_v1.0_CLAUDE.md)(입력 커밋 99952a8) 완성 → Owner가 붙여 넣음 → 답 기록·검토. 그 뒤 남은 Owner 결정을 작업 흐름에 맞춰 다시 추림
 - 막힘: 없음. D-c(저장소 위치·설정)와 D-f(SQLite 수정판 설치)는 Owner 결정이 필요
 - 작성 세션: AAA/NEW/RSCH/MEM_STRG (local_edac275f-…, 2026-10-17 개설)
 

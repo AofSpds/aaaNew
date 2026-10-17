@@ -42,7 +42,7 @@
 | operations 운영 | 아카이브 (archiving) | [OPERATIONS_RESPONSE_GPT_PRO](operations/OPERATIONS_RESPONSE_GPT_PRO.md) Q1 | GPT_PRO |
 | | 백업·복원·참조값 (backup-restore) | [BACKUP_RESTORE_REFERENCE_CLAUDE](operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md) (초벌 + 실측, [스크립트](operations/backup_restore_bench.py)) | CLAUDE |
 | | | OPERATIONS_RESPONSE_GPT_PRO Q2 | GPT_PRO |
-| | | [BACKUP_RESTORE_REVIEW_REQUEST_v0.1_CLAUDE](operations/BACKUP_RESTORE_REVIEW_REQUEST_v0.1_CLAUDE.md) (Pro 검토 의뢰서 초안) | CLAUDE |
+| | | [BACKUP_RESTORE_REVIEW_REQUEST_v1.0_CLAUDE](operations/BACKUP_RESTORE_REVIEW_REQUEST_v1.0_CLAUDE.md) (Pro 검토 의뢰서, 보낸 판), v0.1 (초안) | CLAUDE |
 | | 여러 기기 (devices) | OPERATIONS_RESPONSE_GPT_PRO Q3 | GPT_PRO |
 | | 위치·권한 (location-permissions) | CONCURRENT_WRITES_CLAUDE §5 (세션 권한, 문서). OPERATIONS_RESPONSE_GPT_PRO Q4 | CLAUDE · GPT_PRO |
 | | 모바일 열람 (mobile) | OPERATIONS_RESPONSE_GPT_PRO Q5 | GPT_PRO |
