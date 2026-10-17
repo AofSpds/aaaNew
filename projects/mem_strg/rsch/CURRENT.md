@@ -39,7 +39,14 @@ seal_id = <UTC yyyymmddThhmmssZ>-<임의 6자>   ← 브랜치 이름과 무관 
   - 순서: 봉인본 대조 통과 → E: 복사·대조 → K: 복사·대조 → 그다음에 참조값 기록. **어느 단계든 실패하면 멈춥니다**(Pro P3).
   - 용량: 지우지 않는 원칙이라, 빈 공간이 10% 또는 100GB 아래로 내려가면 봉인을 멈추고 보고합니다(정리는 Owner 결정).
   - 아직 E:·K:에 폴더를 만들지 않았습니다. 첫 실제 봉인 때 만듭니다.
-  - 자료 저장소의 실제 위치(desktop-care에 알려 줄 경로)는 아직 미정입니다(Owner 결정 D-c). 후보는 `C:\Users\ms1pk\memstore\`(Git 저장소·작업 사본·Drive 미러 밖)입니다.
+  - ~~자료 저장소의 실제 위치는 아직 미정(D-c)~~ → **결정 (Owner 2026-10-18 "허락해요")**: 자료 저장소는 `C:\Users\ms1pk\memstore\`입니다.
+    - Git 저장소·작업 사본·동기화 폴더 밖입니다.
+    - 표식 파일 `MEMSTORE.txt`(store_id: memstore-01)를 두었습니다. 쓰기 도구는 이 store_id가 맞을 때만 기록하고, 경로가 없으면 새로 만들지 않고 멈춥니다(Pro P2 권고).
+  - **세션 쓰기 권한 (Owner 2026-10-18: "세션이 쓰게 하는것이지요" / "허락해요")**: 한 번만 설정했고, 이후 여는 모든 세션에 적용됩니다.
+    - Claude: `~\.claude\settings.json`에 `permissions.additionalDirectories` = memstore, E:\MEMSTORE_BACKUP, K:\MEMSTORE_BACKUP. JSON 검사 통과
+    - Codex: `~\.codex\config.toml` 끝에 `[sandbox_workspace_write] writable_roots` 같은 세 경로. TOML 검사 통과
+    - 고치기 전 사본: 두 파일 모두 `*.bak-20261018`(해시 일치 확인)
+    - 한계: 파일 쓰기 승인만 줄어듭니다. 명령 실행 승인은 따로입니다. Codex의 writable_roots가 Windows 자체 샌드박스에서 동작하는지는 아직 시험하지 않았습니다 [미확인]. 이미 열려 있는 세션은 다시 열어야 반영될 수 있습니다.
 - **관련 프로젝트: 시스템 복원 `localComputer` (DEV-ENV)** (Owner 2026-10-18: "우리가 시스템 복원을 위한 프로젝트도 있을거예요")
   - 위치: `C:\Users\ms1pk\dev\localComputer`, GitHub AofSpds/localComputer (읽기만 함)
   - 이미 돌고 있는 것 [문서: localComputer CURRENT 2026-10-15 18:59]: 데스크톱 정기 백업 desktop-care
@@ -47,6 +54,8 @@ seal_id = <UTC yyyymmddThhmmssZ>-<임의 6자>   ← 브랜치 이름과 무관 
     - 핵심 자료 09·13·17·21시, 전체 22시, 토 점검, 일 복원 시험
     - 경로 탈출·ADS·예약 파일명 거부 시험 포함
   - 활용 후보: 자료 저장소 폴더를 desktop-care 보호 목록에 넣으면 백업이 세 곳(E: + K: + Google Drive)이 됩니다. Google Drive가 "외부 서비스 지양"과 맞는지는 Owner가 결정합니다
+  - 담당 세션: desktop-care를 설정한 것은 **Codex 세션 01a12865…**(localComputer DEV-ENV, 10-11부터)입니다. 기록에서 DesktopCare-Core·restic-v1-20261015를 찾아 확인했습니다. Claude 세션 format_rec는 담당이 아닙니다(Owner: "따로 있을겁니다 아마").
+  - 인폼(2026-10-18): Codex 대기열에 정보 공유 1건을 넣었습니다(작업 요청 아님, 회신 "수신" 한 줄). **90초 안에 가져가지 않았습니다.** 다른 스레드 앞으로 쌓인 메시지도 15–18시간째 남아 있어서, 그 스레드가 열려야 전달될 것으로 봅니다 [미확인].
   - ⚠ 알린 위험: D:가 백업 키 USB입니다(`D:\DevEnvBackup-G14` 존재 확인, 내용은 열지 않음). 최근 3일 기록에 D: 오류 166(paging 126, 재시도 40)이 있습니다. 키 USB 사본을 하나 더 두기를 권고했습니다(키 작업은 이 채널이 하지 않음)
 - **작업 위치 (Owner 2026-10-18: "아 지금부터 하시면 됩니다." / "여기까지만 머지하시고 브랜치따세요.")**
   - 작업 사본: `C:\Users\ms1pk\dev\aaaNew-wt-mem_strg` (mem_strg 전용 worktree 1개). 브랜치는 `mem_strg/req-001`이고, main `d6f7f99`에서 땄습니다.
