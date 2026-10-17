@@ -2,28 +2,28 @@
 .claude/settings.local.json
 .claude/worktrees/
 
-# Third-party agent installs under rsch/apps (reinstallable; data/ folders may hold logins and session state)
+# Third-party agent installs under rsch/ref-apps (reinstallable; data/ folders may hold logins and session state)
 # Keep only launcher/install scripts, package manifests and the small Chainlit app files.
-bootstrap/rsch/apps/chainlit/*
-!bootstrap/rsch/apps/chainlit/*.ps1
-!bootstrap/rsch/apps/chainlit/app.py
-!bootstrap/rsch/apps/chainlit/chainlit.md
-!bootstrap/rsch/apps/chainlit/requirements.txt
-bootstrap/rsch/apps/hermes/*
-!bootstrap/rsch/apps/hermes/*.ps1
-bootstrap/rsch/apps/omp/*
-!bootstrap/rsch/apps/omp/*.ps1
-!bootstrap/rsch/apps/omp/build-manifest.json
-bootstrap/rsch/apps/opencode/*
-!bootstrap/rsch/apps/opencode/*.ps1
-!bootstrap/rsch/apps/opencode/package.json
-!bootstrap/rsch/apps/opencode/package-lock.json
-bootstrap/rsch/apps/pi/pi-web/*
-!bootstrap/rsch/apps/pi/pi-web/package.json
-!bootstrap/rsch/apps/pi/pi-web/package-lock.json
+projects/bootstrap/rsch/ref-apps/chainlit/*
+!projects/bootstrap/rsch/ref-apps/chainlit/*.ps1
+!projects/bootstrap/rsch/ref-apps/chainlit/app.py
+!projects/bootstrap/rsch/ref-apps/chainlit/chainlit.md
+!projects/bootstrap/rsch/ref-apps/chainlit/requirements.txt
+projects/bootstrap/rsch/ref-apps/hermes/*
+!projects/bootstrap/rsch/ref-apps/hermes/*.ps1
+projects/bootstrap/rsch/ref-apps/omp/*
+!projects/bootstrap/rsch/ref-apps/omp/*.ps1
+!projects/bootstrap/rsch/ref-apps/omp/build-manifest.json
+projects/bootstrap/rsch/ref-apps/opencode/*
+!projects/bootstrap/rsch/ref-apps/opencode/*.ps1
+!projects/bootstrap/rsch/ref-apps/opencode/package.json
+!projects/bootstrap/rsch/ref-apps/opencode/package-lock.json
+projects/bootstrap/rsch/ref-apps/pi/pi-web/*
+!projects/bootstrap/rsch/ref-apps/pi/pi-web/package.json
+!projects/bootstrap/rsch/ref-apps/pi/pi-web/package-lock.json
 
 # Large backups (6.47 GB zip and its copies)
-bootstrap/rsch/research/sub-memory/backups/
+projects/bootstrap/rsch/research/sub-memory/backups/
 
 # Python / Node environments and caches anywhere
 .venv/
@@ -35,8 +35,8 @@ __pycache__/
 *.pyc
 
 # Relation engine derived files (rebuilt from jsonl, see RELATION_ENGINE_PLAN D1)
-bootstrap/memory-store/index.sqlite
-bootstrap/memory-store/records/local/
+projects/bootstrap/memory-store/index.sqlite
+projects/bootstrap/memory-store/records/local/
 
 # Logs
 *.log
