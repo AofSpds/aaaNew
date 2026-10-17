@@ -1,8 +1,13 @@
 # CURRENT — mem_strg / rsch
 
 - 상태: ACTIVE · 2026-10-18
-- 현재 work act: REQ-001 — Pro 외주 연구 1차(P1 저장 구조·P2 운영)를 받아 검토하고 S0–S3에 정정을 반영함. 파일을 주제 폴더 5개 + 소주제 등록부로 재배치함
-- 다음 한 단계: 참조값과 백업·복원 초벌의 Pro 검토 의뢰서 [v1.0](research/operations/BACKUP_RESTORE_REVIEW_REQUEST_v1.0_CLAUDE.md)(입력 커밋 99952a8) 완성 → Owner가 붙여 넣음 → 답 기록·검토. 그 뒤 남은 Owner 결정을 작업 흐름에 맞춰 다시 추림
+- 현재 work act: REQ-001 — 참조값과 백업·복원(S5) 초벌에 대한 Pro 검토 답을 받음([BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO](research/operations/BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO.md), Pro가 자기 브랜치로 직접 올림). 검토 처리 전
+- 다음 한 단계: Pro 검토 답 처리(채택·정정) → 초벌 v0.2
+- **작업 위치 (Owner 2026-10-18: "아 지금부터 하시면 됩니다." / "여기까지만 머지하시고 브랜치따세요.")**
+  - 작업 사본: `C:\Users\ms1pk\dev\aaaNew-wt-mem_strg` (mem_strg 전용 worktree 1개). 브랜치는 `mem_strg/req-001`이고, main `d6f7f99`에서 땄습니다.
+  - 공용 폴더 `C:\Users\ms1pk\dev\aaaNew`(main)에서는 mem_strg 파일을 고치지 않습니다. BTSR 세션과 같은 폴더이기 때문입니다.
+  - 외주(Pro) 결과는 외주 브랜치 → 이 작업 브랜치로 합칩니다. 작업 단위가 끝나면 PR로 main에 올립니다. 머지는 주관 PLN이 DPM 승인을 받아 하고, PLN이 생기기 전에는 Owner가 맡습니다.
+  - 작업 흐름을 정하기 전의 커밋: `2506468` `8771f1f` `5408ece` `c9215e5` `99952a8` `b4be47a`는 main에 바로 푸시했습니다. 되돌리지 않습니다. 이어서 `d6f7f99`에서 Pro P3 외주 브랜치를 main에 머지해 그 단락을 닫았습니다.
 - 막힘: 없음. D-c(저장소 위치·설정)와 D-f(SQLite 수정판 설치)는 Owner 결정이 필요
 - 작성 세션: AAA/NEW/RSCH/MEM_STRG (local_edac275f-…, 2026-10-17 개설)
 

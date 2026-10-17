@@ -43,6 +43,7 @@
 | | 백업·복원·참조값 (backup-restore) | [BACKUP_RESTORE_REFERENCE_CLAUDE](operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md) (초벌 + 실측, [스크립트](operations/backup_restore_bench.py)) | CLAUDE |
 | | | OPERATIONS_RESPONSE_GPT_PRO Q2 | GPT_PRO |
 | | | [BACKUP_RESTORE_REVIEW_REQUEST_v1.0_CLAUDE](operations/BACKUP_RESTORE_REVIEW_REQUEST_v1.0_CLAUDE.md) (Pro 검토 의뢰서, 보낸 판), v0.1 (초안) | CLAUDE |
+| | | [BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO](operations/BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO.md) (Pro 검토 답. Pro가 외주 브랜치에 직접 올림, `cbed825` → main `d6f7f99`에 머지) | GPT_PRO |
 | | 여러 기기 (devices) | OPERATIONS_RESPONSE_GPT_PRO Q3 | GPT_PRO |
 | | 위치·권한 (location-permissions) | CONCURRENT_WRITES_CLAUDE §5 (세션 권한, 문서). OPERATIONS_RESPONSE_GPT_PRO Q4 | CLAUDE · GPT_PRO |
 | | 모바일 열람 (mobile) | OPERATIONS_RESPONSE_GPT_PRO Q5 | GPT_PRO |
