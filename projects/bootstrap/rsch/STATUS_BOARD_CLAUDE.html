@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<!-- 원본: Claude 세션 scratchpad rsch_status_board.html, 게시본 https://claude.ai/artifact/AjsvhwLZb8k45Y3aNGDc2a -->
+<!-- 원본: scratchpad rsch_status_board.html, 아티팩트 https://claude.ai/artifact/AjsvhwLZb8k45Y3aNGDc2a -->
 </head>
 <body>
 <title>aaa 재구축 rsch 현황판</title>
@@ -84,25 +84,25 @@
 
 <div class="wrap">
   <header>
-    <h1>aaa 재구축 rsch 현황판</h1>
-    <span class="stamp">갱신 2026-10-17 · 작성 aaa_new_rsch (Claude) · 작업대 <span class="mono">aaaNew/projects/bootstrap/rsch</span></span>
+    <h1>aaa 재구축 rsch 현황판 — AAA/NEW/RSCH/BTSR</h1>
+    <span class="stamp">갱신 2026-10-17 · 작성 AAA/NEW/RSCH/BTSR (Claude) · 작업대 <span class="mono">aaaNew/projects/bootstrap/rsch</span></span>
   </header>
 
   <section class="summary">
     <div class="tile run">
       <span class="label">지금 진행 중</span>
-      <span class="value">코딩 기준 초안 · 결정 대기</span>
-      <span class="sub">권고안 구조로 pln/·memory-engine/·memory-store/ 생성, CODING_STANDARDS 초안(C1–C5). 다음은 결정 후 단계 1</span>
+      <span class="value">aaa 폴더 구조 제안 v0.1</span>
+      <span class="sub">RHS/DPM 회신·RHS 결정 #1–#39·실패 원인 수집 → aaa 구조안(apps 코어 · domains 전 도메인 관리 · projects/bootstrap pln·arch·pmo·rsch). Owner 결정 F1–F7 대기</span>
     </div>
     <div class="tile wait">
       <span class="label">Owner 결정 대기</span>
-      <span class="value">D1–D21 (21건)</span>
-      <span class="sub">반박 검토 완료: 유지 7·변경 5·Owner 선택 1·신규 8. 착수에 필요한 최소 6건</span>
+      <span class="value">F1–F7 · D1–D21 · E1–E9 · C1–C5</span>
+      <span class="sub">먼저 F1(domains의 “관리” = 등록·규칙 칸, 권고). D 착수 최소 6건</span>
     </div>
     <div class="tile warn">
       <span class="label">Git</span>
-      <span class="value">projects/ 구조 전환 완료</span>
-      <span class="sub">bootstrap → projects/bootstrap, rsch/apps → rsch/ref-apps, aaaNew/apps는 core 실행부로 비움. 두 앱 재설치 확인 후 커밋·푸시</span>
+      <span class="value">원격 main 6b19bb0</span>
+      <span class="sub">미커밋: domains/README, projects/README, 구조 제안 v0.1 — 커밋은 Owner 지시 때. mem_strg/는 이 세션 관리 밖</span>
     </div>
     <div class="tile ok">
       <span class="label">이번 주 완료</span>
@@ -115,16 +115,18 @@
     <h2>세션과 통신</h2>
     <div class="scroll"><table>
       <tr><th>세션</th><th>역할</th><th>마지막 활동</th><th>식별자</th><th>상태</th></tr>
-      <tr><td>Claude aaa_new_rsch</td><td>Claude Code 접점·실행 중 개입점·관계 엔진 계획</td><td class="num">10-17 (지금)</td><td class="mono">e3bfd5a5…</td><td><span class="chip run">활성</span></td></tr>
+      <tr><td>Claude AAA/NEW/RSCH/BTSR</td><td>bootstrap rsch: 접점·개입점·관계 엔진·역할 설계·aaa 구조안</td><td class="num">10-17 (지금)</td><td class="mono">e3bfd5a5…</td><td><span class="chip run">활성</span></td></tr>
       <tr><td>Codex rsch</td><td>연구 총괄, 요구사항, Codex 접점 조사</td><td class="num">10-14 12:08</td><td class="mono">01a13598…</td><td><span class="chip wait">대기</span></td></tr>
       <tr><td>Codex rsch_sub_memory</td><td>기억 관계 연구, Kev 실험, 백업</td><td class="num">10-14 20:03 (기록 10-16)</td><td class="mono">01a1385f…</td><td><span class="chip wait">대기</span></td></tr>
       <tr><td>Claude format_rec</td><td>노트북 포맷 전 백업</td><td class="num">10-14</td><td class="mono">local_5beddf3b…</td><td><span class="chip warn">결과 미확인</span></td></tr>
+      <tr><td>Claude RHS/DPM</td><td>RHS 도메인 총괄. 구조 원문·결정·실패 원인 회신</td><td class="num">10-17 (회신 받음)</td><td class="mono">local_01db8a4d…</td><td><span class="chip ok">연락됨</span></td></tr>
+      <tr><td>Claude AAA/NEW/RSCH/MEM_STRG</td><td>별도 프로젝트 mem_strg (메모 저장소 연구, 이 세션 관리 밖)</td><td class="num">10-17</td><td class="mono">local_edac275f…</td><td><span class="chip run">활성</span></td></tr>
     </table></div>
     <p class="note">통신: Claude→Codex는 queue DB로 전달 확인. Codex→Claude는 queue가 없어 화면 입력으로 1회 수신, 이후 <span class="mono">requests/REQUEST_CLAUDE.md</span> 파일 경로 제안.</p>
   </section>
 
   <section class="panel">
-    <h2>폴더 구조 — aaaNew/apps(core 실행부) · aaaNew/projects/bootstrap/ (아래는 rsch 루트 기준, ../ 는 bootstrap 형제 작업대)</h2>
+    <h2>폴더 구조 — aaaNew/apps(core 실행부) · aaaNew/domains(모든 도메인 관리, 구성 제안 단계) · aaaNew/projects/bootstrap/ (아래는 rsch 루트 기준, ../ 는 bootstrap 형제 작업대)</h2>
     <div class="scroll"><table>
       <tr><th>폴더</th><th>내용</th><th>소유</th></tr>
       <tr><td class="mono">STATUS_BOARD_CLAUDE.html</td><td>이 현황판</td><td>Claude</td></tr>
@@ -136,7 +138,7 @@
       <tr><td class="mono">research/relation-engine/</td><td>jevlike 갭, 관계 엔진 계획, JEV-BYUL 대조, D1–D21</td><td>Claude</td></tr>
       <tr><td class="mono">research/memory-external/</td><td>외부 기억 사례 조사</td><td>Codex rsch</td></tr>
       <tr><td class="mono">research/sub-memory/</td><td>기억 관계 보고서 12편, Kev·그래프 실험, 백업(Git 제외) (구 rsch_sub_memory)</td><td>Codex sub</td></tr>
-      <tr><td class="mono">design/</td><td>역할·워크플로 설계 v0.2</td><td>Claude</td></tr>
+      <tr><td class="mono">design/</td><td>역할·워크플로 설계 v0.2, aaa 폴더 구조 제안 v0.1</td><td>Claude</td></tr>
       <tr><td class="mono">legacy/</td><td>옛 수명주기 문서 2편</td><td>—</td></tr>
       <tr><td class="mono">../pln/</td><td>계획 작업대 (폴더만, 담당 미배정)</td><td>—</td></tr>
       <tr><td class="mono">../memory-engine/</td><td>관계 엔진 코드 작업대 + CODING_STANDARDS 초안</td><td>Claude</td></tr>
@@ -173,6 +175,7 @@
         <tr><td>DECISIONS_D1_D21_CLAUDE</td><td>기본값 반박 검토(유지 7·변경 5·Owner 1) + 신규 D14–D21</td><td><span class="chip ok mono">0caf450</span></td></tr>
         <tr><td>ROLE_WORKFLOW_DESIGN_CLAUDE v0.2</td><td>AAA 역할·워크플로 벤치마크, 역할 4+iva, 워크플로 7, E1–E9</td><td><span class="chip ok mono">0d84100</span></td></tr>
         <tr><td>.gitignore</td><td>백업 zip·.venv·캐시·설치 폴더·로컬 권한 파일 제외 → 커밋 대상 4 MB</td><td><span class="chip ok mono">b4dc621</span></td></tr>
+        <tr><td>AAA_FOLDER_STRUCTURE_PROPOSAL_CLAUDE v0.1</td><td>Owner 원문(aaaNew)·RHS 결정·실패 원인 → aaa 구조안, F1–F7</td><td><span class="chip wait">미커밋</span></td></tr>
       </table></div>
     </section>
     <section class="panel">
@@ -222,6 +225,7 @@
     <section class="panel">
       <h2>다음 단계</h2>
       <ul class="list">
+        <li>aaa 폴더 구조 F1–F7 하나씩 결정 (F1부터) → 결정 뒤 domains/aaa·rhs 칸 생성, DPM·PLN 개설 패킷</li>
         <li>D1–D21 Owner 결정 (최소 6건: D5·D9·D15·D16·D18·D20) + 역할 설계 E1–E9</li>
         <li>코딩 기준 C1–C5 확정</li>
         <li>단계 1(저장소) 착수: D1·D8 결정이 선행</li>
@@ -238,6 +242,7 @@
         <li>노트북 포맷 진행 여부, format_rec 세션 결과</li>
         <li>데스크톱 앱이 실행기를 다시 띄우는 시점</li>
         <li>설치한 실행기 5종의 로그인·모델 연결</li>
+        <li>jwDev의 dev 폴더가 Google Drive 미러인지 (aaaNew .git 위험)</li>
       </ul>
     </section>
   </div>
