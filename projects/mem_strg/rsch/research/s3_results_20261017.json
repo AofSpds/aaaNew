@@ -1,0 +1,32 @@
+{
+  "checkpoints": {
+    "11:30": [
+      "WAIT verifier:PMOV#H3d ← rhs/order/pln"
+    ],
+    "13:30": [
+      "WAIT verifier:PMOV#H3d ← rhs/order/pln, rhs/order/pmo",
+      "CROSS_ONE_SIDED RHS-X-001: sim 쪽에만 있음"
+    ],
+    "15:30": [
+      "CONFLICT rhs/order/pln가 rhs/order/pmo를 기다리지만 rhs/order/pmo는 DONE → 확인: RHS/ORDER/PLN",
+      "CROSS_ONE_SIDED RHS-X-001: sim 쪽에만 있음"
+    ],
+    "23:59": [
+      "STALE rhs/order/pln (WAITING 10h) → 확인: RHS/ORDER/PLN",
+      "CONFLICT rhs/order/pln가 rhs/order/pmo를 기다리지만 rhs/order/pmo는 DONE → 확인: RHS/ORDER/PLN",
+      "STALE rhs/sim/pln (ACTIVE 12h) → 확인: RHS/SIM/PLN",
+      "CROSS_ONE_SIDED RHS-X-001: sim 쪽에만 있음"
+    ]
+  },
+  "rejected": [
+    "rejected: missing=[] unknown=[] state=DONE? bad_targets=[]",
+    "rejected: missing=[] unknown=[] state=WAITING bad_targets=['PMOV']",
+    "rejected: missing=[] unknown=['history'] state=IDLE bad_targets=[]"
+  ],
+  "scale": {
+    "updates": 10000,
+    "set_plus_regen_ms_median": 8.444000006420538,
+    "p99_ms": 10.725000000093132,
+    "max_ms": 57.02150000433903
+  }
+}

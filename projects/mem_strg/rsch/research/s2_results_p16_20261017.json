@@ -1,0 +1,62 @@
+{
+  "params": {
+    "out_dir": "C:\\Users\\ms1pk\\AppData\\Local\\Temp\\claude\\C--Users-ms1pk-dev-aaaNew\\883f6504-8c08-4a3a-86cb-f8a146933561\\scratchpad\\s2_p16",
+    "procs": 16,
+    "n": 300,
+    "modes": "overwrite,append_nolock,append_lock,per_writer,sqlite"
+  },
+  "results": [
+    {
+      "mode": "overwrite",
+      "wall_s": 37.442042499998934,
+      "waits": 44462,
+      "errors": 0,
+      "expected": 4800,
+      "valid": 3075,
+      "missing": 1725
+    },
+    {
+      "mode": "append_nolock",
+      "wall_s": 0.7586715000070399,
+      "waits": 0,
+      "errors": 0,
+      "expected": 4800,
+      "valid": 4070,
+      "missing": 730,
+      "bad_lines": 240,
+      "duplicates": 0
+    },
+    {
+      "mode": "append_lock",
+      "wall_s": 1.7854752999992343,
+      "waits": 23108,
+      "errors": 0,
+      "expected": 4800,
+      "valid": 4800,
+      "missing": 0,
+      "bad_lines": 0,
+      "duplicates": 0
+    },
+    {
+      "mode": "per_writer",
+      "wall_s": 0.8792467000021134,
+      "waits": 0,
+      "errors": 0,
+      "expected": 4800,
+      "valid": 4800,
+      "missing": 0,
+      "bad_lines": 0,
+      "duplicates": 0
+    },
+    {
+      "mode": "sqlite",
+      "wall_s": 10.162438299987116,
+      "waits": 0,
+      "errors": 0,
+      "expected": 4800,
+      "valid": 4800,
+      "missing": 0,
+      "duplicates": 0
+    }
+  ]
+}

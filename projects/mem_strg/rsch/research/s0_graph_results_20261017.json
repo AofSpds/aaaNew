@@ -1,0 +1,69 @@
+{
+  "params": {
+    "out_dir": "C:\\Users\\ms1pk\\AppData\\Local\\Temp\\claude\\C--Users-ms1pk-dev-aaaNew\\883f6504-8c08-4a3a-86cb-f8a146933561\\scratchpad\\s0_graph1",
+    "sizes": "10000,100000,1000000",
+    "queries": 200
+  },
+  "results": [
+    {
+      "records": 10000,
+      "nodes": 10250,
+      "edges": 21011,
+      "build_s": 0.037730500000179745,
+      "db_bytes": 1122304,
+      "ancestors": {
+        "median_ms": 1.759650003805291,
+        "p95_ms": 3.0966000049374998,
+        "max_ms": 4.0714999922784045,
+        "result_median": 1685.5
+      },
+      "impact": {
+        "median_ms": 7.934899993415456,
+        "p95_ms": 10.866700002225116,
+        "max_ms": 11.383600009139627,
+        "result_median": 5318.0,
+        "views_median": 50.0
+      }
+    },
+    {
+      "records": 100000,
+      "nodes": 102500,
+      "edges": 209628,
+      "build_s": 0.3916159999935189,
+      "db_bytes": 12128256,
+      "ancestors": {
+        "median_ms": 114.6990499983076,
+        "p95_ms": 121.41570000676438,
+        "max_ms": 130.5856999970274,
+        "result_median": 73572.0
+      },
+      "impact": {
+        "median_ms": 180.88559999887366,
+        "p95_ms": 190.01799999387003,
+        "max_ms": 202.12420000461861,
+        "result_median": 89757.0,
+        "views_median": 500.0
+      }
+    },
+    {
+      "records": 1000000,
+      "nodes": 1025000,
+      "edges": 2099125,
+      "build_s": 4.190727199995308,
+      "db_bytes": 124461056,
+      "ancestors": {
+        "median_ms": 1359.5511500025168,
+        "p95_ms": 1411.9486999989022,
+        "max_ms": 1656.4920999953756,
+        "result_median": 791748.5
+      },
+      "impact": {
+        "median_ms": 0.07494999590562657,
+        "p95_ms": 2407.1839999960503,
+        "max_ms": 2509.8317000083625,
+        "result_median": 0.0,
+        "views_median": 0.0
+      }
+    }
+  ]
+}

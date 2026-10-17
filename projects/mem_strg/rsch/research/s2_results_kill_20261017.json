@@ -1,0 +1,13 @@
+{
+  "params": {
+    "out_dir": "C:\\Users\\ms1pk\\AppData\\Local\\Temp\\claude\\C--Users-ms1pk-dev-aaaNew\\883f6504-8c08-4a3a-86cb-f8a146933561\\scratchpad\\s2_kill1",
+    "procs": 8,
+    "n": 500,
+    "modes": ","
+  },
+  "results": [],
+  "kill_release": {
+    "held_while_alive": true,
+    "released_after_kill_s": 2.130000211764127e-05
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "params": {
+    "out_dir": "C:\\Users\\ms1pk\\AppData\\Local\\Temp\\claude\\C--Users-ms1pk-dev-aaaNew\\883f6504-8c08-4a3a-86cb-f8a146933561\\scratchpad\\s1_full",
+    "roles": 20,
+    "updates": 500,
+    "backups": 5
+  },
+  "total_updates": 10000,
+  "forms": [
+    {
+      "form": "A_files",
+      "write_s": 64.236945200013,
+      "rollup_s": [
+        0.09057240000402089,
+        0.09019649999390822,
+        0.09688710000773426,
+        0.08905670000240207,
+        0.12496490000921767
+      ],
+      "backup": [
+        {
+          "files_changed": 2022,
+          "lines_added": 44004,
+          "lines_deleted": 0,
+          "binary_files": 0,
+          "git_kib": 1063
+        },
+        {
+          "files_changed": 2041,
+          "lines_added": 44299,
+          "lines_deleted": 299,
+          "binary_files": 0,
+          "git_kib": 2193
+        },
+        {
+          "files_changed": 2041,
+          "lines_added": 44292,
+          "lines_deleted": 292,
+          "binary_files": 0,
+          "git_kib": 3223
+        },
+        {
+          "files_changed": 2041,
+          "lines_added": 44285,
+          "lines_deleted": 285,
+          "binary_files": 0,
+          "git_kib": 4487
+        },
+        {
+          "files_changed": 2041,
+          "lines_added": 44291,
+          "lines_deleted": 291,
+          "binary_files": 0,
+          "git_kib": 5817
+        }
+      ],
+      "roles_in_rollup": 20,
+      "files": 10022,
+      "bytes": 12469668,
+      "git_kib_after_gc": 5430,
+      "write_ms_per_update": 6.4236945200013
+    },
+    {
+      "form": "B_jsonl_sqlite",
+      "write_s": 2.360998100004508,
+      "rollup_s": [
+        0.13221039999916684,
+        0.144049399998039,
+        0.17703510000137612,
+        0.19195680000120774,
+        0.20405010000104085
+      ],
+      "backup": [
+        {
+          "files_changed": 21,
+          "lines_added": 2002,
+          "lines_deleted": 0,
+          "binary_files": 0,
+          "git_kib": 497
+        },
+        {
+          "files_changed": 20,
+          "lines_added": 2000,
+          "lines_deleted": 0,
+          "binary_files": 0,
+          "git_kib": 1484
+        },
+        {
+          "files_changed": 20,
+          "lines_added": 2000,
+          "lines_deleted": 0,
+          "binary_files": 0,
+          "git_kib": 2960
+        },
+        {
+          "files_changed": 20,
+          "lines_added": 2000,
+          "lines_deleted": 0,
+          "binary_files": 0,
+          "git_kib": 4925
+        },
+        {
+          "files_changed": 20,
+          "lines_added": 2000,
+          "lines_deleted": 0,
+          "binary_files": 0,
+          "git_kib": 7380
+        }
+      ],
+      "roles_in_rollup": 20,
+      "files": 42,
+      "bytes": 12317386,
+      "git_kib_after_gc": 3235,
+      "write_ms_per_update": 0.23609981000045083
+    },
+    {
+      "form": "C_sqlite",
+      "write_s": 0.5781798999960301,
+      "rollup_s": [
+        0.01434569999400992,
+        0.013460200003464706,
+        0.01576559999375604,
+        0.017992699999012984,
+        0.020471600000746548
+      ],
+      "backup": [
+        {
+          "files_changed": 2,
+          "lines_added": 3,
+          "lines_deleted": 0,
+          "binary_files": 1,
+          "git_kib": 582
+        },
+        {
+          "files_changed": 1,
+          "lines_added": 0,
+          "lines_deleted": 0,
+          "binary_files": 1,
+          "git_kib": 1743
+        },
+        {
+          "files_changed": 1,
+          "lines_added": 0,
+          "lines_deleted": 0,
+          "binary_files": 1,
+          "git_kib": 3481
+        },
+        {
+          "files_changed": 1,
+          "lines_added": 0,
+          "lines_deleted": 0,
+          "binary_files": 1,
+          "git_kib": 5798
+        },
+        {
+          "files_changed": 1,
+          "lines_added": 0,
+          "lines_deleted": 0,
+          "binary_files": 1,
+          "git_kib": 8694
+        }
+      ],
+      "roles_in_rollup": 20,
+      "files": 25,
+      "bytes": 13951654,
+      "git_kib_after_gc": 2007,
+      "write_ms_per_update": 0.05781798999960301
+    }
+  ]
+}
