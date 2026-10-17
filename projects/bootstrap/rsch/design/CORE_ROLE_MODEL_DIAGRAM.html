@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORE 역할 모델</title>
+<style>
+:root{--bg:#fafaf8;--fg:#1f2328;--mute:#6a737d;--line:#d0d7de;--card:#fff;--ok:#1a7f37;--okbg:#dafbe1;--prop:#9a6700;--propbg:#fff8c5;--out:#8250df;--outbg:#fbefff;--accent:#0969da}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1117;--fg:#e6edf3;--mute:#8b949e;--line:#30363d;--card:#161b22;--ok:#3fb950;--okbg:#12261e;--prop:#d29922;--propbg:#272115;--out:#a371f7;--outbg:#231a33;--accent:#58a6ff}}
+:root[data-theme="dark"]{--bg:#0d1117;--fg:#e6edf3;--mute:#8b949e;--line:#30363d;--card:#161b22;--ok:#3fb950;--okbg:#12261e;--prop:#d29922;--propbg:#272115;--out:#a371f7;--outbg:#231a33;--accent:#58a6ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,"Malgun Gothic",sans-serif;padding:16px}
+h1{font-size:18px;margin:0 0 4px}h2{font-size:15px;margin:22px 0 8px}
+.sub{color:var(--mute);font-size:12px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:10px;white-space:nowrap}
+.ok{background:var(--okbg);color:var(--ok)}.prop{background:var(--propbg);color:var(--prop)}.out{background:var(--outbg);color:var(--out)}
+.tree{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto}
+.n{margin:2px 0 2px 0;padding-left:16px;border-left:1px dashed var(--line)}
+.root{border-left:none;padding-left:0}
+.name{font-family:Consolas,monospace;font-weight:600}
+.d{color:var(--mute);font-size:12px;margin-left:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+.opt{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px}
+.opt.rec{border:2px solid var(--accent)}
+.opt h3{margin:0 0 6px;font-size:14px}
+.box{border:1px solid var(--line);border-radius:6px;padding:6px 8px;margin:6px 0;font-family:Consolas,monospace;font-size:12px}
+.arrow{color:var(--accent);font-size:12px;margin:2px 0 2px 8px}
+ul{margin:6px 0;padding-left:18px}li{margin:2px 0}
+</style>
+<style>.role{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-weight:600;background:var(--card)}.v{color:var(--mute);font-size:12px;margin-left:4px}table{border-collapse:collapse;width:100%;font-size:13px}td,th{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}th{background:var(--card)}.scroll{overflow-x:auto}</style>
+</head>
+<body>
+<h1>CORE 1. 역할 모델 (초안 v0.1)</h1>
+<div class="sub">CORE = 프로젝트(워크플로)와 역할의 기본 모델 (Owner 2026-10-18) · 근거 RHS 결정 · 원문: CORE_ROLE_MODEL_CLAUDE.md</div>
+<div class="legend"><span class="tag ok">✔ RHS Owner 결정</span><span class="tag prop">제안·해석</span></div>
+
+<h2>1. 트리</h2>
+<div class="tree">
+ <div class="n root"><span class="role">Owner</span><span class="v">+ IVA</span><span class="d">결정·종료 — 역할은 문의만 (#2)</span> <span class="tag ok">✔ IVA = Owner의 검증자</span>
+  <div class="n"><span class="role">DPM</span><span class="v">+ DPMV</span><span class="d">도메인 하나 (#9 #21)</span> <span class="tag ok">✔</span>
+   <div class="n"><span class="role">PLN</span><span class="v">+ PLNV</span><span class="d">프로젝트 하나, 여럿 (#8 #22)</span> <span class="tag ok">✔</span>
+    <div class="n"><span class="role">RSCH</span><span class="v">+ RSCHV</span><span class="d">연구·시험, PLN 아래에서 지원 (#15)</span> <span class="tag ok">✔</span></div>
+    <div class="n"><span class="role">ARCH</span><span class="v">+ ARCHV</span><span class="d">설계, PLN 아래 존치 (#12)</span> <span class="tag ok">✔</span>
+     <div class="n"><span class="role">PMO</span><span class="v">+ PMOV</span><span class="d">구현·코드·실행, 결과를 ARCH에 보냄</span> <span class="tag ok">✔ 위계 2026-10-18</span></div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="sub" style="margin-top:8px">V(검증자)는 모두 비상설 (#13) · 단계: 연구 RSCH → 기획 PLN → 설계 ARCH → 구현 PMO (#11)</div>
+</div>
+
+<h2>2. 역할 카드</h2>
+<div class="scroll"><table>
+<tr><th>역할</th><th>맡는 일</th><th>여는 이</th><th>로드맵</th></tr>
+<tr><td>DPM</td><td>도메인 총괄, projects 전체 관리, 역할 Current를 모아 도메인 Current</td><td>Owner</td><td>도메인 M1 → M2</td></tr>
+<tr><td>PLN</td><td>프로젝트 일 관리, 하위 역할 배정·이관 결정</td><td>DPM 요청 → Owner</td><td>프로젝트 M1 → … 완료</td></tr>
+<tr><td>RSCH</td><td>연구, 시험</td><td>PLN</td><td>연구·시험 순서</td></tr>
+<tr><td>ARCH</td><td>설계</td><td>PLN</td><td>설계 범위</td></tr>
+<tr><td>PMO</td><td>구현, 코드, 실행 → 결과를 ARCH에</td><td>PLN</td><td>구현 묶음 순서</td></tr>
+<tr><td>*V</td><td>짝 역할 검증, 판정만 남김. <b>넘길 때 한 번</b> (예: PMO → ARCH 보낼 때 PMOV)</td><td>짝의 상위 <span class="tag ok">✔</span> (PMOV는 ARCH) · Owner의 검증자는 IVA</td><td>없음</td></tr>
+</table></div>
+<div class="sub" style="margin-top:6px">모든 역할: Current 한 장(README 같은 메모리 뷰) · 자기 범위 로드맵 · 로컬 작업대 · 자기 폴더만 씀</div>
+
+<h2>3. R1 — 도메인 장부와 CORE는 누가 맡나 (결정: 가, 기록은 도메인 DPM이 합의하에)</h2>
+<div class="two">
+ <div class="opt rec">
+  <h3>가. aaa DPM이 총괄 <span class="tag ok">✔ Owner 결정</span></h3><div class="sub">"AAA의 DPM이 총괄하지만, 도메인의 DPM이 합의하에 기록하게 됩니다. 관리는 DPM이 합니다."</div>
+  <div class="box">Owner → AAA DPM (aaa 도메인 + domains 장부 + CORE)</div>
+  <ul><li>역할을 늘리지 않음</li><li>짐이 커지면 그때 나눔</li></ul>
+ </div>
+ <div class="opt">
+  <h3>나. 도메인들 위에 역할 하나 더</h3>
+  <div class="box">Owner → (전체 총괄) → 각 도메인 DPM (aaa, RHS …)</div>
+  <ul><li>aaa 자기 일과 전체 관리가 분리됨</li><li>세션·비용 하나 더, 전달 단계 하나 더</li></ul>
+ </div>
+</div>
+</body>
+</html>

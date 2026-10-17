@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>aaa 구조도</title>
+<style>
+:root{--bg:#fafaf8;--fg:#1f2328;--mute:#6a737d;--line:#d0d7de;--card:#fff;--ok:#1a7f37;--okbg:#dafbe1;--prop:#9a6700;--propbg:#fff8c5;--out:#8250df;--outbg:#fbefff;--accent:#0969da}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1117;--fg:#e6edf3;--mute:#8b949e;--line:#30363d;--card:#161b22;--ok:#3fb950;--okbg:#12261e;--prop:#d29922;--propbg:#272115;--out:#a371f7;--outbg:#231a33;--accent:#58a6ff}}
+:root[data-theme="dark"]{--bg:#0d1117;--fg:#e6edf3;--mute:#8b949e;--line:#30363d;--card:#161b22;--ok:#3fb950;--okbg:#12261e;--prop:#d29922;--propbg:#272115;--out:#a371f7;--outbg:#231a33;--accent:#58a6ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,"Malgun Gothic",sans-serif;padding:16px}
+h1{font-size:18px;margin:0 0 4px}h2{font-size:15px;margin:22px 0 8px}
+.sub{color:var(--mute);font-size:12px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:10px;white-space:nowrap}
+.ok{background:var(--okbg);color:var(--ok)}.prop{background:var(--propbg);color:var(--prop)}.out{background:var(--outbg);color:var(--out)}
+.tree{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto}
+.n{margin:2px 0 2px 0;padding-left:16px;border-left:1px dashed var(--line)}
+.root{border-left:none;padding-left:0}
+.name{font-family:Consolas,monospace;font-weight:600}
+.d{color:var(--mute);font-size:12px;margin-left:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+.opt{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px}
+.opt.rec{border:2px solid var(--accent)}
+.opt h3{margin:0 0 6px;font-size:14px}
+.box{border:1px solid var(--line);border-radius:6px;padding:6px 8px;margin:6px 0;font-family:Consolas,monospace;font-size:12px}
+.arrow{color:var(--accent);font-size:12px;margin:2px 0 2px 8px}
+ul{margin:6px 0;padding-left:18px}li{margin:2px 0}
+</style>
+</head>
+<body>
+<h1>aaa 폴더 구조도 (제안 v0.1)</h1>
+<div class="sub">2026-10-17 · AAA/NEW/RSCH/BTSR · 옮긴 것 없음 · 근거: AAA_FOLDER_STRUCTURE_PROPOSAL_CLAUDE.md</div>
+<div class="legend"><span class="tag ok">✔ Owner 결정</span><span class="tag prop">제안 (결정 전)</span><span class="tag out">이 세션 관리 밖</span></div>
+
+<h2>1. 전체 그림</h2>
+<div class="tree">
+ <div class="n root"><span class="name">aaaNew\</span><span class="d">aaa = 모든 도메인의 코어</span> <span class="tag ok">✔</span>
+  <div class="n"><span class="name">apps\</span><span class="d">aaa 코어 실행부 (코드만)</span> <span class="tag ok">✔</span></div>
+  <div class="n"><span class="name">domains\</span><span class="d">모든 도메인 관리</span> <span class="tag ok">✔</span>
+   <div class="n"><span class="name">INDEX.md</span><span class="d">도메인 목록</span> <span class="tag prop">제안</span></div>
+   <div class="n"><span class="name">aaa\</span><span class="d">aaa 자신의 칸</span> <span class="tag prop">F2</span>
+    <div class="n"><span class="name">core\</span><span class="d">모든 도메인 공통 규칙·양식</span> <span class="tag prop">F3</span></div>
+    <div class="n"><span class="name">records\</span><span class="d">Owner 원문 장부</span> <span class="tag prop">제안</span></div>
+    <div class="n"><span class="name">dpm\</span><span class="d">aaa DPM 자리</span> <span class="tag prop">F5</span></div>
+    <div class="n"><span class="name">coordination\</span><span class="d">도메인 넘는 요청·회신, 개설 패킷</span> <span class="tag prop">제안</span></div>
+   </div>
+   <div class="n"><span class="name">rhs\</span><span class="d">RHS 장부 칸 (RHS 폴더는 제자리)</span> <span class="tag ok">✔ F1</span>
+    <div class="n"><span class="name">DOMAIN.md</span><span class="d">위치·세션·담당 DPM·따르는 규칙 판</span> <span class="tag prop">제안</span></div>
+    <div class="n"><span class="name">(Current)</span><span class="d">역할마다 분리, README 같은 것</span> <span class="tag ok">✔ F1-c</span> <span class="tag prop">자리: RHS 원문 받은 뒤</span></div>
+   </div>
+  </div>
+  <div class="n"><span class="name">projects\</span><span class="d">aaa의 프로젝트 (프로젝트 하나 = PLN 하나)</span> <span class="tag ok">✔</span>
+   <div class="n"><span class="name">bootstrap\</span><span class="d">aaa 코어를 만드는 프로젝트</span> <span class="tag ok">✔</span>
+    <div class="n"><span class="name">pln\</span><span class="d">계획</span> <span class="tag ok">✔ 폴더 있음</span></div>
+    <div class="n"><span class="name">arch\</span><span class="d">설계</span> <span class="tag prop">F4</span></div>
+    <div class="n"><span class="name">pmo\</span><span class="d">구현 (코드는 apps\에)</span> <span class="tag prop">F4</span></div>
+    <div class="n"><span class="name">rsch\</span><span class="d">연구·시험·현황판 ← 지금 이 채널</span> <span class="tag ok">✔</span>
+     <div class="n"><span class="name">ref-apps\</span><span class="d">외부 참조 앱</span> <span class="tag ok">✔</span></div>
+    </div>
+   </div>
+   <div class="n"><span class="name">mem_strg\</span><span class="d">메모 저장소 연구 (별도 프로젝트)</span> <span class="tag out">관리 밖</span></div>
+  </div>
+ </div>
+ <div class="sub" style="margin-top:8px">Git 밖: 작업대 = 백업이 충분한 로컬 저장소 <span class="tag ok">✔ F1-b</span> (형태는 MEM_STRG 연구)</div>
+</div>
+
+<h2>2. F1 — domains가 RHS를 "관리"하는 방식 (결정: 가)</h2>
+<div class="two">
+ <div class="opt rec">
+  <h3>가. 장부 방식 <span class="tag ok">✔ Owner 결정</span></h3>
+  <div class="box">dev\aaaNew\domains\rhs\DOMAIN.md</div>
+  <div class="arrow">↓ 위치·규칙을 가리킴 / ↑ 상태가 모임</div>
+  <div class="box">dev\rghtHpSnpr\  (제자리)</div>
+  <ul>
+   <li>RHS 폴더는 안 움직임</li>
+   <li>aaa는 목록·규칙 판·상태만 들고 있음</li>
+   <li>RHS가 진행 중인 구조 결정·병합에 영향 없음</li>
+  </ul>
+ </div>
+ <div class="opt">
+  <h3>나. 이사 방식</h3>
+  <div class="box">dev\aaaNew\domains\rhs\  ← RHS 통째로</div>
+  <ul>
+   <li>한곳에 다 모여 보임</li>
+   <li>RHS 경로가 전부 바뀜 (오늘 정한 경로 흔들림)</li>
+   <li>aaaNew 저장소 안에 다른 저장소 → Git 꼬임</li>
+  </ul>
+ </div>
+</div>
+<h2>3. Current = 모듈화된 메모리 뷰, 훅에서 조립 <span class="tag ok">✔ Owner 방향</span></h2>
+<div class="tree">
+ <div class="sub">에이전트 호출 → 훅 → 필요한 조각을 골라 조립 → 런타임 컨텍스트에 주입</div>
+ <div class="two" style="margin-top:8px">
+  <div class="opt">
+   <h3>조각 (각 도메인 저장소, Git) <span class="tag prop">자리 제안</span></h3>
+   <div class="box">역할 Current — 역할 폴더마다 한 장 (README 같은 것)</div>
+   <div class="box">도메인 Current — 역할 Current를 DPM이 모음</div>
+   <div class="box">모듈 Current — 모듈(engine·host·observer·control, memory-engine …)마다</div>
+  </div>
+  <div class="opt">
+   <h3>aaa가 하는 일 <span class="tag prop">제안</span></h3>
+   <div class="box">domains\&lt;도메인&gt;\DOMAIN.md — 조각 위치 목록 (장부)</div>
+   <div class="arrow">↓</div>
+   <div class="box">apps\ 조립기 — 훅에서 조각을 골라 묶음</div>
+   <div class="arrow">↓</div>
+   <div class="box">세션 컨텍스트 (예: RHS/order/PMO = PMO 역할 + RHS 도메인 + engine 모듈)</div>
+  </div>
+ </div>
+ <div class="sub" style="margin-top:8px">작업 메모·진행 기록은 로컬 저장소 (✔ F1-b). Git의 Current는 상태가 바뀔 때만 갱신, 커밋은 묶어서.</div>
+</div>
+</body>
+</html>

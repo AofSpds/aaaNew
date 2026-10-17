@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORE 프로젝트 모델</title>
+<style>
+:root{--bg:#fafaf8;--fg:#1f2328;--mute:#6a737d;--line:#d0d7de;--card:#fff;--ok:#1a7f37;--okbg:#dafbe1;--prop:#9a6700;--propbg:#fff8c5;--out:#8250df;--outbg:#fbefff;--accent:#0969da}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1117;--fg:#e6edf3;--mute:#8b949e;--line:#30363d;--card:#161b22;--ok:#3fb950;--okbg:#12261e;--prop:#d29922;--propbg:#272115;--out:#a371f7;--outbg:#231a33;--accent:#58a6ff}}
+:root[data-theme="dark"]{--bg:#0d1117;--fg:#e6edf3;--mute:#8b949e;--line:#30363d;--card:#161b22;--ok:#3fb950;--okbg:#12261e;--prop:#d29922;--propbg:#272115;--out:#a371f7;--outbg:#231a33;--accent:#58a6ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,"Malgun Gothic",sans-serif;padding:16px}
+h1{font-size:18px;margin:0 0 4px}h2{font-size:15px;margin:22px 0 8px}
+.sub{color:var(--mute);font-size:12px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:10px;white-space:nowrap}
+.ok{background:var(--okbg);color:var(--ok)}.prop{background:var(--propbg);color:var(--prop)}.out{background:var(--outbg);color:var(--out)}
+.tree{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto}
+.n{margin:2px 0 2px 0;padding-left:16px;border-left:1px dashed var(--line)}
+.root{border-left:none;padding-left:0}
+.name{font-family:Consolas,monospace;font-weight:600}
+.d{color:var(--mute);font-size:12px;margin-left:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+.opt{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px}
+.opt.rec{border:2px solid var(--accent)}
+.opt h3{margin:0 0 6px;font-size:14px}
+.box{border:1px solid var(--line);border-radius:6px;padding:6px 8px;margin:6px 0;font-family:Consolas,monospace;font-size:12px}
+.arrow{color:var(--accent);font-size:12px;margin:2px 0 2px 8px}
+ul{margin:6px 0;padding-left:18px}li{margin:2px 0}
+</style>
+<style>table{border-collapse:collapse;width:100%;font-size:13px}td,th{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}th{background:var(--card)}.scroll{overflow-x:auto}.lv{font-weight:600}</style>
+</head>
+<body>
+<h1>CORE 2. 프로젝트 모델 (초안 v0.1)</h1>
+<div class="sub">AAA_NEW/BTSR/RSCH · 2026-10-18 · 원문: CORE_PROJECT_MODEL_CLAUDE.md</div>
+<div class="legend"><span class="tag ok">✔ RHS Owner 결정</span><span class="tag prop">제안</span></div>
+
+<h2>1. 프로젝트 모양</h2>
+<div class="tree">
+ <div class="n root"><span class="name">projects\&lt;프로젝트&gt;\</span><span class="d">작업 단위 = PLN 하나, 앱 아님</span> <span class="tag ok">✔ #20 #22</span>
+  <div class="n"><span class="name">pln\</span><span class="d">기획 — 프로젝트 로드맵·배정·수용</span> <span class="tag ok">✔ #8</span></div>
+  <div class="n"><span class="name">rsch\</span><span class="d">연구·시험</span> <span class="tag ok">✔ #15</span></div>
+  <div class="n"><span class="name">arch\</span><span class="d">설계 정본</span> <span class="tag ok">✔ #12</span></div>
+  <div class="n"><span class="name">pmo\</span><span class="d">구현 기록 (코드는 apps\)</span> <span class="tag ok">✔ #14 #16</span></div>
+ </div>
+ <div class="sub" style="margin-top:8px">이력·현황·계획은 프로젝트 안 (#23) · projects 전체는 DPM이 관리 (#21) · 요청·회신은 프로젝트 안 한 곳</div>
+</div>
+
+<h2>2. 로드맵 층 <span class="tag ok">✔ #32</span></h2>
+<div class="tree">
+ <div class="n root"><span class="lv">도메인 로드맵 (DPM)</span><span class="d">AAA_NEW-M1 → M2 …</span> <span class="tag ok">✔ 이름</span>
+  <div class="n"><span class="lv">프로젝트 로드맵 (PLN)</span><span class="d">BTSR-P1 → P2 → … 완료 · 각 단계가 어느 M을 위한 것인지</span>
+   <div class="n"><span class="lv">역할 로드맵 (RSCH·ARCH·PMO)</span><span class="d">자기 범위 · 각 단계가 어느 P를 위한 것인지</span></div>
+  </div>
+ </div>
+</div>
+
+<h2>3. 질문 — 모두 결정 (2026-10-18)</h2>
+<div class="scroll"><table>
+<tr><th>질문</th><th>권고</th></tr>
+<tr><td><b>프로젝트 개설(P1)</b><br>누가 정하고 누가 여나</td><td><span class="tag ok">✔ Owner 결정</span> "DPM이 있다면 제가 DPM에 요청합니다." → Owner → DPM → PLN 개설 → PLN이 하위 역할 세션. DPM이 없으면 Owner가 직접</td></tr>
+<tr><td><b>단계 순서(P2)</b><br>연구→기획→설계→구현은 고정 순서인가</td><td>고정 순서가 아니라 일의 종류. 마일스톤마다 필요한 단계만 (bootstrap은 연구부터)</td></tr>
+<tr><td><b>단계 이름(P3)</b></td><td><span class="tag ok">✔ Owner 결정</span> 도메인 AAA_NEW-M1 · 프로젝트 BTSR-P1 · 설계 BTSR-A1 · 구현 묶음 BTSR-F1</td></tr>
+<tr><td><b>프로젝트 닫기(P4)</b></td><td><span class="tag ok">✔ Owner 결정</span> PLN 닫기 요청 → IVA 확인 → Owner 종료. 닫을 때 작업 사본·세션 정리</td></tr>
+</table></div>
+</body>
+</html>
