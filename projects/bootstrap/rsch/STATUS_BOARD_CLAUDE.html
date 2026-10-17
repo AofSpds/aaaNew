@@ -84,15 +84,15 @@
 
 <div class="wrap">
   <header>
-    <h1>aaa 재구축 rsch 현황판 — AAA/NEW/RSCH/BTSR</h1>
-    <span class="stamp">갱신 2026-10-17 · 작성 AAA/NEW/RSCH/BTSR (Claude) · 작업대 <span class="mono">aaaNew/projects/bootstrap/rsch</span></span>
+    <h1>aaa 재구축 rsch 현황판 — AAA_NEW/BTSR/RSCH</h1>
+    <span class="stamp">갱신 2026-10-17 · 작성 AAA_NEW/BTSR/RSCH (Claude) · 작업대 <span class="mono">aaaNew/projects/bootstrap/rsch</span></span>
   </header>
 
   <section class="summary">
     <div class="tile run">
       <span class="label">지금 진행 중</span>
-      <span class="value">aaa 폴더 구조 제안 v0.1</span>
-      <span class="sub">RHS/DPM 회신·RHS 결정 #1–#39·실패 원인 수집 → aaa 구조안(apps 코어 · domains 전 도메인 관리 · projects/bootstrap pln·arch·pmo·rsch). F1 결정(장부 방식, Git엔 도메인 Current, 작업대는 로컬 저장소). F2–F7 대기</span>
+      <span class="value">CORE 역할 모델 초안 v0.1</span>
+      <span class="sub">CORE = 프로젝트(워크플로)·역할의 기본 모델. 결정: 장부 방식, Current = 모듈화된 메모리 뷰(훅에서 조립), AAA DPM 총괄, Owner 검증자 IVA, 검증은 넘길 때 한 번, 훅으로 역할 단위 강제, 세션 이름 도메인/프로젝트/역할(AAA_NEW)</span>
     </div>
     <div class="tile wait">
       <span class="label">Owner 결정 대기</span>
@@ -115,12 +115,12 @@
     <h2>세션과 통신</h2>
     <div class="scroll"><table>
       <tr><th>세션</th><th>역할</th><th>마지막 활동</th><th>식별자</th><th>상태</th></tr>
-      <tr><td>Claude AAA/NEW/RSCH/BTSR</td><td>bootstrap rsch: 접점·개입점·관계 엔진·역할 설계·aaa 구조안</td><td class="num">10-17 (지금)</td><td class="mono">e3bfd5a5…</td><td><span class="chip run">활성</span></td></tr>
+      <tr><td>Claude AAA_NEW/BTSR/RSCH</td><td>bootstrap rsch: 접점·개입점·관계 엔진·역할 설계·aaa 구조안</td><td class="num">10-17 (지금)</td><td class="mono">e3bfd5a5…</td><td><span class="chip run">활성</span></td></tr>
       <tr><td>Codex rsch</td><td>연구 총괄, 요구사항, Codex 접점 조사</td><td class="num">10-14 12:08</td><td class="mono">01a13598…</td><td><span class="chip wait">대기</span></td></tr>
       <tr><td>Codex rsch_sub_memory</td><td>기억 관계 연구, Kev 실험, 백업</td><td class="num">10-14 20:03 (기록 10-16)</td><td class="mono">01a1385f…</td><td><span class="chip wait">대기</span></td></tr>
       <tr><td>Claude format_rec</td><td>노트북 포맷 전 백업</td><td class="num">10-14</td><td class="mono">local_5beddf3b…</td><td><span class="chip warn">결과 미확인</span></td></tr>
       <tr><td>Claude RHS/DPM</td><td>RHS 도메인 총괄. 구조 원문·결정·실패 원인 회신</td><td class="num">10-17 (회신 받음)</td><td class="mono">local_01db8a4d…</td><td><span class="chip ok">연락됨</span></td></tr>
-      <tr><td>Claude AAA/NEW/RSCH/MEM_STRG</td><td>별도 프로젝트 mem_strg (메모 저장소 연구, 이 세션 관리 밖)</td><td class="num">10-17</td><td class="mono">local_edac275f…</td><td><span class="chip run">활성</span></td></tr>
+      <tr><td>Claude AAA_NEW/MEM_STRG/RSCH</td><td>별도 프로젝트 mem_strg (메모 저장소 연구, 이 세션 관리 밖)</td><td class="num">10-17</td><td class="mono">local_edac275f…</td><td><span class="chip run">활성</span></td></tr>
     </table></div>
     <p class="note">통신: Claude→Codex는 queue DB로 전달 확인. Codex→Claude는 queue가 없어 화면 입력으로 1회 수신, 이후 <span class="mono">requests/REQUEST_CLAUDE.md</span> 파일 경로 제안.</p>
   </section>
