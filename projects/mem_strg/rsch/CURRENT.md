@@ -2,7 +2,7 @@
 
 - 상태: ACTIVE · 2026-10-18
 - 현재 work act: REQ-001 — 참조값과 백업·복원(S5) 초벌에 대한 Pro 검토 답을 받음([BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO](research/operations/BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO.md), Pro가 자기 브랜치로 직접 올림). 검토 처리 전
-- 다음 한 단계: ~~Pro 검토 답 처리 → 초벌 v0.2~~ **완료** ([참조값과 백업·복원 v0.2](research/operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md), 실측 v2 통과). 다음은 아카이브 이름·목록 양식(S4) 초벌, 또는 desktop-care 보호 목록 요청(Codex 스레드가 열리면)
+- 다음 한 단계: ~~Pro 검토 답 처리 → 초벌 v0.2~~ **완료** ([참조값과 백업·복원 v0.2](research/operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md), 실측 v2 통과). 아카이브 이름·목록 양식(S4) 초벌도 완료. 다음은 기존 메모 옮기기(S7) 초벌, 또는 desktop-care 보호 목록 요청(Codex 스레드가 열리면)
 - **백업 위치 (Owner 2026-10-18)**: "백업은 다른 드라이브에도 하고, 외부 드라이브에도 합니다." → 백업 실물은 두 곳에 둡니다(Owner 결정 D-a 해결)
   - 관찰 [실측, 읽기만]: HANAL의 PC 안 디스크는 C:(NVMe 1.9TB) 하나뿐입니다.
     - E: F: H: I: = 외장 HDD 2.8TB (NTFS, 항상 연결)
@@ -103,6 +103,7 @@ Byul 최신 연구·JEV·그래프 DB 등을 이용해 **모든 도메인 공통
    └─ archive/<프로젝트>/<브랜치>@<머지 커밋>/<역할>/  PR 머지 때 고정한 묶음 (지우지 않음)
 Git: 브랜치의 공식 산출물 + PR에 자료 묶음 참조값(묶음 ID·digest). main = 도메인 CURRENT
 ```
+  - ↑ 이 그림은 2026-10-18 초안입니다. 폴더 이름은 다음 문서들로 바뀌었습니다: `work\<work_id>\<역할>\`, `archive\seals\<seal_id>\`, 참조값은 Git 추적 파일 → [아카이브 초벌](research/operations/ARCHIVING_INDEX_CLAUDE.md) §1, [참조값과 백업·복원 v0.2](research/operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md) §2
 - **머지 주체 (Owner 2026-10-18)**: "해당 프로젝트를 주관하는 PLN이 DPM의 승인을 받고 하게 됩니다. 물론 오너가 최종 확인자입니다."
   - 흐름: 역할의 작업 메모 → PLN 머지안 → DPM 승인 → PLN 머지(CURRENT 갱신, 직전판은 아카이브) → Owner 최종 확인
   - CURRENT를 쓰는 주체는 프로젝트마다 PLN 하나입니다. 다른 역할은 자기 작업 메모만 씁니다.
@@ -136,7 +137,7 @@ S0 선행 연구 모으기 · S1 저장 방식 · S2 동시 쓰기 · S3 도메�
 | 단계 | 내용 | 상태 |
 | --- | --- | --- |
 | S1′ | 저장 계층 재검토 (원장·투영·그래프·판정 층) | Pro P1 답으로 1차 정리. 실측 1·2 뒤 다시 봄 |
-| S4 | 아카이브 (시점·이름·목록) | **시점 결정됨**: PR 머지 때 브랜치 묶음을 고정. 이름·목록 양식만 남음 (Pro P2 Q1 INDEX 칸 참고) |
+| S4 | 아카이브 (시점·이름·목록) | **초벌** ([ARCHIVING_INDEX_CLAUDE](research/operations/ARCHIVING_INDEX_CLAUDE.md)): 시점은 PR 머지 때 봉인(Owner). 작업 폴더는 work_id(브랜치 이름과 무관), 봉인은 seal_id. 목록은 사건을 덧붙이는 INDEX.tsv + 생성 INDEX.md. CURRENT 지난 판은 Git main 이력이 맡음. 결정 후보 4개 |
 | S5 | 참조값과 백업·복원 | **초벌 v0.2 + 실측 v2** ([BACKUP_RESTORE_REFERENCE_CLAUDE](research/operations/BACKUP_RESTORE_REFERENCE_CLAUDE.md)). Pro P3 검토 반영: 참조 파일을 Git에, 봉인 번호, 실패하면 멈춤, 봉인본에서 백업, manifest v2. 실측 고장 8가지 통과 |
 | S6 | 여러 기기·모바일 | D-b·D-d 뒤 |
 | S7 | 기존 메모 이전 | Pro P2 Q6 양식으로 도메인별 목록 |
