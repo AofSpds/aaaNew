@@ -229,6 +229,8 @@ class Judge(Protocol):
 
 ## 8. Owner 결정이 필요한 항목
 
+> 2026-10-17 반박 검토 결과와 추가 항목 D14–D21은 [DECISIONS_D1_D21_CLAUDE.md](DECISIONS_D1_D21_CLAUDE.md)에 있다. 아래 표는 검토 전 기본값이며, D2·D3·D4·D9·D13은 그 문서의 권고안으로 바뀌었다.
+
 | # | 결정 | 기본값 제안 |
 | --- | --- | --- |
 | D1 | 저장 형식 | jsonl 추가 전용 + SQLite 투영, Git 관리. 그래프 DB 없음 |
