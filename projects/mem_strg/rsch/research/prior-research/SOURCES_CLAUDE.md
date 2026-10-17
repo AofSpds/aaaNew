@@ -1,14 +1,14 @@
 # S0 원천 수집 — Byul·JEV·그래프 DB·BTSR 연구
 
 - 작성: 2026-10-17, AAA/NEW/RSCH/MEM_STRG · REQ-001 개정 2
-- 원칙(Owner): "너무 혼자 딮써치 하지 마시고, 연구 결과를 모으고 기록한 후 초벌 연구와 프로챗으로 연구 외주줄 계획을 세우시면 됩니다." 그래서 이 문서는 **수집 기록**입니다. 깊은 조사는 Pro 의뢰로 넘깁니다([PLAN](../PLAN_PRELIM_AND_PRO.md)).
+- 원칙(Owner): "너무 혼자 딮써치 하지 마시고, 연구 결과를 모으고 기록한 후 초벌 연구와 프로챗으로 연구 외주줄 계획을 세우시면 됩니다." 그래서 이 문서는 **수집 기록**입니다. 깊은 조사는 Pro 의뢰로 넘깁니다([PLAN](../../PLAN_PRELIM_AND_OUTSOURCE_CLAUDE.md)).
 
 ## 1. 모은 것
 
 | 원천 | 기록 | 등급 |
 | --- | --- | --- |
-| BTSR 메모리 연구 22건 + 폴더 3개 | [archive/2026-10-17_BTSR_MEMORY_RESEARCH.md](../archive/2026-10-17_BTSR_MEMORY_RESEARCH.md) (aaaNew 6b19bb0, sha256) | 문서 요약 |
-| Byul 원칙·최신 브랜치·v0.1 구현, AAA JEV-BYUL 연구(9-26/27) | [S0_BYUL_JEV_EXTRACT.md](S0_BYUL_JEV_EXTRACT.md) | 문서 요약 |
+| BTSR 메모리 연구 22건 + 폴더 3개 | [archive/2026-10-17_BTSR_MEMORY_RESEARCH.md](../../archive/2026-10-17_BTSR_MEMORY_RESEARCH.md) (aaaNew 6b19bb0, sha256) | 문서 요약 |
+| Byul 원칙·최신 브랜치·v0.1 구현, AAA JEV-BYUL 연구(9-26/27) | [BYUL_JEV_EXTRACT_CLAUDE.md](BYUL_JEV_EXTRACT_CLAUDE.md) | 문서 요약 |
 | 내장형 그래프 DB 후보의 2026년 상태 | 아래 §2 | 웹 2차 출처 |
 | SQLite 그래프 규모 실측 | 아래 §3 | 실측 |
 
@@ -39,7 +39,7 @@ Byul 최신본 위치: 로컬 main(79c00bf, 2026-08-26)과 deep-review 브랜치
 
 ## 3. SQLite 재귀 CTE 규모 실측 [실측]
 
-- 스크립트: [s0_graph_scale_bench.py](s0_graph_scale_bench.py) · 원자료: [s0_graph_results_20261017.json](s0_graph_results_20261017.json)
+- 스크립트: [s0_graph_scale_bench.py](../storage-structure/s0_graph_scale_bench.py) · 원자료: [s0_graph_results_20261017.json](../storage-structure/s0_graph_results_20261017.json)
 - 모형(가정):
   - 기록마다 최근 2,000건 안에서 1–3개 기록에서 파생(DERIVED_FROM)됩니다.
   - view는 기록 20개를 고릅니다.
@@ -52,6 +52,7 @@ Byul 최신본 위치: 로컬 main(79c00bf, 2026-08-26)과 deep-review 브랜치
 | 100만 | 103만·210만 | 1.36 s, 노드 791,749 | p95 2.4 s (중앙값은 모형 결함으로 무효*) |
 
 - *100만 건 모형에서는 원자료 대부분이 어떤 기록에서도 참조되지 않아 영향 중앙값이 0으로 나왔습니다. p95만 의미가 있습니다.
+- **정정 (2026-10-18, Pro P1 지적 → [REVIEW](../../reviews/STORAGE_ENGINE_OPERATIONS_REVIEW_CLAUDE.md) #7)**: 바로 아래 "70–80%"는 10만·100만 건에만 맞습니다. 1만 건은 16%(1,686/10,250), 10만 건은 72%, 100만 건은 77%입니다. P1 의뢰서의 "어느 규모든 70–80%"라는 표현은 틀렸습니다. 다만 "따라갈 범위 규칙이 엔진 선택보다 먼저"라는 해석은 Pro도 유지했습니다.
 - 읽는 법 [판단]:
   - 파생이 촘촘하면 출처를 제한 없이 끝까지 따라갈 때 이력의 70–80%가 딸려 나옵니다.
   - 이것은 엔진 속도의 문제가 아니라 의미의 문제입니다. 전용 그래프 DB도 같은 수의 노드를 지나갑니다.

@@ -1,6 +1,6 @@
 # 계획 — 초벌 연구와 Pro 챗 연구 외주 (mem_strg)
 
-- 작성: 2026-10-17, AAA/NEW/RSCH/MEM_STRG · 상태: Owner 진행 승인("네"). 의뢰서 초안 [P1](pro/P1_STORAGE_ENGINE_ARCH_REQUEST_v0.1.md)·[P2](pro/P2_OPERATIONS_REQUEST_v0.1.md) 작성, 보내지 않음
+- 작성: 2026-10-17, AAA/NEW/RSCH/MEM_STRG · 상태: Owner 진행 승인("네"). 의뢰서 초안 [P1](research/storage-structure/STORAGE_ENGINE_REQUEST_v0.1_CLAUDE.md)·[P2](research/operations/OPERATIONS_REQUEST_v0.1_CLAUDE.md) 작성, 보내지 않음
 - 만드는 것(Owner): "네 우리는 그 로컬 저장소와 그 로컬 저장소를 관리하는 엔진을 만듭니다."
 - 근거(Owner 원문):
   - "웹 프로챗에 연구 의뢰를 할것입니다."
@@ -22,7 +22,7 @@
 | S1 저장 형태 | B안: 역할별 jsonl 추가 전용 + SQLite 투영(캐시) + 생성 MD view | 실측 + 문서 |
 | S2 동시 쓰기 | 잠금 없으면 15–54% 손실. 잠금 파일·세션별 파일·SQLite는 손실 0 | 실측 |
 | S3 롤업 | 쓰기마다 도메인 view 재생성, 필수 머리 8칸. RHS 시뮬 문제 5가지 해소 | 실측(시제품) |
-| S0 원천 | BTSR 연구 22건 아카이브, Byul·JEV 추출, 그래프 DB 후보, SQLite 그래프 규모 실측 | [research/S0_SOURCES.md](research/S0_SOURCES.md) |
+| S0 원천 | BTSR 연구 22건 아카이브, Byul·JEV 추출, 그래프 DB 후보, SQLite 그래프 규모 실측 | [prior-research/SOURCES_CLAUDE](research/prior-research/SOURCES_CLAUDE.md) |
 
 ## 3. 초벌 연구 (이 채널, 작게)
 
@@ -42,7 +42,7 @@ Pro 사용량을 아끼려고 의뢰는 **2건**으로 묶습니다. 두 건은 
 
 | ID | 주제 | 묻는 것 | 입력 |
 | --- | --- | --- | --- |
-| P1 | 저장 체계 구조 (S1′) | Byul 원칙(관계 원시성, view 파생, 원자료 재구성 가능성, 삭제 뒤 재계산)과 JEV-like 판정을 담을 저장 구조. 이벤트 소싱 + 투영, provenance(PROV), 이중 시간축(bitemporal), 내장형 그래프 DB(Kuzu 후속 포크·LadybugDB·DuckPGQ·Oxigraph·FalkorDBLite 등)의 2026년 상태와 적합성. 그래프를 정본으로 둘지 투영으로 둘지. 출처를 따라갈 범위를 정하는 규칙 (질문 목록: S0 §4) | S0_SOURCES, S0_BYUL_JEV_EXTRACT, S1–S3 문서, BTSR 아카이브 |
+| P1 | 저장 체계 구조 (S1′) | Byul 원칙(관계 원시성, view 파생, 원자료 재구성 가능성, 삭제 뒤 재계산)과 JEV-like 판정을 담을 저장 구조. 이벤트 소싱 + 투영, provenance(PROV), 이중 시간축(bitemporal), 내장형 그래프 DB(Kuzu 후속 포크·LadybugDB·DuckPGQ·Oxigraph·FalkorDBLite 등)의 2026년 상태와 적합성. 그래프를 정본으로 둘지 투영으로 둘지. 출처를 따라갈 범위를 정하는 규칙 (질문 목록: S0 §4) | SOURCES_CLAUDE, BYUL_JEV_EXTRACT_CLAUDE, S1–S3 문서, BTSR 아카이브 |
 | P2 | 운영 (S4–S7) | 아카이브 시점·이름, Git 참조값과 PR 백업·복원, 여러 기기(Google Drive 미러 위 jsonl/SQLite 위험, 대안 동기화), 외부 서비스 없이 모바일에서 읽는 방법, Git 메모를 밖으로 옮기는 절차 | S1–S3 문서, S2 권한 제약 |
 
 의뢰서 형식 (AAA `WEBGPT_REQUEST_001_EN.txt` 관례를 줄임):

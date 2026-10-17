@@ -4,6 +4,13 @@
 - 실측 환경: HANAL, Windows 11, Python 3.13.14, SQLite 3.50.4, git 2.55.0
 - 스크립트: [s1_form_bench.py](s1_form_bench.py) (표준 라이브러리 + git만 씀, 지우는 동작 없음)
 
+> **정정 (2026-10-18, Pro P1·P2 검토 → [REVIEW](../../reviews/STORAGE_ENGINE_OPERATIONS_REVIEW_CLAUDE.md) #3–#6)**
+> - 쓰기 시간 비교는 내구성이 같은 조건이 아닙니다. jsonl은 fsync를 하지 않았고, SQLite는 synchronous=NORMAL이었습니다. B의 SQLite 투영 비용도 쓰기 시간에 들어 있지 않습니다. 그래서 "속도는 판단 기준이 아니다"라는 결론은 유지하되, 0.24 대 0.06 ms를 같은 조건의 비교로 읽으면 안 됩니다.
+> - §4의 "C: 백업 전에 checkpoint가 필요합니다"는 일반 명제로는 틀립니다. 실행 중인 DB의 일관된 사본을 만드는 공식 경로는 backup API와 `VACUUM INTO`입니다.
+> - jsonl의 Git 백업 장점은 **읽을 수 있는 추가 diff**입니다. 크기는 gc 뒤 SQLite가 더 작았습니다(2,007 vs 3,235 KiB, §3 표).
+> - 실측에 쓴 SQLite 3.50.4는 WAL-reset 버그 범위(3.7.0–3.51.2) 안입니다. 수정판은 3.50.7과 3.51.3 이상입니다 [문서, sqlite.org/wal.html §11].
+> - 빠진 대조군: "SQLite 정본 + PR 때 결정적인 jsonl export". 다음 실측에 넣습니다.
+
 ## 1. 결론
 
 권고 후보는 **B: 역할별 jsonl 추가 전용 + SQLite 투영(재생성 캐시) + 생성 MD view**입니다. 확정은 S2(동시 쓰기) 실측 뒤에 합니다.
@@ -71,7 +78,7 @@
 ## 8. 재현
 
 ```text
-python -I research/s1_form_bench.py <새 폴더> --roles 20 --updates 500 --backups 5
+python -I research/storage-structure/s1_form_bench.py <새 폴더> --roles 20 --updates 500 --backups 5
 ```
 
 원자료: [s1_results_20261017.json](s1_results_20261017.json)

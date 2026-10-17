@@ -4,6 +4,12 @@
 - 원천: RHS `STRUCTURE_SIMULATION_REVIEW_v0.1` §2·§4와 `rollup_sim.py` (둘 다 bc344e2, 읽기만), STRUCTURE_DECISIONS #29–#33
 - 시제품: [s3_rollup_proto.py](s3_rollup_proto.py) (S1 B안 + S2 잠금 규칙, 표준 라이브러리만)
 
+> **정정 (2026-10-18, Pro P1·P2 검토 → [REVIEW](../../reviews/STORAGE_ENGINE_OPERATIONS_REVIEW_CLAUDE.md) #8–#11)**
+> - §4의 8.4 ms는 **순차 실행**에서만 잰 값입니다. 시제품은 역할 잠금을 푼 뒤에 재생성하고, 스트림들을 공통 snapshot 없이 읽고, `current.md`를 직접 덮어씁니다. 그래서 동시에 실행하면 부분 읽기나 옛 판 재게시가 생길 수 있습니다(관측된 것은 아님). 게시를 직렬화하고 generation을 확인하고 원자적으로 교체하는 방식을 다음에 실측합니다.
+> - CYCLE 검사는 두 역할의 상호 대기만 잡습니다. 3개 이상의 순환은 잡지 못합니다.
+> - "끝줄만 읽는다"는 한 스트림에 CURRENT만 있을 때만 맞습니다. §5의 로드맵안(`kind=roadmap`을 같은 스트림에)과 함께 쓰려면 kind별 최신 판을 따로 따라가야 합니다.
+> - 쓰다 만 끝줄 뒤에 이어 쓸 때의 복구 절차는 없습니다(S2 정정 참고).
+
 ## 1. 결론
 
 - 도메인 Current는 **사람이 모으지 않고 쓰기 CLI가 쓸 때마다 다시 만듭니다** [판단]. RHS에서 10-04 이후 도메인 Current가 멈춘 원인이 "누가 언제 모으나"였기 때문입니다.
