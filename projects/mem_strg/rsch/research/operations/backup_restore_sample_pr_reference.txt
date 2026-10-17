@@ -1,0 +1,10 @@
+format: MEMSTORE_REF v1
+store_id: test-store
+bundle_id: rhs/order/feat-f3@a1b2c3d
+sealed_by: RHS/ORDER/PLN
+source_commit: a1b2c3d4e5f60718293a4b5c6d7e8f9012345678
+roles: pln, pmo, rsch
+files: 21
+bytes: 336837
+manifest_sha256: 254556acfe1d9cd922f107b27af06fe7c9c60f27247de9d24bbc241a0f2e8411
+backup: backup-local-1

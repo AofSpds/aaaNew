@@ -1,0 +1,46 @@
+{
+  "seal": {
+    "seconds": 0.3711533000023337,
+    "files": 21,
+    "bytes": 336837,
+    "archive_check": [],
+    "backup_check": []
+  },
+  "restore_clean": {
+    "seconds": 0.016765899999882095,
+    "problems": []
+  },
+  "faults_detected": {
+    "byte_changed": [
+      true,
+      [
+        "내용 다름: rsch/test-data/sample_2.bin"
+      ]
+    ],
+    "file_missing": [
+      true,
+      [
+        "누락: pln/notes.md"
+      ]
+    ],
+    "file_added": [
+      true,
+      [
+        "목록에 없는 파일: pln/extra.txt"
+      ]
+    ],
+    "jsonl_appended_after_seal": [
+      true,
+      [
+        "크기 다름: pmo/memo.jsonl"
+      ]
+    ],
+    "manifest_tampered": [
+      true,
+      [
+        "manifest 지문 불일치 (manifest 변조 또는 다른 묶음)",
+        "누락: fake.txt"
+      ]
+    ]
+  }
+}
