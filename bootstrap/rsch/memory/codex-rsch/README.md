@@ -72,11 +72,11 @@ Hermes 설치 소스 commit: `8f817911723e3ec13e7f47fc022fdcc9e2149354`.
 
 PowerShell에서 아래 스크립트를 실행한다. 각각 자신의 폴더를 작업 디렉터리로 설정한다.
 
-- OpenCode 웹: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\opencode\start.ps1`
-- Hermes CLI: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\hermes\start.ps1`
-- Hermes 웹: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\hermes\dashboard.ps1`
-- OMP CLI: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\omp\start.ps1`
-- Chainlit 예제: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\chainlit\start.ps1`
+- OpenCode 웹: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\apps\opencode\start.ps1`
+- Hermes CLI: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\apps\hermes\start.ps1`
+- Hermes 웹: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\apps\hermes\dashboard.ps1`
+- OMP CLI: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\apps\omp\start.ps1`
+- Chainlit 예제: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\apps\chainlit\start.ps1`
 
 Chainlit의 기본 포트 8000은 Windows에서 바인딩이 거부되어 사용 가능한 30142로 변경했다. 기존 서버가 실행 중이면 같은 서버를 중복 실행하지 않는다.
 
@@ -91,7 +91,7 @@ OpenCode의 XDG 설정·데이터는 `opencode\.runtime`, Hermes 데이터는 `h
 
 ## 관련 기록
 
-- 설치 상세: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\agent-installations.json`
+- 설치 상세: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\apps\agent-installations.json`
 - 세션 준비 문서: `C:\Users\ms1pk\dev\aaaNew\bootstrap\rsch\legacy\agent_runtime_lifecycle_control\SESSION_PREPARATION.md`
 - SLR 후보 연구 자료: `C:\Users\ms1pk\dev\slr-p5a\src\projects\AAA\coordination\exchanges\AAA-SLR-APP-IMPLEMENTATION-UNCERTAINTY-RESEARCH-20261007-001` — 참고용으로 읽으며 산출물 저장 위치로 사용하지 않는다.
 

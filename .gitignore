@@ -2,22 +2,25 @@
 .claude/settings.local.json
 .claude/worktrees/
 
-# Third-party agent installs under rsch (reinstallable; data/ folders may hold logins and session state)
-# Keep only the launcher and install scripts so the setup can be reproduced.
-bootstrap/rsch/chainlit/*
-!bootstrap/rsch/chainlit/*.ps1
-bootstrap/rsch/hermes/*
-!bootstrap/rsch/hermes/*.ps1
-bootstrap/rsch/omp/*
-!bootstrap/rsch/omp/*.ps1
-!bootstrap/rsch/omp/build-manifest.json
-bootstrap/rsch/opencode/*
-!bootstrap/rsch/opencode/*.ps1
-!bootstrap/rsch/opencode/package.json
-!bootstrap/rsch/opencode/package-lock.json
-bootstrap/rsch/pi/pi-web/*
-!bootstrap/rsch/pi/pi-web/package.json
-!bootstrap/rsch/pi/pi-web/package-lock.json
+# Third-party agent installs under rsch/apps (reinstallable; data/ folders may hold logins and session state)
+# Keep only launcher/install scripts, package manifests and the small Chainlit app files.
+bootstrap/rsch/apps/chainlit/*
+!bootstrap/rsch/apps/chainlit/*.ps1
+!bootstrap/rsch/apps/chainlit/app.py
+!bootstrap/rsch/apps/chainlit/chainlit.md
+!bootstrap/rsch/apps/chainlit/requirements.txt
+bootstrap/rsch/apps/hermes/*
+!bootstrap/rsch/apps/hermes/*.ps1
+bootstrap/rsch/apps/omp/*
+!bootstrap/rsch/apps/omp/*.ps1
+!bootstrap/rsch/apps/omp/build-manifest.json
+bootstrap/rsch/apps/opencode/*
+!bootstrap/rsch/apps/opencode/*.ps1
+!bootstrap/rsch/apps/opencode/package.json
+!bootstrap/rsch/apps/opencode/package-lock.json
+bootstrap/rsch/apps/pi/pi-web/*
+!bootstrap/rsch/apps/pi/pi-web/package.json
+!bootstrap/rsch/apps/pi/pi-web/package-lock.json
 
 # Large backups (6.47 GB zip and its copies)
 bootstrap/rsch/research/sub-memory/backups/

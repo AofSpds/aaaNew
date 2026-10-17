@@ -180,6 +180,6 @@ Pi는 **모델 호출 직전 입력 전체**(`before_provider_request`)를 바�
 
 - 실측: `repro/mid.py`(PreToolUse/PostToolUse/UserPromptSubmit/Stop), `repro/run.sh`, `repro/tx.py`. 세션 `0bcbada5-1f53-48ad-9eb6-92cd02d93dd0`의 기록에서 `hook_additional_context`, `permission_denials`, `hook_blocking_error`, `stop_hook_summary` 확인.
 - Codex 타입: `../codex-entry-research/protocol-0.157.1/v2/{HookEventName, ConfiguredHookHandler, HookOutputEntryKind, TurnSteerParams, TurnInterruptParams, ThreadInjectItemsParams, ThreadQueueAddParams, TurnStartParams}.ts`
-- Pi: `rsch/pi/pi-web/node_modules/@earendil-works/pi-coding-agent/{docs/extensions.md, docs/rpc-commands.md, dist/core/extensions/types.d.ts}`
-- Hermes: `rsch/hermes/hermes-agent/{agent/shell_hooks.py, agent/turn_context.py:795-840, hermes_cli/hooks.py}`
+- Pi: `rsch/apps/pi/pi-web/node_modules/@earendil-works/pi-coding-agent/{docs/extensions.md, docs/rpc-commands.md, dist/core/extensions/types.d.ts}`
+- Hermes: `rsch/apps/hermes/hermes-agent/{agent/shell_hooks.py, agent/turn_context.py:795-840, hermes_cli/hooks.py}`
 - Claude Code 문서: https://code.claude.com/docs/en/hooks , https://code.claude.com/docs/en/hooks-guide

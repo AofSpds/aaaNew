@@ -21,7 +21,7 @@
 **로컬 전체 검색 결과(2026-10-17, `dev/` 전체·`.codex/skills`·`.claude/skills`, 숨김·gitignore 폴더 포함, node_modules·.venv·.git 제외):** `rsch_sub_memory` 밖에는 jevlike·open-jev·NanoJev·Kev의 clone이나 구현이 없다. `jev`/`jevlike`라는 이름의 폴더도 없다. 관련 흔적은 두 종류뿐이다.
 
 - **AAA의 JEV-BYUL 연구 프로젝트** (`dev/AAA/projects/AAA/work/jev-byul-research/`, `subplans/SR-JEV-BYUL`, ARCP 요구 "R20 BYUL + JEV-like relation primitive / Memory Analyze Engine", `human-llm-operating-model/work/jev-byul-rsch-staging/`): 전부 문서다. 코드 없음. 그 안의 결론 한 줄은 지금도 유효하다 — "OPEN JEV-LIKE IMPLEMENTATION != JEV REPRODUCTION".
-- **Hermes 설치본 안의 Jev 클라이언트 코드** (`rsch/hermes/hermes-agent/evals/compaction/jev_arm.py` 등): 호스팅된 TypeSafe `jev-latest`를 OpenRouter Decisions API로 호출하는 압축 평가용 코드다. 로컬 판단 모델이 아니다. 플러그인 카탈로그에 `jev-judge.yaml`("TypeSafe Jev as a judgment layer — a pre-tool gate") 등 외부 저장소를 가리키는 항목 13개가 있으나 로컬 복사본은 없다.
+- **Hermes 설치본 안의 Jev 클라이언트 코드** (`rsch/apps/hermes/hermes-agent/evals/compaction/jev_arm.py` 등): 호스팅된 TypeSafe `jev-latest`를 OpenRouter Decisions API로 호출하는 압축 평가용 코드다. 로컬 판단 모델이 아니다. 플러그인 카탈로그에 `jev-judge.yaml`("TypeSafe Jev as a judgment layer — a pre-tool gate") 등 외부 저장소를 가리키는 항목 13개가 있으나 로컬 복사본은 없다.
 
 따라서 사용자가 뜻한 "jevlike 엔진"이 **기존에 만들어 둔 우리 구현**이라면 이 PC에는 없고, AAA 쪽 JEV-BYUL 연구 문서가 그 계보다. Byul(`dev/Byul`, HEAD `79c00bfe`)은 그래프·view 연구 코드이며 판단 모델은 아니다.
 
