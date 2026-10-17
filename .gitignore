@@ -1,0 +1,39 @@
+# Local Claude Code settings and worktrees (per machine, may hold permissions)
+.claude/settings.local.json
+.claude/worktrees/
+
+# Third-party agent installs under rsch (reinstallable; data/ folders may hold logins and session state)
+# Keep only the launcher and install scripts so the setup can be reproduced.
+bootstrap/rsch/chainlit/*
+!bootstrap/rsch/chainlit/*.ps1
+bootstrap/rsch/hermes/*
+!bootstrap/rsch/hermes/*.ps1
+bootstrap/rsch/omp/*
+!bootstrap/rsch/omp/*.ps1
+!bootstrap/rsch/omp/build-manifest.json
+bootstrap/rsch/opencode/*
+!bootstrap/rsch/opencode/*.ps1
+!bootstrap/rsch/opencode/package.json
+!bootstrap/rsch/opencode/package-lock.json
+bootstrap/rsch/pi/pi-web/*
+!bootstrap/rsch/pi/pi-web/package.json
+!bootstrap/rsch/pi/pi-web/package-lock.json
+
+# Large backups (6.47 GB zip and its copies)
+bootstrap/rsch/rsch_sub_memory/backups/
+
+# Python / Node environments and caches anywhere
+.venv/
+venv/
+.cache/
+.uv-cache/
+node_modules/
+__pycache__/
+*.pyc
+
+# Relation engine derived files (rebuilt from jsonl, see RELATION_ENGINE_PLAN D1)
+bootstrap/memory-store/index.sqlite
+bootstrap/memory-store/records/local/
+
+# Logs
+*.log
