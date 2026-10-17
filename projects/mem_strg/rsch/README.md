@@ -1,7 +1,10 @@
 # mem_strg / rsch — 에이전트 메모 로컬 저장소 연구 작업대
 
-- 채널(세션) 이름: `AAA/NEW/RSCH/MEM_STRG` (Owner 제안 aaa_new_rsch_mem_strg, 세션 이름 규칙: 대문자·`_` 대신 `/`)
-- 프로젝트: mem_strg (별도 프로젝트, bootstrap과 독립). 역할: rsch. AAA/NEW/RSCH/BTSR([bootstrap/rsch](../../bootstrap/rsch))와 같은 항렬의 병렬 연구 채널
+- 채널(세션) 이름: `AAA_NEW/MEM_STRG/RSCH`
+  - 세션 이름 규칙(Owner 2026-10-18 확정): `<도메인>/<프로젝트>/<역할>`, 대문자, 칸 사이는 "/", 칸 안은 "_". 도메인 이름은 `AAA_NEW` 한 칸입니다.
+  - 이전 이름: aaa_new_rsch_mem_strg → AAA/NEW/RSCH/MEM_STRG → 지금 이름
+- 프로젝트: mem_strg (별도 프로젝트, bootstrap과 독립). 역할: rsch. AAA_NEW/BTSR/RSCH([bootstrap/rsch](../../bootstrap/rsch))와 같은 항렬의 병렬 연구 채널
+- 작업 위치: 전용 작업 사본 `aaaNew-wt-mem_strg`의 브랜치 `mem_strg/req-001`. 공용 폴더의 main에서는 고치지 않습니다(CURRENT "작업 위치" 참고)
 - 요청 출처: RHS/DPM 세션 경유 Owner 지시 — [requests/REQ-001](requests/REQ-001_RHS_DPM_LOCAL_MEMORY_STORE.md)
 - 주제: Owner가 하는 모든 도메인의 공통 메모리 규칙(Owner 2026-10-17). 자주 고치는 에이전트 메모(Current·로드맵·아카이브)를 Git에서 분리해 담을 로컬 저장소의 형태와 기술. Git에는 참조값만, 로컬 저장소는 내재화, PR마다 Git 백업. RHS는 첫 적용 사례.
 - 관련: 관계 엔진 [memory-store](../../bootstrap/memory-store) 결정(D1·D8·D15·D16·D20), [역할·워크플로 설계](../../bootstrap/rsch/design/ROLE_WORKFLOW_DESIGN_CLAUDE.md)
@@ -10,7 +13,7 @@
 ```text
 projects/mem_strg/rsch/
 ├─ README.md     이 파일
-├─ CURRENT.md    현재 상태 (작성 세션 1개: AAA/NEW/RSCH/MEM_STRG)
+├─ CURRENT.md    현재 상태 (작성 세션 1개: AAA_NEW/MEM_STRG/RSCH)
 ├─ PLAN_PRELIM_AND_OUTSOURCE_CLAUDE.md   초벌 연구·외주(Pro) 계획
 ├─ requests/     받은 요청 원문 (확정 기록, 고치지 않음)
 ├─ returns/      반환 (result/evidence/delta/open/learnings/next, 확정 기록)
