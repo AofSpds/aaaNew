@@ -3,6 +3,51 @@
 - 상태: ACTIVE · 2026-10-18
 - 현재 work act: REQ-001 — 참조값과 백업·복원(S5) 초벌에 대한 Pro 검토 답을 받음([BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO](research/operations/BACKUP_RESTORE_REVIEW_RESPONSE_GPT_PRO.md), Pro가 자기 브랜치로 직접 올림). 검토 처리 전
 - 다음 한 단계: Pro 검토 답 처리(채택·정정) → 초벌 v0.2
+- **백업 위치 (Owner 2026-10-18)**: "백업은 다른 드라이브에도 하고, 외부 드라이브에도 합니다." → 백업 실물은 두 곳에 둡니다(Owner 결정 D-a 해결)
+  - 관찰 [실측, 읽기만]: HANAL의 PC 안 디스크는 C:(NVMe 1.9TB) 하나뿐입니다.
+    - E: F: H: I: = 외장 HDD 2.8TB (NTFS, 항상 연결)
+    - J: K: = 외장 HDD 7.5TB (exFAT, 항상 연결)
+    - D: = USB 메모리, G: = Google Drive (외부 서비스라 제외)
+  - 드라이브 선정 (Owner 2026-10-18: "가장 상태좋고 좋은 드라이브에 하시죠" → 이 채널이 상태를 보고 고름):
+    - **1차 = E:** (2.8TB NTFS, 빈 공간 1,270GB, 최근 오류 0)
+    - **2차 = K:** (7.5TB exFAT, 빈 공간 2,831GB, 최근 오류 0)
+    - 근거 [실측, 읽기만]: Windows System 기록 10-15 01:50부터(약 3일치)의 디스크 오류를 드라이브별로 셌습니다.
+      - H: 읽기 재시도 335, paging 오류 20, NTFS 지연 쓰기 실패 6
+      - I: NTFS 지연 쓰기 실패 10
+      - D:(USB 메모리) 재시도 40, paging 오류 126
+      - F:·J: 재시도 1씩. E:·K:·C: 0
+      - 오류 시각이 USB 재설정(UASPStor 129, 10-15 22:32, 10-16 21:53)과 겹칩니다.
+    - 한계: 기록이 3일치뿐입니다. USB 외장의 SMART(온도·오류 계수)는 관리자 권한이나 별도 도구 없이는 읽을 수 없어 보지 못했습니다. Windows 건강 상태는 8개 장치 모두 "Healthy"였습니다.
+    - 남은 위험: E:·K:가 모두 항상 연결돼 있어, PC 전체에 생기는 사고(랜섬웨어·실수로 지움)에는 함께 노출됩니다. K:를 평소 분리할지는 Owner가 따로 정합니다.
+    - 따로 알린 것: H:·I:에 문제 징후가 있음 (Owner 자료 확인 권고)
+- **하드디스크 백업 저장소 (Owner 2026-10-18: "네 하드디스크 백업 저장소도 정하시고, 해당 세션에 연락이 닿으면 인폼주세요." → 이 채널이 정함)**
+
+```text
+백업 위치 3곳
+  hdd-e-primary    = E:\MEMSTORE_BACKUP\   (1차, 봉인할 때마다 복사·대조)
+  hdd-k-secondary  = K:\MEMSTORE_BACKUP\   (2차, 1차 대조가 통과한 뒤 복사·대조)
+  gdrive-desktopcare = localComputer desktop-care의 restic 암호화 저장소 (자료 저장소 폴더를 보호 목록에 넣음)
+
+<드라이브>:\MEMSTORE_BACKUP\
+├─ LOCATION.txt          위치 ID·만든 날·장치 설명(모델·용량, 시리얼 없음). 드라이브 문자가 바뀌어도 이 표식으로 찾음
+└─ <store_id>\           store_id = memstore-01 (모든 도메인 공통 저장소 1개)
+   ├─ INDEX.tsv          봉인 목록 (추가만): seal_id · bundle_id · sealed_at(UTC) · manifest_sha256 · 상태
+   └─ seals\<seal_id>\   MANIFEST.tsv + bundle\ (읽기 전용 표시)
+seal_id = <UTC yyyymmddThhmmssZ>-<임의 6자>   ← 브랜치 이름과 무관 (Pro P3: 이름 겹침·봉인 세대 문제)
+```
+
+  - 순서: 봉인본 대조 통과 → E: 복사·대조 → K: 복사·대조 → 그다음에 참조값 기록. **어느 단계든 실패하면 멈춥니다**(Pro P3).
+  - 용량: 지우지 않는 원칙이라, 빈 공간이 10% 또는 100GB 아래로 내려가면 봉인을 멈추고 보고합니다(정리는 Owner 결정).
+  - 아직 E:·K:에 폴더를 만들지 않았습니다. 첫 실제 봉인 때 만듭니다.
+  - 자료 저장소의 실제 위치(desktop-care에 알려 줄 경로)는 아직 미정입니다(Owner 결정 D-c). 후보는 `C:\Users\ms1pk\memstore\`(Git 저장소·작업 사본·Drive 미러 밖)입니다.
+- **관련 프로젝트: 시스템 복원 `localComputer` (DEV-ENV)** (Owner 2026-10-18: "우리가 시스템 복원을 위한 프로젝트도 있을거예요")
+  - 위치: `C:\Users\ms1pk\dev\localComputer`, GitHub AofSpds/localComputer (읽기만 함)
+  - 이미 돌고 있는 것 [문서: localComputer CURRENT 2026-10-15 18:59]: 데스크톱 정기 백업 desktop-care
+    - restic 암호화 저장소 → Google Drive
+    - 핵심 자료 09·13·17·21시, 전체 22시, 토 점검, 일 복원 시험
+    - 경로 탈출·ADS·예약 파일명 거부 시험 포함
+  - 활용 후보: 자료 저장소 폴더를 desktop-care 보호 목록에 넣으면 백업이 세 곳(E: + K: + Google Drive)이 됩니다. Google Drive가 "외부 서비스 지양"과 맞는지는 Owner가 결정합니다
+  - ⚠ 알린 위험: D:가 백업 키 USB입니다(`D:\DevEnvBackup-G14` 존재 확인, 내용은 열지 않음). 최근 3일 기록에 D: 오류 166(paging 126, 재시도 40)이 있습니다. 키 USB 사본을 하나 더 두기를 권고했습니다(키 작업은 이 채널이 하지 않음)
 - **작업 위치 (Owner 2026-10-18: "아 지금부터 하시면 됩니다." / "여기까지만 머지하시고 브랜치따세요.")**
   - 작업 사본: `C:\Users\ms1pk\dev\aaaNew-wt-mem_strg` (mem_strg 전용 worktree 1개). 브랜치는 `mem_strg/req-001`이고, main `d6f7f99`에서 땄습니다.
   - 공용 폴더 `C:\Users\ms1pk\dev\aaaNew`(main)에서는 mem_strg 파일을 고치지 않습니다. BTSR 세션과 같은 폴더이기 때문입니다.
