@@ -1,0 +1,7 @@
+{
+  "name": "rsch-opencode",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"start": "opencode web --hostname 127.0.0.1 --port 4096"},
+  "dependencies": {"opencode-ai": "1.19.0"}
+}

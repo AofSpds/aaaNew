@@ -20,7 +20,7 @@ bootstrap/rsch/pi/pi-web/*
 !bootstrap/rsch/pi/pi-web/package-lock.json
 
 # Large backups (6.47 GB zip and its copies)
-bootstrap/rsch/rsch_sub_memory/backups/
+bootstrap/rsch/research/sub-memory/backups/
 
 # Python / Node environments and caches anywhere
 .venv/

@@ -1,0 +1,44 @@
+{
+  "lesson_a": {
+    "path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\LESSONS_CODEX.md",
+    "sha256": "5efa427b3a39136354ceda9a406382af3b17343181d0737e0c4ec536d42f5a47",
+    "excerpt": "첫 작업에서 역할과 절대 작업대 경로를 확인하고, 파일 명령에 명시한다.",
+    "start_line": 7,
+    "excerpt_sha256": "27da1a673ad38b45697dce310e488911682db5970c7618f3014b5684fee37035"
+  },
+  "lesson_b": {
+    "path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\LESSONS_CODEX.md",
+    "sha256": "5efa427b3a39136354ceda9a406382af3b17343181d0737e0c4ec536d42f5a47",
+    "excerpt": "사용자 지정 역할·절대 경로·현재 과제·메모 진입점을 먼저 대조한다.",
+    "start_line": 15,
+    "excerpt_sha256": "56770092e3de52d05aee579c626af24b248bc061a2579e4f0db74cff2fd1d39f"
+  },
+  "parent_dir": {
+    "path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\README.md",
+    "sha256": "c7ca4fd99710126de0273a8d2e63a4e91263f0091122e559ab2e8feb1722d6f1",
+    "excerpt": "작업대: C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch.",
+    "start_line": 7,
+    "excerpt_sha256": "7fd3eed983bd73157ceb312e4d661883b08eeb167dadf68845f5f79d2a7fed65"
+  },
+  "child_dir": {
+    "path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\rsch_sub_memory\\INTAKE_CODEX.md",
+    "sha256": "c54f09858cdad13691290353386e317c8d9ec0c7dc1ebba7a1479e9baa2a5ae5",
+    "excerpt": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\rsch_sub_memory",
+    "start_line": 7,
+    "excerpt_sha256": "c3c21674f1e346a88f00894f44274f6be6c872c5b818a81d5df7e9e9ee0ef767"
+  },
+  "before": {
+    "path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\rsch_sub_memory\\INTAKE_CODEX.md",
+    "sha256": "c54f09858cdad13691290353386e317c8d9ec0c7dc1ebba7a1479e9baa2a5ae5",
+    "excerpt": "실제 jevlike 구현 조사는 아직 시작하지 않았다.",
+    "start_line": 26,
+    "excerpt_sha256": "92e673abe43195003b3d81aa51d8fcaf644f8dcf0758cf274e7d925958024b3a"
+  },
+  "after": {
+    "path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\rsch_sub_memory\\R05_R06_REFINEMENT_CODEX.md",
+    "sha256": "1814e60a863d775f3441c49a20290386e59f33849ef8f379a6d28a1f753934c4",
+    "excerpt": "README와 핵심 텍스트 코드를 읽었다.",
+    "start_line": 17,
+    "excerpt_sha256": "9945297bfc636019302e238f2878763db5b19401804f0d6221d351b7f6da71ee"
+  }
+}

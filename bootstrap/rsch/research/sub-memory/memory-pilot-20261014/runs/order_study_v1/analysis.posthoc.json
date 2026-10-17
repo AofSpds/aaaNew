@@ -1,0 +1,275 @@
+{
+  "status": "post-hoc descriptive analysis; no operating threshold adopted",
+  "methods": {
+    "original": {
+      "n_questions": 36,
+      "actual_option_order_changes": 0,
+      "decision_flips": 0,
+      "proposal_agreements": 17,
+      "keep_candidates": 8,
+      "missed_reference_review": 0,
+      "pmax05_keep_ids": [
+        "P01",
+        "P04",
+        "P05",
+        "P06",
+        "S01"
+      ]
+    },
+    "reverse": {
+      "n_questions": 36,
+      "actual_option_order_changes": 36,
+      "decision_flips": 11,
+      "proposal_agreements": 11,
+      "keep_candidates": 4,
+      "missed_reference_review": 0,
+      "pmax05_keep_ids": [
+        "P04"
+      ]
+    },
+    "key_asc": {
+      "n_questions": 36,
+      "actual_option_order_changes": 18,
+      "decision_flips": 3,
+      "proposal_agreements": 17,
+      "keep_candidates": 8,
+      "missed_reference_review": 0,
+      "pmax05_keep_ids": [
+        "P01",
+        "P04",
+        "P05",
+        "P06",
+        "S01"
+      ]
+    },
+    "description_length_asc": {
+      "n_questions": 36,
+      "actual_option_order_changes": 36,
+      "decision_flips": 5,
+      "proposal_agreements": 14,
+      "keep_candidates": 5,
+      "missed_reference_review": 0,
+      "pmax05_keep_ids": [
+        "P04",
+        "P05"
+      ]
+    },
+    "random_11": {
+      "n_questions": 36,
+      "actual_option_order_changes": 35,
+      "decision_flips": 7,
+      "proposal_agreements": 17,
+      "keep_candidates": 8,
+      "missed_reference_review": 0,
+      "pmax05_keep_ids": [
+        "P04",
+        "P05",
+        "P06"
+      ]
+    },
+    "random_29": {
+      "n_questions": 36,
+      "actual_option_order_changes": 31,
+      "decision_flips": 6,
+      "proposal_agreements": 15,
+      "keep_candidates": 8,
+      "missed_reference_review": 0,
+      "pmax05_keep_ids": [
+        "P01",
+        "P04",
+        "P05",
+        "P06"
+      ]
+    },
+    "prior_score_desc": {
+      "n_questions": 36,
+      "actual_option_order_changes": 36,
+      "decision_flips": 0,
+      "proposal_agreements": 17,
+      "keep_candidates": 8,
+      "missed_reference_review": 0,
+      "pmax05_keep_ids": [
+        "P01",
+        "P04",
+        "P05",
+        "P06"
+      ]
+    },
+    "cycle_1": {
+      "n_questions": 36,
+      "actual_option_order_changes": 36,
+      "decision_flips": 7,
+      "proposal_agreements": 13,
+      "keep_candidates": 5,
+      "missed_reference_review": 0,
+      "pmax05_keep_ids": [
+        "P04",
+        "P05"
+      ]
+    },
+    "cycle_2": {
+      "n_questions": 36,
+      "actual_option_order_changes": 36,
+      "decision_flips": 4,
+      "proposal_agreements": 15,
+      "keep_candidates": 6,
+      "missed_reference_review": 0,
+      "pmax05_keep_ids": [
+        "P01",
+        "P04",
+        "P05",
+        "P06"
+      ]
+    },
+    "cycle_3": {
+      "n_questions": 18,
+      "actual_option_order_changes": 18,
+      "decision_flips": 2,
+      "proposal_agreements": 5,
+      "keep_candidates": null,
+      "missed_reference_review": null,
+      "pmax05_keep_ids": []
+    },
+    "memory_b_first": {
+      "n_questions": 36,
+      "actual_option_order_changes": 0,
+      "decision_flips": 8,
+      "proposal_agreements": 18,
+      "keep_candidates": 11,
+      "missed_reference_review": 1,
+      "pmax05_keep_ids": [
+        "P01",
+        "P04",
+        "P05",
+        "P06",
+        "S01"
+      ]
+    },
+    "repeat_original": {
+      "n_questions": 6,
+      "actual_option_order_changes": 0,
+      "decision_flips": 0,
+      "proposal_agreements": 3,
+      "keep_candidates": 2,
+      "missed_reference_review": 0,
+      "pmax05_keep_ids": [
+        "P04"
+      ]
+    }
+  },
+  "option_route_unstable_ids": [
+    "L01",
+    "L02",
+    "L03",
+    "P06",
+    "S03"
+  ],
+  "display_route_unstable_ids": [
+    "L02",
+    "L04",
+    "L05"
+  ],
+  "either_axis_route_unstable_ids": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05",
+    "P06",
+    "S03"
+  ],
+  "all_tested_option_orders_keep_ids": [
+    "P01",
+    "P04",
+    "P05",
+    "S01"
+  ],
+  "all_tested_option_orders_keep_beyond_rules": [],
+  "stable_wrong_question_count": 10,
+  "unique_option_orders_per_case_question": {
+    "overlap": [
+      7,
+      8,
+      9
+    ],
+    "compatibility": [
+      4,
+      5,
+      6
+    ]
+  },
+  "max_option_probability_span": {
+    "overlap": 0.1404402107000351,
+    "compatibility": 0.14338582754135132
+  },
+  "state_token_range": [
+    48,
+    205
+  ],
+  "l04_input": {
+    "context": "A와 B는 같은 연구 역할이 업무를 시작할 때 적용하는 교훈 후보다.",
+    "memory_a": "업무 시작 시 역할과 작업대 경로를 반드시 확인한다.",
+    "memory_b": "업무 시작 시 역할과 작업대 경로를 확인해서는 안 된다."
+  },
+  "l04_predictions": {
+    "original": {
+      "request_id": "request_0061",
+      "case_id": "L04",
+      "question_id": "compatibility",
+      "input_layout": "original",
+      "option_order": [
+        "compatible",
+        "conflict",
+        "insufficient"
+      ],
+      "rendered_sha256": "02d32d1f12e87909cc198bfbaf2df887d834abb120408955d64a96e8c0c3d6a0",
+      "decision": "conflict",
+      "probabilities": {
+        "compatible": 0.3325698673725128,
+        "conflict": 0.38225555419921875,
+        "insufficient": 0.28517457842826843
+      },
+      "p_max": 0.38225555419921875,
+      "elapsed_ms": 1400.0417000061134,
+      "state_tokens": 57,
+      "truncated": false
+    },
+    "memory_b_first": {
+      "request_id": "request_0066",
+      "case_id": "L04",
+      "question_id": "compatibility",
+      "input_layout": "memory_b_first",
+      "option_order": [
+        "compatible",
+        "conflict",
+        "insufficient"
+      ],
+      "rendered_sha256": "fc11df5f23bb89b842a979f63aa8cf57cd97d0aea9208298a3ffde30a2773ae4",
+      "decision": "compatible",
+      "probabilities": {
+        "compatible": 0.37099286913871765,
+        "conflict": 0.3176894187927246,
+        "insufficient": 0.31131771206855774
+      },
+      "p_max": 0.37099286913871765,
+      "elapsed_ms": 1365.520799998194,
+      "state_tokens": 57,
+      "truncated": false
+    }
+  },
+  "checks": {
+    "run_completed": true,
+    "unique_requests_and_predictions": true,
+    "method_assignments_complete": true,
+    "frozen_data_exact": true,
+    "rendered_order_hashes_match": true,
+    "state_semantics_unchanged": true,
+    "no_reference_fields_in_requests": true,
+    "candidate_order_matches_rendered_request": true,
+    "candidate_membership_unchanged": true,
+    "source_files_unchanged": true,
+    "no_input_truncation": true,
+    "same_input_repeat_exact": true,
+    "reference_labels_still_unreviewed": true
+  }
+}

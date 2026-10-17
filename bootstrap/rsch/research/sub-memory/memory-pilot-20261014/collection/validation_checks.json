@@ -1,0 +1,5 @@
+{
+  "duplicate_case_rejected": true,
+  "changed_input_hash_rejected": true,
+  "unreviewed_promotion_rejected": true
+}

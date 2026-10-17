@@ -1,0 +1,4427 @@
+[
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0001",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0002",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0003",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0004",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0005",
+    "option_order": [
+      "partial",
+      "insufficient",
+      "equivalent",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0004",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0006",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "insufficient",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0007",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0008",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0004",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0009",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "method": "repeat_original",
+    "request_id": "request_0010",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0011",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0012",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0011",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0013",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0014",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0011",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0014",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0013",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0015",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0016",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "method": "repeat_original",
+    "request_id": "request_0017",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0018",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0019",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0020",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0021",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0022",
+    "option_order": [
+      "partial",
+      "insufficient",
+      "distinct",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0023",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0024",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "insufficient",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0025",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0026",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0021",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0027",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0028",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0029",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0028",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0030",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0031",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0030",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0032",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0030",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0032",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0033",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0034",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0035",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0036",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0037",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0038",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "distinct",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0039",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0040",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "insufficient",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0041",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0042",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0037",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0043",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0044",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0045",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0044",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0046",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0047",
+    "option_order": [
+      "conflict",
+      "compatible",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0048",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0048",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0046",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0049",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0050",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0051",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0052",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0053",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0054",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0055",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "partial",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0056",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0057",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "insufficient",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0058",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0059",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0054",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0060",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0061",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0062",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0061",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0063",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0064",
+    "option_order": [
+      "conflict",
+      "compatible",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0063",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0064",
+    "option_order": [
+      "conflict",
+      "compatible",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0063",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0065",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0066",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0067",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0068",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0069",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0070",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0071",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "distinct",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0072",
+    "option_order": [
+      "partial",
+      "equivalent",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0073",
+    "option_order": [
+      "insufficient",
+      "partial",
+      "equivalent",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0074",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0075",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0070",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0076",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0077",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0078",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0077",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0079",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0080",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0079",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0081",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0079",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0081",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0082",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0083",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0084",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0085",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0086",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0087",
+    "option_order": [
+      "equivalent",
+      "distinct",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0085",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0088",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "distinct",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0089",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0090",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0086",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0091",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0092",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0093",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0092",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0094",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0095",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0096",
+    "option_order": [
+      "conflict",
+      "compatible",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0095",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0094",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0095",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0097",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0098",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0099",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0100",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0101",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0102",
+    "option_order": [
+      "partial",
+      "distinct",
+      "equivalent",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0103",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0104",
+    "option_order": [
+      "equivalent",
+      "insufficient",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0105",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0106",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0101",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0107",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0108",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0109",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0108",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0110",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0111",
+    "option_order": [
+      "conflict",
+      "compatible",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0108",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0112",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0110",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0113",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0114",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0115",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0116",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0117",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0118",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0119",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0116",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0120",
+    "option_order": [
+      "equivalent",
+      "insufficient",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0121",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0122",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0118",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0123",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0124",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0125",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0124",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0126",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0125",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0127",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0127",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0126",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0127",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0128",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0129",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0130",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0131",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0132",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0133",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "insufficient",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0134",
+    "option_order": [
+      "partial",
+      "equivalent",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0135",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "distinct",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0136",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0137",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0132",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0138",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0139",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0140",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0139",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0141",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0140",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0139",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0142",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0141",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0142",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0143",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0144",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0145",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0146",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0147",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0148",
+    "option_order": [
+      "distinct",
+      "partial",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0149",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "partial",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0150",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "insufficient",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0151",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0152",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0147",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0153",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "method": "repeat_original",
+    "request_id": "request_0154",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0155",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0156",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0155",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0157",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0156",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0158",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0159",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0157",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0158",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0160",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "method": "repeat_original",
+    "request_id": "request_0161",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0162",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0163",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0164",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0165",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0165",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0166",
+    "option_order": [
+      "equivalent",
+      "distinct",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0167",
+    "option_order": [
+      "equivalent",
+      "insufficient",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0168",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0169",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0165",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0170",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0171",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0172",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0171",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0173",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0173",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0174",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0175",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0173",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0174",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0176",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0177",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0178",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0179",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0180",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0181",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "insufficient",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0182",
+    "option_order": [
+      "partial",
+      "insufficient",
+      "equivalent",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0183",
+    "option_order": [
+      "equivalent",
+      "insufficient",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0184",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0185",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0180",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0186",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0187",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0188",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0187",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0189",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0190",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0191",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0191",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0189",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0190",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0192",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0193",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0194",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0195",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0196",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0197",
+    "option_order": [
+      "insufficient",
+      "partial",
+      "distinct",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0198",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0196",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0199",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0200",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0196",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0201",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0202",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0203",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0202",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0204",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0205",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0204",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0205",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0204",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0206",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0207",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0208",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0209",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0210",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0211",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0212",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "partial",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0210",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0213",
+    "option_order": [
+      "equivalent",
+      "insufficient",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0214",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0215",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0211",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0216",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0217",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0218",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0217",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0219",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0220",
+    "option_order": [
+      "conflict",
+      "compatible",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0220",
+    "option_order": [
+      "conflict",
+      "compatible",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0221",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0219",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0221",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0222",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0223",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0224",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0225",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0226",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0227",
+    "option_order": [
+      "equivalent",
+      "insufficient",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0225",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0228",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "distinct",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0229",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0230",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0226",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0231",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0232",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0233",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0232",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0234",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0233",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0232",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0235",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0234",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0236",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0237",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0238",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0239",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0240",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0241",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0238",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0242",
+    "option_order": [
+      "partial",
+      "distinct",
+      "equivalent",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0243",
+    "option_order": [
+      "equivalent",
+      "insufficient",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0244",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0245",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0241",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0246",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "method": "repeat_original",
+    "request_id": "request_0247",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0248",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0249",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0248",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0250",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0251",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0248",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0251",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0250",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0251",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0252",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "method": "repeat_original",
+    "request_id": "request_0253",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0254",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0255",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0256",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0257",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0255",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0256",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0258",
+    "option_order": [
+      "equivalent",
+      "insufficient",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0259",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0260",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0257",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0261",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0262",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0263",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0262",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0264",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0265",
+    "option_order": [
+      "compatible",
+      "insufficient",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0263",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0266",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0264",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0266",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0267",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "original",
+    "request_id": "request_0268",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "reverse",
+    "request_id": "request_0269",
+    "option_order": [
+      "insufficient",
+      "distinct",
+      "partial",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "key_asc",
+    "request_id": "request_0270",
+    "option_order": [
+      "distinct",
+      "equivalent",
+      "insufficient",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "description_length_asc",
+    "request_id": "request_0271",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "random_11",
+    "request_id": "request_0272",
+    "option_order": [
+      "equivalent",
+      "distinct",
+      "partial",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "random_29",
+    "request_id": "request_0273",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "insufficient",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "prior_score_desc",
+    "request_id": "request_0274",
+    "option_order": [
+      "equivalent",
+      "insufficient",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "cycle_1",
+    "request_id": "request_0275",
+    "option_order": [
+      "partial",
+      "distinct",
+      "insufficient",
+      "equivalent"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "cycle_2",
+    "request_id": "request_0276",
+    "option_order": [
+      "distinct",
+      "insufficient",
+      "equivalent",
+      "partial"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "cycle_3",
+    "request_id": "request_0271",
+    "option_order": [
+      "insufficient",
+      "equivalent",
+      "partial",
+      "distinct"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "method": "memory_b_first",
+    "request_id": "request_0277",
+    "option_order": [
+      "equivalent",
+      "partial",
+      "distinct",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "method": "original",
+    "request_id": "request_0278",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "method": "reverse",
+    "request_id": "request_0279",
+    "option_order": [
+      "insufficient",
+      "conflict",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "method": "key_asc",
+    "request_id": "request_0278",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "method": "description_length_asc",
+    "request_id": "request_0280",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "method": "random_11",
+    "request_id": "request_0280",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "method": "random_29",
+    "request_id": "request_0281",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "method": "prior_score_desc",
+    "request_id": "request_0281",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "method": "cycle_1",
+    "request_id": "request_0280",
+    "option_order": [
+      "conflict",
+      "insufficient",
+      "compatible"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "method": "cycle_2",
+    "request_id": "request_0281",
+    "option_order": [
+      "insufficient",
+      "compatible",
+      "conflict"
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "method": "memory_b_first",
+    "request_id": "request_0282",
+    "option_order": [
+      "compatible",
+      "conflict",
+      "insufficient"
+    ]
+  }
+]

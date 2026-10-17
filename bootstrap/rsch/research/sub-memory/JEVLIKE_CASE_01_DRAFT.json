@@ -1,0 +1,57 @@
+{
+  "case_id": "JEVLIKE_CASE_01",
+  "status": "review_proposal",
+  "purpose": "역할이 다른 두 작업대 기록의 관계 판정 입력 설계",
+  "input": {
+    "context": "다음 두 기억의 관계를 판정한다.\n기억 A: 프로젝트=bootstrap; 역할=부모 rsch; 용도=연구 산출물; 작업대=C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch.\n기억 B: 프로젝트=bootstrap; 역할=자식 rsch_sub_memory; 용도=연구 산출물; 작업대=C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\rsch_sub_memory.",
+    "options": [
+      "중복",
+      "충돌",
+      "역할별 공존",
+      "판단 보류"
+    ]
+  },
+  "expected_review": {
+    "option_index": 2,
+    "relation": "역할별 공존",
+    "action": "각 역할의 기록을 유지하고 해당 역할에 맞게 선택",
+    "reason": "같은 bootstrap 프로젝트 안에서 적용 역할이 다르다",
+    "hold_conditions": [
+      "한쪽 기억이나 역할·용도가 입력에서 누락됨",
+      "원문과 입력의 대응을 확인할 수 없음"
+    ],
+    "independent_review_completed": false
+  },
+  "source": {
+    "path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\README.md",
+    "lines": [
+      7,
+      141
+    ],
+    "sha256": "C7CA4FD99710126DE0273A8D2E63A4E91263F0091122E559AB2E8FEB1722D6F1",
+    "input_is_reconstruction_not_verbatim": true
+  },
+  "input_probe": {
+    "method": "UTF-8 입력을 문서상 기본 context 한도인 192바이트로 자르는 로컬 계산",
+    "context_bytes": 333,
+    "documented_default_context_bytes": 192,
+    "would_truncate": true,
+    "prefix_contains_memory_b": true,
+    "prefix_contains_child_role": false,
+    "option_bytes": [
+      6,
+      6,
+      16,
+      13
+    ],
+    "model_executed": false,
+    "model_configuration_changed": false,
+    "code_reference": "https://github.com/vinnylarouge/jevlike/blob/94f5fd1b0b11d52bbdfdf4e0ee6aa96b568f8452/jevlike/data.py"
+  },
+  "notes": [
+    "입력과 기대 판정은 검토용이며 학습 정답으로 확정하지 않았다.",
+    "문맥에 기대 판정 설명을 넣지 않고 기대 결과는 입력 밖에 둔다.",
+    "현재 기본 길이에서 원문 조건을 보존하지 못하므로 이 상태의 점수로 병합·대체를 확정하는 것을 허용하지 않는 정책을 제안한다.",
+    "설정에 맞는 모델과 조건 보존을 확인하기 전이며 이것은 모델 성능 시험이 아니다."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "started_at": "2026-10-14T10:06:15.137527+00:00",
+  "model_revision": "bf75a6a8848ea6960ff2ed108d9ed44c2941174f",
+  "source_commit": "0a6d3fafeee7f3f76a9a4a522bf8b9d5b50bd7e5",
+  "base_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "device": "cpu",
+  "dtype": "float32",
+  "torch": "2.8.0+cpu",
+  "transformers": "5.19.0",
+  "peft": "0.21.2",
+  "questions_per_request": 1,
+  "unique_requests": 282,
+  "method_assignments": 384,
+  "plan_sha256": "367f90d4c9c22352fd59db3e371c4b2e80dee95e0d0674a1250fd88fbd6e7907",
+  "data_sha256": "997e518197cd103593ef3ec0913a467921e84db9e19a1b6660ce37b488eb8fd4",
+  "questions_sha256": "af15b761735b4d276ae0192716db5d2a998cebb5c9575077a995e2eb56b1b899",
+  "design": "original/reverse/key/description length/prior score/2 seeded shuffles/balanced cycles; B-first display; 3-case repeat control",
+  "deduplication": "identical rendered requests share an evaluation; repeat controls always rerun",
+  "evaluation": "labels read only after inference; agreement with unreviewed proposals, not validated accuracy",
+  "context_limits": {
+    "state": 2048,
+    "branch": 4096
+  },
+  "source_hashes_before": {
+    "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\LESSONS_CODEX.md": "5efa427b3a39136354ceda9a406382af3b17343181d0737e0c4ec536d42f5a47",
+    "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\README.md": "c7ca4fd99710126de0273a8d2e63a4e91263f0091122e559ab2e8feb1722d6f1",
+    "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\rsch_sub_memory\\INTAKE_CODEX.md": "c54f09858cdad13691290353386e317c8d9ec0c7dc1ebba7a1479e9baa2a5ae5",
+    "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\rsch_sub_memory\\R05_R06_REFINEMENT_CODEX.md": "1814e60a863d775f3441c49a20290386e59f33849ef8f379a6d28a1f753934c4"
+  },
+  "load_seconds": 5.09224300000642,
+  "temperature": 2.3510958125672174,
+  "finished_at": "2026-10-14T10:14:52.345526+00:00"
+}

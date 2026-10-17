@@ -1,0 +1,632 @@
+[
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.2747643515467644,
+      "partial": 0.2540130876004696,
+      "distinct": 0.1835712492465973,
+      "insufficient": 0.28765133023262024
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.3990999758243561,
+      "conflict": 0.20020503799120584,
+      "insufficient": 0.40069499611854553
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.309440553188324,
+      "partial": 0.24653133377432823,
+      "distinct": 0.16798684000968933,
+      "insufficient": 0.27604125812649727
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": true,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.37326720356941223,
+      "conflict": 0.2220502495765686,
+      "insufficient": 0.40468255678812665
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.32199153304100037,
+      "partial": 0.26616154983639717,
+      "distinct": 0.1454678699374199,
+      "insufficient": 0.26637905836105347
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": true,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.43330082297325134,
+      "conflict": 0.17268706361452738,
+      "insufficient": 0.39401211341222125
+    },
+    "mean_decision": "compatible",
+    "mean_agrees": true,
+    "vote_decision": "compatible",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": true,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.37025532871484756,
+      "partial": 0.2183908298611641,
+      "distinct": 0.17606069520115852,
+      "insufficient": 0.2352931834757328
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": false,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.3070817490418752,
+      "conflict": 0.39545004566510517,
+      "insufficient": 0.2974681854248047
+    },
+    "mean_decision": "conflict",
+    "mean_agrees": true,
+    "vote_decision": "conflict",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.23734831809997559,
+      "partial": 0.2598427087068558,
+      "distinct": 0.18752356991171837,
+      "insufficient": 0.31528539955616
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.36909811695416767,
+      "conflict": 0.21816901365915933,
+      "insufficient": 0.4127328892548879
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.2359936647117138,
+      "partial": 0.13027752935886383,
+      "distinct": 0.17107699066400528,
+      "insufficient": 0.4626517966389656
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": true,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.3169108033180237,
+      "conflict": 0.17332545419534048,
+      "insufficient": 0.5097637673219045
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": true,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.32029490917921066,
+      "partial": 0.2209194153547287,
+      "distinct": 0.19342780858278275,
+      "insufficient": 0.2653578817844391
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": false,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.5196476976076762,
+      "conflict": 0.1300529440244039,
+      "insufficient": 0.350299338499705
+    },
+    "mean_decision": "compatible",
+    "mean_agrees": true,
+    "vote_decision": "compatible",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": true,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.29274121671915054,
+      "partial": 0.22022464871406555,
+      "distinct": 0.1937336102128029,
+      "insufficient": 0.29330047965049744
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": null,
+    "vote_tied": true,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.34587593873341876,
+      "conflict": 0.19499245782693228,
+      "insufficient": 0.4591315984725952
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.30816471576690674,
+      "partial": 0.14877359196543694,
+      "distinct": 0.1560330167412758,
+      "insufficient": 0.38702869415283203
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.2883969446023305,
+      "conflict": 0.14073399702707926,
+      "insufficient": 0.5708690285682678
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": true,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.6657938957214355,
+      "partial": 0.14372205920517445,
+      "distinct": 0.056743064895272255,
+      "insufficient": 0.13374099880456924
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": true,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.6092551151911417,
+      "conflict": 0.11004398266474406,
+      "insufficient": 0.2807009319464366
+    },
+    "mean_decision": "compatible",
+    "mean_agrees": true,
+    "vote_decision": "compatible",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": true,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.31350077688694,
+      "partial": 0.19858970120549202,
+      "distinct": 0.20649052038788795,
+      "insufficient": 0.28141898661851883
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": false,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.575328012307485,
+      "conflict": 0.0942264844973882,
+      "insufficient": 0.33044548829396564
+    },
+    "mean_decision": "compatible",
+    "mean_agrees": true,
+    "vote_decision": "compatible",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": true,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.35022641718387604,
+      "partial": 0.2266717031598091,
+      "distinct": 0.15750176832079887,
+      "insufficient": 0.2656000927090645
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": false,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.5052200655142466,
+      "conflict": 0.12660840650399527,
+      "insufficient": 0.36817153294881183
+    },
+    "mean_decision": "compatible",
+    "mean_agrees": true,
+    "vote_decision": "compatible",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": true,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.28708531707525253,
+      "partial": 0.22003943473100662,
+      "distinct": 0.1995321847498417,
+      "insufficient": 0.29334302991628647
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.479288786649704,
+      "conflict": 0.1605102370182673,
+      "insufficient": 0.3602009912331899
+    },
+    "mean_decision": "compatible",
+    "mean_agrees": true,
+    "vote_decision": "compatible",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": true,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.31966225802898407,
+      "partial": 0.24130739644169807,
+      "distinct": 0.16154932230710983,
+      "insufficient": 0.27748098969459534
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": false,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.34442682067553204,
+      "conflict": 0.1823851317167282,
+      "insufficient": 0.47318803270657855
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.317825011909008,
+      "partial": 0.13805250637233257,
+      "distinct": 0.18899931013584137,
+      "insufficient": 0.3551231548190117
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.40203555425008136,
+      "conflict": 0.1932165871063868,
+      "insufficient": 0.4047478338082631
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.4417363181710243,
+      "partial": 0.19867409020662308,
+      "distinct": 0.12573087587952614,
+      "insufficient": 0.23385874181985855
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": false,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.339547723531723,
+      "conflict": 0.2187613546848297,
+      "insufficient": 0.4416909118493398
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.33737289905548096,
+      "partial": 0.17602162063121796,
+      "distinct": 0.17697645723819733,
+      "insufficient": 0.30962904542684555
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": false,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.3763640324274699,
+      "conflict": 0.1764441281557083,
+      "insufficient": 0.44719183444976807
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": true,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "n_passes": 4,
+    "mean_probabilities": {
+      "equivalent": 0.4278516247868538,
+      "partial": 0.20612379536032677,
+      "distinct": 0.1306657660752535,
+      "insufficient": 0.2353588193655014
+    },
+    "mean_decision": "equivalent",
+    "mean_agrees": true,
+    "vote_decision": "equivalent",
+    "vote_tied": false,
+    "vote_agrees": true,
+    "mean_keep": null,
+    "mean_missed_reference_review": null
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "n_passes": 3,
+    "mean_probabilities": {
+      "compatible": 0.3622453411420186,
+      "conflict": 0.2021199663480123,
+      "insufficient": 0.435634712378184
+    },
+    "mean_decision": "insufficient",
+    "mean_agrees": false,
+    "vote_decision": "insufficient",
+    "vote_tied": false,
+    "vote_agrees": false,
+    "mean_keep": false,
+    "mean_missed_reference_review": false
+  }
+]

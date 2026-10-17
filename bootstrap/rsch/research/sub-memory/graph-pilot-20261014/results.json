@@ -1,0 +1,870 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sqlite": "3.53.1",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "scope": "selection/provenance/invalidation control only; no LLM, no source writes, no crash/concurrency integration",
+  "dataset": {
+    "cards": 12,
+    "source_files": 7,
+    "queries": 5,
+    "cached_views": 6,
+    "nodes": 32,
+    "edges": 40,
+    "label_status": "researcher_curated_not_independent_gold"
+  },
+  "aggregates": {
+    "full_packet": {
+      "precision": 0.3,
+      "recall": 1.0,
+      "returned_cards": 60,
+      "required_cards": 18,
+      "payload_utf8_bytes": 31470
+    },
+    "flat_task_mapping": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "returned_cards": 18,
+      "required_cards": 18,
+      "payload_utf8_bytes": 9011
+    },
+    "typed_graph": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "returned_cards": 18,
+      "required_cards": 18,
+      "payload_utf8_bytes": 9011
+    },
+    "sqlite_recursive_graph": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "returned_cards": 18,
+      "required_cards": 18,
+      "payload_utf8_bytes": 9011
+    }
+  },
+  "queries": [
+    {
+      "task": "memory_start",
+      "method": "full_packet",
+      "selected": [
+        "common",
+        "completion",
+        "composition",
+        "domain",
+        "evidence",
+        "execution",
+        "experience",
+        "installation",
+        "prototype",
+        "recompute",
+        "relations",
+        "ui"
+      ],
+      "expected": [
+        "completion",
+        "domain",
+        "evidence",
+        "experience",
+        "relations"
+      ],
+      "true_positive": 5,
+      "returned": 12,
+      "required": 5,
+      "missing": [],
+      "extra": [
+        "common",
+        "composition",
+        "execution",
+        "installation",
+        "prototype",
+        "recompute",
+        "ui"
+      ],
+      "payload_utf8_bytes": 6294
+    },
+    {
+      "task": "memory_start",
+      "method": "flat_task_mapping",
+      "selected": [
+        "completion",
+        "domain",
+        "evidence",
+        "experience",
+        "relations"
+      ],
+      "expected": [
+        "completion",
+        "domain",
+        "evidence",
+        "experience",
+        "relations"
+      ],
+      "true_positive": 5,
+      "returned": 5,
+      "required": 5,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 2727
+    },
+    {
+      "task": "memory_start",
+      "method": "typed_graph",
+      "selected": [
+        "completion",
+        "domain",
+        "evidence",
+        "experience",
+        "relations"
+      ],
+      "expected": [
+        "completion",
+        "domain",
+        "evidence",
+        "experience",
+        "relations"
+      ],
+      "true_positive": 5,
+      "returned": 5,
+      "required": 5,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 2727
+    },
+    {
+      "task": "memory_start",
+      "method": "sqlite_recursive_graph",
+      "selected": [
+        "completion",
+        "domain",
+        "evidence",
+        "experience",
+        "relations"
+      ],
+      "expected": [
+        "completion",
+        "domain",
+        "evidence",
+        "experience",
+        "relations"
+      ],
+      "true_positive": 5,
+      "returned": 5,
+      "required": 5,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 2727
+    },
+    {
+      "task": "graph_design",
+      "method": "full_packet",
+      "selected": [
+        "common",
+        "completion",
+        "composition",
+        "domain",
+        "evidence",
+        "execution",
+        "experience",
+        "installation",
+        "prototype",
+        "recompute",
+        "relations",
+        "ui"
+      ],
+      "expected": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "true_positive": 6,
+      "returned": 12,
+      "required": 6,
+      "missing": [],
+      "extra": [
+        "completion",
+        "domain",
+        "execution",
+        "experience",
+        "installation",
+        "ui"
+      ],
+      "payload_utf8_bytes": 6294
+    },
+    {
+      "task": "graph_design",
+      "method": "flat_task_mapping",
+      "selected": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "expected": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "true_positive": 6,
+      "returned": 6,
+      "required": 6,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 3005
+    },
+    {
+      "task": "graph_design",
+      "method": "typed_graph",
+      "selected": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "expected": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "true_positive": 6,
+      "returned": 6,
+      "required": 6,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 3005
+    },
+    {
+      "task": "graph_design",
+      "method": "sqlite_recursive_graph",
+      "selected": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "expected": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "true_positive": 6,
+      "returned": 6,
+      "required": 6,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 3005
+    },
+    {
+      "task": "graph_refresh",
+      "method": "full_packet",
+      "selected": [
+        "common",
+        "completion",
+        "composition",
+        "domain",
+        "evidence",
+        "execution",
+        "experience",
+        "installation",
+        "prototype",
+        "recompute",
+        "relations",
+        "ui"
+      ],
+      "expected": [
+        "evidence",
+        "prototype",
+        "recompute"
+      ],
+      "true_positive": 3,
+      "returned": 12,
+      "required": 3,
+      "missing": [],
+      "extra": [
+        "common",
+        "completion",
+        "composition",
+        "domain",
+        "execution",
+        "experience",
+        "installation",
+        "relations",
+        "ui"
+      ],
+      "payload_utf8_bytes": 6294
+    },
+    {
+      "task": "graph_refresh",
+      "method": "flat_task_mapping",
+      "selected": [
+        "evidence",
+        "prototype",
+        "recompute"
+      ],
+      "expected": [
+        "evidence",
+        "prototype",
+        "recompute"
+      ],
+      "true_positive": 3,
+      "returned": 3,
+      "required": 3,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 1373
+    },
+    {
+      "task": "graph_refresh",
+      "method": "typed_graph",
+      "selected": [
+        "evidence",
+        "prototype",
+        "recompute"
+      ],
+      "expected": [
+        "evidence",
+        "prototype",
+        "recompute"
+      ],
+      "true_positive": 3,
+      "returned": 3,
+      "required": 3,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 1373
+    },
+    {
+      "task": "graph_refresh",
+      "method": "sqlite_recursive_graph",
+      "selected": [
+        "evidence",
+        "prototype",
+        "recompute"
+      ],
+      "expected": [
+        "evidence",
+        "prototype",
+        "recompute"
+      ],
+      "true_positive": 3,
+      "returned": 3,
+      "required": 3,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 1373
+    },
+    {
+      "task": "runtime_handoff",
+      "method": "full_packet",
+      "selected": [
+        "common",
+        "completion",
+        "composition",
+        "domain",
+        "evidence",
+        "execution",
+        "experience",
+        "installation",
+        "prototype",
+        "recompute",
+        "relations",
+        "ui"
+      ],
+      "expected": [
+        "domain",
+        "evidence",
+        "execution"
+      ],
+      "true_positive": 3,
+      "returned": 12,
+      "required": 3,
+      "missing": [],
+      "extra": [
+        "common",
+        "completion",
+        "composition",
+        "experience",
+        "installation",
+        "prototype",
+        "recompute",
+        "relations",
+        "ui"
+      ],
+      "payload_utf8_bytes": 6294
+    },
+    {
+      "task": "runtime_handoff",
+      "method": "flat_task_mapping",
+      "selected": [
+        "domain",
+        "evidence",
+        "execution"
+      ],
+      "expected": [
+        "domain",
+        "evidence",
+        "execution"
+      ],
+      "true_positive": 3,
+      "returned": 3,
+      "required": 3,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 1426
+    },
+    {
+      "task": "runtime_handoff",
+      "method": "typed_graph",
+      "selected": [
+        "domain",
+        "evidence",
+        "execution"
+      ],
+      "expected": [
+        "domain",
+        "evidence",
+        "execution"
+      ],
+      "true_positive": 3,
+      "returned": 3,
+      "required": 3,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 1426
+    },
+    {
+      "task": "runtime_handoff",
+      "method": "sqlite_recursive_graph",
+      "selected": [
+        "domain",
+        "evidence",
+        "execution"
+      ],
+      "expected": [
+        "domain",
+        "evidence",
+        "execution"
+      ],
+      "true_positive": 3,
+      "returned": 3,
+      "required": 3,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 1426
+    },
+    {
+      "task": "ui_scope",
+      "method": "full_packet",
+      "selected": [
+        "common",
+        "completion",
+        "composition",
+        "domain",
+        "evidence",
+        "execution",
+        "experience",
+        "installation",
+        "prototype",
+        "recompute",
+        "relations",
+        "ui"
+      ],
+      "expected": [
+        "ui"
+      ],
+      "true_positive": 1,
+      "returned": 12,
+      "required": 1,
+      "missing": [],
+      "extra": [
+        "common",
+        "completion",
+        "composition",
+        "domain",
+        "evidence",
+        "execution",
+        "experience",
+        "installation",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "payload_utf8_bytes": 6294
+    },
+    {
+      "task": "ui_scope",
+      "method": "flat_task_mapping",
+      "selected": [
+        "ui"
+      ],
+      "expected": [
+        "ui"
+      ],
+      "true_positive": 1,
+      "returned": 1,
+      "required": 1,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 480
+    },
+    {
+      "task": "ui_scope",
+      "method": "typed_graph",
+      "selected": [
+        "ui"
+      ],
+      "expected": [
+        "ui"
+      ],
+      "true_positive": 1,
+      "returned": 1,
+      "required": 1,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 480
+    },
+    {
+      "task": "ui_scope",
+      "method": "sqlite_recursive_graph",
+      "selected": [
+        "ui"
+      ],
+      "expected": [
+        "ui"
+      ],
+      "true_positive": 1,
+      "returned": 1,
+      "required": 1,
+      "missing": [],
+      "extra": [],
+      "payload_utf8_bytes": 480
+    }
+  ],
+  "example_selection_traces": {
+    "state": "READY",
+    "selected": [
+      "common",
+      "composition",
+      "evidence",
+      "prototype",
+      "recompute",
+      "relations"
+    ],
+    "versions": {
+      "g:graph": "1",
+      "m:common": "717955064c0eda4635d7d53d51f82a0e6aa7008e97ddc17fedfbf8abafa1f483",
+      "m:composition": "c79efe351af4e34e17373e79a85c4b0e66b4efbe2e88786b90f0ff9ef09a4634",
+      "m:evidence": "52b0dff09b322294fcf2f0b2a160a921edc3032ab3c68a92f02cdab571f03a72",
+      "m:prototype": "39c0cc1069b24ad05a03b30029dc7dfd4d2939cfdf7dd48197a7864640d46ee0",
+      "m:recompute": "ee0bfb9030fa773e8b459b0bbb458bfbfd44f3e4a20773ff9cf5cd1f237c283c",
+      "m:relations": "560f1dcef82664682e0562deea38d1a49d36c319d3d8667a9d4809560bde0a11",
+      "s:byul_common": "fd48be49fc69f8205a5fa04d2502ec4b22486e06f7c220f5b3f18073e55ec6e3",
+      "s:byul_composition": "90580b28d121aace049386c0218218778207ee545724cb9598ea3b57447d1e4d",
+      "s:byul_contract": "4a667fe84d0f433f9d698831c3788bc09e3323c2d9f2b5218aa0b866204959bb",
+      "s:byul_refresh": "667258c643f256d3c5db19eeb3b9013cb8cac5b1f5da219aead221cfa8d80073",
+      "s:parent_memory": "c7ca4fd99710126de0273a8d2e63a4e91263f0091122e559ab2e8feb1722d6f1",
+      "s:requirements": "d16d7064ea2d17d2d294fdd2f3d0296459dbb339f6866fb0ecc726ebc60d4b64",
+      "t:graph_design": "1"
+    },
+    "traces": {
+      "common": [
+        "t:graph_design",
+        "g:graph",
+        "m:common",
+        "s:byul_common"
+      ],
+      "composition": [
+        "t:graph_design",
+        "g:graph",
+        "m:composition",
+        "s:byul_composition"
+      ],
+      "evidence": [
+        "t:graph_design",
+        "g:graph",
+        "m:evidence",
+        "s:parent_memory"
+      ],
+      "prototype": [
+        "t:graph_design",
+        "g:graph",
+        "m:prototype",
+        "s:byul_contract"
+      ],
+      "recompute": [
+        "t:graph_design",
+        "g:graph",
+        "m:recompute",
+        "s:byul_refresh"
+      ],
+      "relations": [
+        "t:graph_design",
+        "g:graph",
+        "m:relations",
+        "s:requirements"
+      ]
+    }
+  },
+  "invalidation": {
+    "changed": [
+      "s:byul_common"
+    ],
+    "affected": [
+      "v:graph_design",
+      "v:parent_brief"
+    ],
+    "total_cached_views": 6,
+    "graph_walk": {
+      "visited_nodes": 6,
+      "followed_edges": 5
+    },
+    "flat_manifest_scan": {
+      "views_scanned": 6,
+      "affected": [
+        "v:graph_design",
+        "v:parent_brief"
+      ]
+    },
+    "parent_readme_whole_file_change_affected": [
+      "v:graph_design",
+      "v:graph_refresh",
+      "v:memory_start",
+      "v:parent_brief",
+      "v:runtime_handoff"
+    ]
+  },
+  "virtual_refresh": {
+    "status": "simulation_only_originals_unchanged",
+    "memory": "common",
+    "new_text": "> \"모든 소스를 그대로 볼수는 없고, 공통 VIEW라 한번 보고 페르소나VIEW를 한번 더 만들어 둔다던가 하는 생각은 하고 잇어요. 파편화된 아이디어가 있는데, 사실 구현 상황이 어떻게 될지 모르겠어요.\" [VIRTUAL STUDY CHANGE ONLY]",
+    "new_source_sha256": "858777e07684c392b35b0ccfd6fed5cf91fb76b8aa18743f59a174c4ffcb9327",
+    "new_span_sha256": "a9a82ebb6db2c3dfe0353151f3d5665c197055e4c95ef2b32f9483e92713951a",
+    "old_excerpt_rebuild": {
+      "state": "BLOCKED",
+      "reason": "source_or_memory_revision_mismatch",
+      "memories": [
+        "common"
+      ]
+    },
+    "rebuilt_state": "READY"
+  },
+  "controls": [
+    {
+      "name": "all_selection_methods_match_same_policy",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "trace_contains_query_and_source",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "mentions_does_not_select_installation",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "unknown_task_is_not_silently_filled",
+      "actual": "BLOCKED",
+      "expected": "BLOCKED",
+      "passed": true
+    },
+    {
+      "name": "transitive_update_impact",
+      "actual": [
+        "v:graph_design",
+        "v:parent_brief"
+      ],
+      "expected": [
+        "v:graph_design",
+        "v:parent_brief"
+      ],
+      "passed": true
+    },
+    {
+      "name": "flat_manifest_scan_matches_graph",
+      "actual": [
+        "v:graph_design",
+        "v:parent_brief"
+      ],
+      "expected": [
+        "v:graph_design",
+        "v:parent_brief"
+      ],
+      "passed": true
+    },
+    {
+      "name": "lost_invalidation_notice_blocked_by_manifest",
+      "actual": "BLOCKED",
+      "expected": "BLOCKED",
+      "passed": true
+    },
+    {
+      "name": "unaffected_view_remains_ready",
+      "actual": "READY",
+      "expected": "READY",
+      "passed": true
+    },
+    {
+      "name": "version_relabel_without_reextract_is_blocked",
+      "actual": "BLOCKED",
+      "expected": "BLOCKED",
+      "passed": true
+    },
+    {
+      "name": "new_source_with_old_memory_version_is_blocked",
+      "actual": "BLOCKED",
+      "expected": "BLOCKED",
+      "passed": true
+    },
+    {
+      "name": "virtual_source_is_reextracted",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "coherent_rebuilt_manifest_ready",
+      "actual": "READY",
+      "expected": "READY",
+      "passed": true
+    },
+    {
+      "name": "deleted_source_blocks_cached_packet",
+      "actual": "BLOCKED",
+      "expected": "BLOCKED",
+      "passed": true
+    },
+    {
+      "name": "deleted_required_source_blocks_rebuild",
+      "actual": "BLOCKED",
+      "expected": "BLOCKED",
+      "passed": true
+    },
+    {
+      "name": "new_membership_invalidates_old_selection",
+      "actual": "BLOCKED",
+      "expected": "BLOCKED",
+      "passed": true
+    },
+    {
+      "name": "new_membership_included_after_reselection",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "cycle_terminates_without_duplicate_items",
+      "actual": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "expected": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "passed": true
+    },
+    {
+      "name": "sql_union_cycle_terminates",
+      "actual": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "expected": [
+        "common",
+        "composition",
+        "evidence",
+        "prototype",
+        "recompute",
+        "relations"
+      ],
+      "passed": true
+    },
+    {
+      "name": "all_sources_unchanged_after_read_only_study",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "known_limitations_observed": [
+    {
+      "fault": "omitted_relevance_edge",
+      "missing": [
+        "common"
+      ],
+      "internal_gate": "READY",
+      "recall": 0.8333333333333334,
+      "meaning": "Version freshness does not prove semantic coverage."
+    },
+    {
+      "fault": "wrongly_typed_selection_edge",
+      "extra": [
+        "installation"
+      ],
+      "meaning": "Correct traversal can faithfully reproduce a wrong relationship judgment."
+    }
+  ],
+  "timings": {
+    "flat_task_mapping": {
+      "median_us_per_query": 2.54,
+      "samples": 200,
+      "scope": "warm in-process selection only; excludes ingestion, index build, disk, LLM, tracing, concurrency"
+    },
+    "typed_graph": {
+      "median_us_per_query": 4.98,
+      "samples": 200,
+      "scope": "warm in-process selection only; excludes ingestion, index build, disk, LLM, tracing, concurrency"
+    },
+    "sqlite_recursive_graph": {
+      "median_us_per_query": 19.78,
+      "samples": 200,
+      "scope": "warm in-process selection only; excludes ingestion, index build, disk, LLM, tracing, concurrency"
+    }
+  },
+  "interpretation_limits": [
+    "All relevance memberships and expected sets were manually curated from a small known corpus.",
+    "Flat mapping is pre-materialized from the same relationships: equal quality is expected, not independent discovery.",
+    "Version-only change is a fault injection; it must block old source excerpts from being relabeled as current.",
+    "A marked in-memory source variant was re-extracted; semantic summarization quality and end-user task success were not tested.",
+    "SQLite uses an in-memory database. No dedicated graph database was installed or compared.",
+    "Manifest checking only guards this prototype serve() function, not a real CLI/model call or a competing writer.",
+    "File-wide digests are conservative and may invalidate unrelated excerpts in the same file."
+  ]
+}

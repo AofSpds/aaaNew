@@ -1,0 +1,488 @@
+[
+  {
+    "case_id": "L01",
+    "question_id": "overlap",
+    "unique_orders": 8,
+    "different_decisions": [
+      "equivalent",
+      "insufficient",
+      "partial"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.10054761171340942,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "L01",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "compatible",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.07658353447914124,
+    "route_unstable": true,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "L02",
+    "question_id": "overlap",
+    "unique_orders": 9,
+    "different_decisions": [
+      "equivalent",
+      "insufficient",
+      "partial"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.11054453253746033,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "L02",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "compatible",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.04677799344062805,
+    "route_unstable": true,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "L03",
+    "question_id": "overlap",
+    "unique_orders": 9,
+    "different_decisions": [
+      "equivalent",
+      "insufficient",
+      "partial"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.1404402107000351,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "L03",
+    "question_id": "compatibility",
+    "unique_orders": 6,
+    "different_decisions": [
+      "compatible",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.059722721576690674,
+    "route_unstable": true,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "L04",
+    "question_id": "overlap",
+    "unique_orders": 9,
+    "different_decisions": [
+      "equivalent"
+    ],
+    "unstable": false,
+    "stable_wrong": true,
+    "max_option_probability_range": 0.1289619505405426,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "L04",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "conflict"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.11317166686058044,
+    "route_unstable": false,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "L05",
+    "question_id": "overlap",
+    "unique_orders": 9,
+    "different_decisions": [
+      "insufficient",
+      "partial"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.09176377952098846,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "L05",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "insufficient"
+    ],
+    "unstable": false,
+    "stable_wrong": true,
+    "max_option_probability_range": 0.05092419683933258,
+    "route_unstable": false,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "L06",
+    "question_id": "overlap",
+    "unique_orders": 8,
+    "different_decisions": [
+      "insufficient"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.06777574121952057,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "L06",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "insufficient"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.07034865021705627,
+    "route_unstable": false,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "P01",
+    "question_id": "overlap",
+    "unique_orders": 9,
+    "different_decisions": [
+      "equivalent",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.06937810778617859,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "P01",
+    "question_id": "compatibility",
+    "unique_orders": 6,
+    "different_decisions": [
+      "compatible"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.13978123664855957,
+    "route_unstable": false,
+    "all_orders_keep": true
+  },
+  {
+    "case_id": "P02",
+    "question_id": "overlap",
+    "unique_orders": 8,
+    "different_decisions": [
+      "equivalent",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.05425705015659332,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "P02",
+    "question_id": "compatibility",
+    "unique_orders": 4,
+    "different_decisions": [
+      "insufficient"
+    ],
+    "unstable": false,
+    "stable_wrong": true,
+    "max_option_probability_range": 0.0415014922618866,
+    "route_unstable": false,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "P03",
+    "question_id": "overlap",
+    "unique_orders": 9,
+    "different_decisions": [
+      "insufficient"
+    ],
+    "unstable": false,
+    "stable_wrong": true,
+    "max_option_probability_range": 0.0960589051246643,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "P03",
+    "question_id": "compatibility",
+    "unique_orders": 4,
+    "different_decisions": [
+      "insufficient"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.05795884132385254,
+    "route_unstable": false,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "P04",
+    "question_id": "overlap",
+    "unique_orders": 9,
+    "different_decisions": [
+      "equivalent"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.11476033926010132,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "P04",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "compatible"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.0766301155090332,
+    "route_unstable": false,
+    "all_orders_keep": true
+  },
+  {
+    "case_id": "P05",
+    "question_id": "overlap",
+    "unique_orders": 8,
+    "different_decisions": [
+      "equivalent",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.101652592420578,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "P05",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "compatible"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.14338582754135132,
+    "route_unstable": false,
+    "all_orders_keep": true
+  },
+  {
+    "case_id": "P06",
+    "question_id": "overlap",
+    "unique_orders": 9,
+    "different_decisions": [
+      "equivalent"
+    ],
+    "unstable": false,
+    "stable_wrong": true,
+    "max_option_probability_range": 0.077459916472435,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "P06",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "compatible",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.10351276397705078,
+    "route_unstable": true,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "S01",
+    "question_id": "overlap",
+    "unique_orders": 8,
+    "different_decisions": [
+      "equivalent",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.05900569260120392,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "S01",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "compatible"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.07373788952827454,
+    "route_unstable": false,
+    "all_orders_keep": true
+  },
+  {
+    "case_id": "S02",
+    "question_id": "overlap",
+    "unique_orders": 8,
+    "different_decisions": [
+      "equivalent"
+    ],
+    "unstable": false,
+    "stable_wrong": true,
+    "max_option_probability_range": 0.07666264474391937,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "S02",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "insufficient"
+    ],
+    "unstable": false,
+    "stable_wrong": true,
+    "max_option_probability_range": 0.040916383266448975,
+    "route_unstable": false,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "S03",
+    "question_id": "overlap",
+    "unique_orders": 8,
+    "different_decisions": [
+      "equivalent",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.08341822028160095,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "S03",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "compatible",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.08003875613212585,
+    "route_unstable": true,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "S04",
+    "question_id": "overlap",
+    "unique_orders": 8,
+    "different_decisions": [
+      "equivalent"
+    ],
+    "unstable": false,
+    "stable_wrong": true,
+    "max_option_probability_range": 0.13708698749542236,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "S04",
+    "question_id": "compatibility",
+    "unique_orders": 4,
+    "different_decisions": [
+      "insufficient"
+    ],
+    "unstable": false,
+    "stable_wrong": true,
+    "max_option_probability_range": 0.0353781133890152,
+    "route_unstable": false,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "S05",
+    "question_id": "overlap",
+    "unique_orders": 7,
+    "different_decisions": [
+      "equivalent",
+      "insufficient"
+    ],
+    "unstable": true,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.0668729841709137,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "S05",
+    "question_id": "compatibility",
+    "unique_orders": 5,
+    "different_decisions": [
+      "insufficient"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.05921021103858948,
+    "route_unstable": false,
+    "all_orders_keep": false
+  },
+  {
+    "case_id": "S06",
+    "question_id": "overlap",
+    "unique_orders": 9,
+    "different_decisions": [
+      "equivalent"
+    ],
+    "unstable": false,
+    "stable_wrong": false,
+    "max_option_probability_range": 0.1154552698135376,
+    "route_unstable": null,
+    "all_orders_keep": null
+  },
+  {
+    "case_id": "S06",
+    "question_id": "compatibility",
+    "unique_orders": 4,
+    "different_decisions": [
+      "insufficient"
+    ],
+    "unstable": false,
+    "stable_wrong": true,
+    "max_option_probability_range": 0.02699372172355652,
+    "route_unstable": false,
+    "all_orders_keep": false
+  }
+]

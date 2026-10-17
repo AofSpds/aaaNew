@@ -1,0 +1,36 @@
+{
+  "run_id": "rules_v1",
+  "engine": "rules",
+  "started_at": "2026-10-14T09:42:25.445772+00:00",
+  "data_freeze": {
+    "created_at": "2026-10-14T09:39:56.183814+00:00",
+    "dataset_sha256": "997e518197cd103593ef3ec0913a467921e84db9e19a1b6660ce37b488eb8fd4",
+    "annotations_sha256": "afa7952aa1c94a7fe6dac456b847c2752d2431acffa3cc27b6524fd6e910c514",
+    "questions_sha256": "af15b761735b4d276ae0192716db5d2a998cebb5c9575077a995e2eb56b1b899",
+    "case_count": 18,
+    "groups": [
+      "lessons",
+      "paths",
+      "status"
+    ],
+    "observed_source_pairs": 3,
+    "controlled_variants": 15,
+    "label_status": "proposed; no independent review; never provided to predictor",
+    "split_policy": "exploratory only; future train/validation/test must keep source families together",
+    "permutation_cases": [
+      "L01",
+      "L04",
+      "P01",
+      "P03",
+      "S01",
+      "S04"
+    ],
+    "diagnostic_probability_threshold": 0.8,
+    "training_performed": false
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "input_policy": "input and questions only; labels/source rationales excluded",
+  "source_commit": "0a6d3fafeee7f3f76a9a4a522bf8b9d5b50bd7e5",
+  "status": "completed",
+  "finished_at": "2026-10-14T09:42:25.464660+00:00"
+}

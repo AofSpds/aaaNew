@@ -1,0 +1,1012 @@
+{
+  "metric_label": "agreement with unreviewed proposals; not validated accuracy",
+  "case_count": 18,
+  "question_count": 36,
+  "answered": 36,
+  "abstained": 0,
+  "agreements": 17,
+  "agreement_all": 0.4722222222222222,
+  "all_questions_agree_cases": 3,
+  "by_question": {
+    "overlap": {
+      "n": 18,
+      "answered": 18,
+      "agreements": 5,
+      "proposed_label_counts": {
+        "partial": 1,
+        "equivalent": 4,
+        "distinct": 12,
+        "insufficient": 1
+      },
+      "posthoc_majority_label": "distinct",
+      "posthoc_majority_agreements": 12
+    },
+    "compatibility": {
+      "n": 18,
+      "answered": 18,
+      "agreements": 12,
+      "proposed_label_counts": {
+        "compatible": 11,
+        "conflict": 4,
+        "insufficient": 3
+      },
+      "posthoc_majority_label": "compatible",
+      "posthoc_majority_agreements": 11
+    }
+  },
+  "pmax_at_least_0_8": {
+    "questions": 0,
+    "disagreements": 0,
+    "note": "prespecified diagnostic cutoff; no error-rate guarantee"
+  },
+  "false_equivalence_candidates": [
+    {
+      "case_id": "L01",
+      "question": "overlap",
+      "expected": "partial",
+      "decision": "equivalent",
+      "p_max": 0.2991448640823364,
+      "probabilities": {
+        "equivalent": 0.2991448640823364,
+        "partial": 0.26483726501464844,
+        "distinct": 0.17463041841983795,
+        "insufficient": 0.2613874673843384
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "L04",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.41202715039253235,
+      "probabilities": {
+        "equivalent": 0.41202715039253235,
+        "partial": 0.2218913584947586,
+        "distinct": 0.14909403026103973,
+        "insufficient": 0.2169875204563141
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P01",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.32669007778167725,
+      "probabilities": {
+        "equivalent": 0.32669007778167725,
+        "partial": 0.23244044184684753,
+        "distinct": 0.1870763897895813,
+        "insufficient": 0.25379306077957153
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P02",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.2978890836238861,
+      "probabilities": {
+        "equivalent": 0.2978890836238861,
+        "partial": 0.22698546946048737,
+        "distinct": 0.18540851771831512,
+        "insufficient": 0.2897168695926666
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P05",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.3054597079753876,
+      "probabilities": {
+        "equivalent": 0.3054597079753876,
+        "partial": 0.21324877440929413,
+        "distinct": 0.20146077871322632,
+        "insufficient": 0.2798306941986084
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P06",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.3416195809841156,
+      "probabilities": {
+        "equivalent": 0.3416195809841156,
+        "partial": 0.2492249608039856,
+        "distinct": 0.1556398570537567,
+        "insufficient": 0.2535156309604645
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S02",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.3205704987049103,
+      "probabilities": {
+        "equivalent": 0.3205704987049103,
+        "partial": 0.2550300359725952,
+        "distinct": 0.15631592273712158,
+        "insufficient": 0.26808348298072815
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S04",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.4732074439525604,
+      "probabilities": {
+        "equivalent": 0.4732074439525604,
+        "partial": 0.20067431032657623,
+        "distinct": 0.11671589314937592,
+        "insufficient": 0.20940238237380981
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S05",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.32928627729415894,
+      "probabilities": {
+        "equivalent": 0.32928627729415894,
+        "partial": 0.18572965264320374,
+        "distinct": 0.175098717212677,
+        "insufficient": 0.30988529324531555
+      },
+      "agreement": false
+    }
+  ],
+  "conflict_misses": [],
+  "disagreements": [
+    {
+      "case_id": "L01",
+      "question": "overlap",
+      "expected": "partial",
+      "decision": "equivalent",
+      "p_max": 0.2991448640823364,
+      "probabilities": {
+        "equivalent": 0.2991448640823364,
+        "partial": 0.26483726501464844,
+        "distinct": 0.17463041841983795,
+        "insufficient": 0.2613874673843384
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "L02",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "insufficient",
+      "p_max": 0.3954243063926697,
+      "probabilities": {
+        "compatible": 0.39211305975914,
+        "conflict": 0.2124626338481903,
+        "insufficient": 0.3954243063926697
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "L04",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.41202715039253235,
+      "probabilities": {
+        "equivalent": 0.41202715039253235,
+        "partial": 0.2218913584947586,
+        "distinct": 0.14909403026103973,
+        "insufficient": 0.2169875204563141
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "L05",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "insufficient",
+      "p_max": 0.29659053683280945,
+      "probabilities": {
+        "equivalent": 0.25583967566490173,
+        "partial": 0.2680412232875824,
+        "distinct": 0.17952856421470642,
+        "insufficient": 0.29659053683280945
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "L05",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "insufficient",
+      "p_max": 0.40989428758621216,
+      "probabilities": {
+        "compatible": 0.38687777519226074,
+        "conflict": 0.2032279223203659,
+        "insufficient": 0.40989428758621216
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P01",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.32669007778167725,
+      "probabilities": {
+        "equivalent": 0.32669007778167725,
+        "partial": 0.23244044184684753,
+        "distinct": 0.1870763897895813,
+        "insufficient": 0.25379306077957153
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P02",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.2978890836238861,
+      "probabilities": {
+        "equivalent": 0.2978890836238861,
+        "partial": 0.22698546946048737,
+        "distinct": 0.18540851771831512,
+        "insufficient": 0.2897168695926666
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P02",
+      "question": "compatibility",
+      "expected": "conflict",
+      "decision": "insufficient",
+      "p_max": 0.44156917929649353,
+      "probabilities": {
+        "compatible": 0.36643096804618835,
+        "conflict": 0.19199985265731812,
+        "insufficient": 0.44156917929649353
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P03",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "insufficient",
+      "p_max": 0.4450013339519501,
+      "probabilities": {
+        "equivalent": 0.2564752697944641,
+        "partial": 0.14691081643104553,
+        "distinct": 0.15161257982254028,
+        "insufficient": 0.4450013339519501
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P05",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.3054597079753876,
+      "probabilities": {
+        "equivalent": 0.3054597079753876,
+        "partial": 0.21324877440929413,
+        "distinct": 0.20146077871322632,
+        "insufficient": 0.2798306941986084
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P06",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.3416195809841156,
+      "probabilities": {
+        "equivalent": 0.3416195809841156,
+        "partial": 0.2492249608039856,
+        "distinct": 0.1556398570537567,
+        "insufficient": 0.2535156309604645
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S01",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "insufficient",
+      "p_max": 0.29037559032440186,
+      "probabilities": {
+        "equivalent": 0.2747746706008911,
+        "partial": 0.2356286197900772,
+        "distinct": 0.19922108948230743,
+        "insufficient": 0.29037559032440186
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S02",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.3205704987049103,
+      "probabilities": {
+        "equivalent": 0.3205704987049103,
+        "partial": 0.2550300359725952,
+        "distinct": 0.15631592273712158,
+        "insufficient": 0.26808348298072815
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S02",
+      "question": "compatibility",
+      "expected": "conflict",
+      "decision": "insufficient",
+      "p_max": 0.453385591506958,
+      "probabilities": {
+        "compatible": 0.3672744929790497,
+        "conflict": 0.1793399155139923,
+        "insufficient": 0.453385591506958
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S03",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "insufficient",
+      "p_max": 0.34197619557380676,
+      "probabilities": {
+        "equivalent": 0.33861005306243896,
+        "partial": 0.1495557427406311,
+        "distinct": 0.169857919216156,
+        "insufficient": 0.34197619557380676
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S04",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.4732074439525604,
+      "probabilities": {
+        "equivalent": 0.4732074439525604,
+        "partial": 0.20067431032657623,
+        "distinct": 0.11671589314937592,
+        "insufficient": 0.20940238237380981
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S04",
+      "question": "compatibility",
+      "expected": "conflict",
+      "decision": "insufficient",
+      "p_max": 0.4478568732738495,
+      "probabilities": {
+        "compatible": 0.34996774792671204,
+        "conflict": 0.20217542350292206,
+        "insufficient": 0.4478568732738495
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S05",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.32928627729415894,
+      "probabilities": {
+        "equivalent": 0.32928627729415894,
+        "partial": 0.18572965264320374,
+        "distinct": 0.175098717212677,
+        "insufficient": 0.30988529324531555
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S06",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "insufficient",
+      "p_max": 0.43697527050971985,
+      "probabilities": {
+        "compatible": 0.3697500228881836,
+        "conflict": 0.19327470660209656,
+        "insufficient": 0.43697527050971985
+      },
+      "agreement": false
+    }
+  ],
+  "permutation": {
+    "questions": 12,
+    "changed": 3,
+    "details": [
+      {
+        "case_id": "L01",
+        "question": "overlap",
+        "changed": true,
+        "max_probability_delta": 0.07305717468261719
+      },
+      {
+        "case_id": "L01",
+        "question": "compatibility",
+        "changed": true,
+        "max_probability_delta": 0.07658353447914124
+      },
+      {
+        "case_id": "L04",
+        "question": "overlap",
+        "changed": false,
+        "max_probability_delta": 0.10040128231048584
+      },
+      {
+        "case_id": "L04",
+        "question": "compatibility",
+        "changed": false,
+        "max_probability_delta": 0.05654829740524292
+      },
+      {
+        "case_id": "P01",
+        "question": "overlap",
+        "changed": true,
+        "max_probability_delta": 0.060953497886657715
+      },
+      {
+        "case_id": "P01",
+        "question": "compatibility",
+        "changed": false,
+        "max_probability_delta": 0.13978123664855957
+      },
+      {
+        "case_id": "P03",
+        "question": "overlap",
+        "changed": false,
+        "max_probability_delta": 0.09271600842475891
+      },
+      {
+        "case_id": "P03",
+        "question": "compatibility",
+        "changed": false,
+        "max_probability_delta": 0.05795884132385254
+      },
+      {
+        "case_id": "S01",
+        "question": "overlap",
+        "changed": false,
+        "max_probability_delta": 0.005023211240768433
+      },
+      {
+        "case_id": "S01",
+        "question": "compatibility",
+        "changed": false,
+        "max_probability_delta": 0.07373756170272827
+      },
+      {
+        "case_id": "S04",
+        "question": "overlap",
+        "changed": false,
+        "max_probability_delta": 0.08202826976776123
+      },
+      {
+        "case_id": "S04",
+        "question": "compatibility",
+        "changed": false,
+        "max_probability_delta": 0.03348354995250702
+      }
+    ]
+  },
+  "latency_ms": {
+    "total": 51497.33690000721,
+    "median": 2953.4231499928865,
+    "note": "local CPU exploratory run; includes encoding and scoring, excludes model load"
+  },
+  "entries": [
+    {
+      "case_id": "L01",
+      "question": "overlap",
+      "expected": "partial",
+      "decision": "equivalent",
+      "p_max": 0.2991448640823364,
+      "probabilities": {
+        "equivalent": 0.2991448640823364,
+        "partial": 0.26483726501464844,
+        "distinct": 0.17463041841983795,
+        "insufficient": 0.2613874673843384
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "L01",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "compatible",
+      "p_max": 0.42768529057502747,
+      "probabilities": {
+        "compatible": 0.42768529057502747,
+        "conflict": 0.1893182098865509,
+        "insufficient": 0.3829965591430664
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "L02",
+      "question": "overlap",
+      "expected": "equivalent",
+      "decision": "equivalent",
+      "p_max": 0.3480290472507477,
+      "probabilities": {
+        "equivalent": 0.3480290472507477,
+        "partial": 0.24734945595264435,
+        "distinct": 0.1583334058523178,
+        "insufficient": 0.24628804624080658
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "L02",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "insufficient",
+      "p_max": 0.3954243063926697,
+      "probabilities": {
+        "compatible": 0.39211305975914,
+        "conflict": 0.2124626338481903,
+        "insufficient": 0.3954243063926697
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "L03",
+      "question": "overlap",
+      "expected": "equivalent",
+      "decision": "equivalent",
+      "p_max": 0.36154961585998535,
+      "probabilities": {
+        "equivalent": 0.36154961585998535,
+        "partial": 0.2713302671909332,
+        "distinct": 0.1338246762752533,
+        "insufficient": 0.23329544067382812
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "L03",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "compatible",
+      "p_max": 0.45255640149116516,
+      "probabilities": {
+        "compatible": 0.45255640149116516,
+        "conflict": 0.1571688950061798,
+        "insufficient": 0.39027470350265503
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "L04",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.41202715039253235,
+      "probabilities": {
+        "equivalent": 0.41202715039253235,
+        "partial": 0.2218913584947586,
+        "distinct": 0.14909403026103973,
+        "insufficient": 0.2169875204563141
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "L04",
+      "question": "compatibility",
+      "expected": "conflict",
+      "decision": "conflict",
+      "p_max": 0.3822552263736725,
+      "probabilities": {
+        "compatible": 0.33256998658180237,
+        "conflict": 0.3822552263736725,
+        "insufficient": 0.28517472743988037
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "L05",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "insufficient",
+      "p_max": 0.29659053683280945,
+      "probabilities": {
+        "equivalent": 0.25583967566490173,
+        "partial": 0.2680412232875824,
+        "distinct": 0.17952856421470642,
+        "insufficient": 0.29659053683280945
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "L05",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "insufficient",
+      "p_max": 0.40989428758621216,
+      "probabilities": {
+        "compatible": 0.38687777519226074,
+        "conflict": 0.2032279223203659,
+        "insufficient": 0.40989428758621216
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "L06",
+      "question": "overlap",
+      "expected": "insufficient",
+      "decision": "insufficient",
+      "p_max": 0.47487154603004456,
+      "probabilities": {
+        "equivalent": 0.22407056391239166,
+        "partial": 0.13505259156227112,
+        "distinct": 0.16600532829761505,
+        "insufficient": 0.47487154603004456
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "L06",
+      "question": "compatibility",
+      "expected": "insufficient",
+      "decision": "insufficient",
+      "p_max": 0.48907628655433655,
+      "probabilities": {
+        "compatible": 0.34576311707496643,
+        "conflict": 0.16516059637069702,
+        "insufficient": 0.48907628655433655
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "P01",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.32669007778167725,
+      "probabilities": {
+        "equivalent": 0.32669007778167725,
+        "partial": 0.23244044184684753,
+        "distinct": 0.1870763897895813,
+        "insufficient": 0.25379306077957153
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P01",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "compatible",
+      "p_max": 0.5735500454902649,
+      "probabilities": {
+        "compatible": 0.5735500454902649,
+        "conflict": 0.11386513710021973,
+        "insufficient": 0.3125847578048706
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "P02",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.2978890836238861,
+      "probabilities": {
+        "equivalent": 0.2978890836238861,
+        "partial": 0.22698546946048737,
+        "distinct": 0.18540851771831512,
+        "insufficient": 0.2897168695926666
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P02",
+      "question": "compatibility",
+      "expected": "conflict",
+      "decision": "insufficient",
+      "p_max": 0.44156917929649353,
+      "probabilities": {
+        "compatible": 0.36643096804618835,
+        "conflict": 0.19199985265731812,
+        "insufficient": 0.44156917929649353
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P03",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "insufficient",
+      "p_max": 0.4450013339519501,
+      "probabilities": {
+        "equivalent": 0.2564752697944641,
+        "partial": 0.14691081643104553,
+        "distinct": 0.15161257982254028,
+        "insufficient": 0.4450013339519501
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P03",
+      "question": "compatibility",
+      "expected": "insufficient",
+      "decision": "insufficient",
+      "p_max": 0.5550348162651062,
+      "probabilities": {
+        "compatible": 0.3118513226509094,
+        "conflict": 0.13311387598514557,
+        "insufficient": 0.5550348162651062
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "P04",
+      "question": "overlap",
+      "expected": "equivalent",
+      "decision": "equivalent",
+      "p_max": 0.713897168636322,
+      "probabilities": {
+        "equivalent": 0.713897168636322,
+        "partial": 0.14661626517772675,
+        "distinct": 0.043537601828575134,
+        "insufficient": 0.0959489643573761
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "P04",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "compatible",
+      "p_max": 0.6373212933540344,
+      "probabilities": {
+        "compatible": 0.6373212933540344,
+        "conflict": 0.09300602227449417,
+        "insufficient": 0.2696726620197296
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "P05",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.3054597079753876,
+      "probabilities": {
+        "equivalent": 0.3054597079753876,
+        "partial": 0.21324877440929413,
+        "distinct": 0.20146077871322632,
+        "insufficient": 0.2798306941986084
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P05",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "compatible",
+      "p_max": 0.609076976776123,
+      "probabilities": {
+        "compatible": 0.609076976776123,
+        "conflict": 0.08238677680492401,
+        "insufficient": 0.30853620171546936
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "P06",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.3416195809841156,
+      "probabilities": {
+        "equivalent": 0.3416195809841156,
+        "partial": 0.2492249608039856,
+        "distinct": 0.1556398570537567,
+        "insufficient": 0.2535156309604645
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "P06",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "compatible",
+      "p_max": 0.5251017808914185,
+      "probabilities": {
+        "compatible": 0.5251017808914185,
+        "conflict": 0.1219494640827179,
+        "insufficient": 0.35294872522354126
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "S01",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "insufficient",
+      "p_max": 0.29037559032440186,
+      "probabilities": {
+        "equivalent": 0.2747746706008911,
+        "partial": 0.2356286197900772,
+        "distinct": 0.19922108948230743,
+        "insufficient": 0.29037559032440186
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S01",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "compatible",
+      "p_max": 0.5069810152053833,
+      "probabilities": {
+        "compatible": 0.5069810152053833,
+        "conflict": 0.14543293416500092,
+        "insufficient": 0.3475860357284546
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "S02",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.3205704987049103,
+      "probabilities": {
+        "equivalent": 0.3205704987049103,
+        "partial": 0.2550300359725952,
+        "distinct": 0.15631592273712158,
+        "insufficient": 0.26808348298072815
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S02",
+      "question": "compatibility",
+      "expected": "conflict",
+      "decision": "insufficient",
+      "p_max": 0.453385591506958,
+      "probabilities": {
+        "compatible": 0.3672744929790497,
+        "conflict": 0.1793399155139923,
+        "insufficient": 0.453385591506958
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S03",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "insufficient",
+      "p_max": 0.34197619557380676,
+      "probabilities": {
+        "equivalent": 0.33861005306243896,
+        "partial": 0.1495557427406311,
+        "distinct": 0.169857919216156,
+        "insufficient": 0.34197619557380676
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S03",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "compatible",
+      "p_max": 0.4431290626525879,
+      "probabilities": {
+        "compatible": 0.4431290626525879,
+        "conflict": 0.17678456008434296,
+        "insufficient": 0.38008633255958557
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "S04",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.4732074439525604,
+      "probabilities": {
+        "equivalent": 0.4732074439525604,
+        "partial": 0.20067431032657623,
+        "distinct": 0.11671589314937592,
+        "insufficient": 0.20940238237380981
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S04",
+      "question": "compatibility",
+      "expected": "conflict",
+      "decision": "insufficient",
+      "p_max": 0.4478568732738495,
+      "probabilities": {
+        "compatible": 0.34996774792671204,
+        "conflict": 0.20217542350292206,
+        "insufficient": 0.4478568732738495
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S05",
+      "question": "overlap",
+      "expected": "distinct",
+      "decision": "equivalent",
+      "p_max": 0.32928627729415894,
+      "probabilities": {
+        "equivalent": 0.32928627729415894,
+        "partial": 0.18572965264320374,
+        "distinct": 0.175098717212677,
+        "insufficient": 0.30988529324531555
+      },
+      "agreement": false
+    },
+    {
+      "case_id": "S05",
+      "question": "compatibility",
+      "expected": "insufficient",
+      "decision": "insufficient",
+      "p_max": 0.4323671758174896,
+      "probabilities": {
+        "compatible": 0.40394821763038635,
+        "conflict": 0.16368456184864044,
+        "insufficient": 0.4323671758174896
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "S06",
+      "question": "overlap",
+      "expected": "equivalent",
+      "decision": "equivalent",
+      "p_max": 0.45558637380599976,
+      "probabilities": {
+        "equivalent": 0.45558637380599976,
+        "partial": 0.20848652720451355,
+        "distinct": 0.12234817445278168,
+        "insufficient": 0.21357887983322144
+      },
+      "agreement": true
+    },
+    {
+      "case_id": "S06",
+      "question": "compatibility",
+      "expected": "compatible",
+      "decision": "insufficient",
+      "p_max": 0.43697527050971985,
+      "probabilities": {
+        "compatible": 0.3697500228881836,
+        "conflict": 0.19327470660209656,
+        "insufficient": 0.43697527050971985
+      },
+      "agreement": false
+    }
+  ],
+  "checks": {
+    "unique_case_ids": true,
+    "frozen_inputs": true,
+    "labels_excluded_from_requests": true,
+    "complete_predictions": true,
+    "source_files_unchanged": true,
+    "strict_overflow_rejected": true
+  }
+}

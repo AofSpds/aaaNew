@@ -1,0 +1,592 @@
+{
+  "label_status": "researcher_curated_not_independent_gold",
+  "cards": {
+    "domain": {
+      "id": "domain",
+      "text": "기억 전달의 주체는 도메인이다. 에이전트가 업무를 시작할 때 역할, 현재 업무, 작업대 위치와 필요한 경험을 제공한다. 사용자가 매번 파일 위치와 프로젝트 맥락을 다시 설명하는 데 의존하지 않는 방향이다.",
+      "source": "requirements",
+      "source_path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\requirements\\REQUIREMENTS_CODEX.md",
+      "lines": [
+        21,
+        21
+      ],
+      "source_sha256": "d16d7064ea2d17d2d294fdd2f3d0296459dbb339f6866fb0ecc726ebc60d4b64",
+      "span_sha256": "439727d8b235045dce2f84daa7c684fc6bdcecb68768add6513e3b0d8cd241d9",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "experience": {
+      "id": "experience",
+      "text": "작업 기록과 사용자 정정, 성공·실패 경험을 보존한다. 이를 리뷰하여 역할별 경험 view를 만들고 다음 업무에서 필요한 내용을 사용할 수 있어야 한다.",
+      "source": "requirements",
+      "source_path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\requirements\\REQUIREMENTS_CODEX.md",
+      "lines": [
+        49,
+        49
+      ],
+      "source_sha256": "d16d7064ea2d17d2d294fdd2f3d0296459dbb339f6866fb0ecc726ebc60d4b64",
+      "span_sha256": "391e5d234321f4d3a97c6ffecf8c91cbbdbd70e0be1cf0b3c7daca6d901e9b99",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "relations": {
+      "id": "relations",
+      "text": "사용자 지정 방향은 jevlike 엔진을 기반으로 관계 엔진을 두는 것이다. 해결하려는 문제는 MD 내부와 문서 사이의 불필요한 의미 중복, 내용 충돌, 관계 미정립이다.",
+      "source": "requirements",
+      "source_path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\requirements\\REQUIREMENTS_CODEX.md",
+      "lines": [
+        55,
+        55
+      ],
+      "source_sha256": "d16d7064ea2d17d2d294fdd2f3d0296459dbb339f6866fb0ecc726ebc60d4b64",
+      "span_sha256": "560f1dcef82664682e0562deea38d1a49d36c319d3d8667a9d4809560bde0a11",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "evidence": {
+      "id": "evidence",
+      "text": "파일 존재, 모델 입력 포함, 실제 준수, 다음 작업의 효과를 따로 확인한다. 이 README는 현재 수동 진입점이며 자동 로딩을 보장하는 설정이 아니다.",
+      "source": "parent_memory",
+      "source_path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\README.md",
+      "lines": [
+        23,
+        23
+      ],
+      "source_sha256": "c7ca4fd99710126de0273a8d2e63a4e91263f0091122e559ab2e8feb1722d6f1",
+      "span_sha256": "52b0dff09b322294fcf2f0b2a160a921edc3032ab3c68a92f02cdab571f03a72",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "common": {
+      "id": "common",
+      "text": "> \"모든 소스를 그대로 볼수는 없고, 공통 VIEW라 한번 보고 페르소나VIEW를 한번 더 만들어 둔다던가 하는 생각은 하고 잇어요. 파편화된 아이디어가 있는데, 사실 구현 상황이 어떻게 될지 모르겠어요.\"",
+      "source": "byul_common",
+      "source_path": "C:\\Users\\ms1pk\\dev\\Byul\\versions\\v0.01\\memory\\110_OWNER_IMPLEMENTATION_IDEA_COMMON_VIEW_THEN_PERSONA_VIEW_AS_OPTIONAL_MULTI_STAGE_PIPELINE_2026-08-23_0548_KST.md",
+      "lines": [
+        17,
+        17
+      ],
+      "source_sha256": "fd48be49fc69f8205a5fa04d2502ec4b22486e06f7c220f5b3f18073e55ec6e3",
+      "span_sha256": "717955064c0eda4635d7d53d51f82a0e6aa7008e97ddc17fedfbf8abafa1f483",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "composition": {
+      "id": "composition",
+      "text": "The Owner confirms that the immediately preceding question about whether `A -> B -> C` yields a meaningful `A -> C` relation is a **composition-function / composed-mapping** question, and that under the current hypothesis the composed relation is not assumed to be globally or automatically present independent of perspective.",
+      "source": "byul_composition",
+      "source_path": "C:\\Users\\ms1pk\\dev\\Byul\\versions\\v0.01\\memory\\97_OWNER_CONFIRMATION_RELATION_COMPOSITION_IS_VIEW_CONDITIONED_2026-08-23_0511_KST.md",
+      "lines": [
+        21,
+        21
+      ],
+      "source_sha256": "90580b28d121aace049386c0218218778207ee545724cb9598ea3b57447d1e4d",
+      "span_sha256": "c79efe351af4e34e17373e79a85c4b0e66b4efbe2e88786b90f0ff9ef09a4634",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "recompute": {
+      "id": "recompute",
+      "text": "> if a user deletes a Source datum/relation that previously contributed to common/intermediate View results, Persona View results, caches, or active Persona state, the current/future Persona should not continue using that deleted Source's derived influence; dependent states should be invalidated and recomputed without it.",
+      "source": "byul_refresh",
+      "source_path": "C:\\Users\\ms1pk\\dev\\Byul\\versions\\v0.01\\memory\\119_OWNER_CONFIRMATION_SOURCE_DELETION_REQUIRES_DERIVED_STATE_RECOMPUTATION_FOR_CURRENT_AND_FUTURE_PERSONA_2026-08-23_0608_KST.md",
+      "lines": [
+        25,
+        25
+      ],
+      "source_sha256": "667258c643f256d3c5db19eeb3b9013cb8cac5b1f5da219aead221cfa8d80073",
+      "span_sha256": "ee0bfb9030fa773e8b459b0bbb458bfbfd44f3e4a20773ff9cf5cd1f237c283c",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "prototype": {
+      "id": "prototype",
+      "text": "v0.1은 source file을 실제 수정하지 않고 virtual mutation을 만들어 다음을 계측한다.",
+      "source": "byul_contract",
+      "source_path": "C:\\Users\\ms1pk\\dev\\Byul\\versions\\v0.1\\MODEL_CONTRACT.md",
+      "lines": [
+        135,
+        135
+      ],
+      "source_sha256": "4a667fe84d0f433f9d698831c3788bc09e3323c2d9f2b5218aa0b866204959bb",
+      "span_sha256": "39c0cc1069b24ad05a03b30029dc7dfd4d2939cfdf7dd48197a7864640d46ee0",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "execution": {
+      "id": "execution",
+      "text": "인증 방식과 실행기 선택은 구분한다. 특정 실행기가 모든 옵션을 이미 지원한다고 가정하지 않는다. 옵션마다 기억 전달·작업대 지정·시작 훅의 접점이 달라도 도메인의 역할과 기억 관리 기준은 유지되어야 한다.",
+      "source": "requirements",
+      "source_path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\requirements\\REQUIREMENTS_CODEX.md",
+      "lines": [
+        33,
+        33
+      ],
+      "source_sha256": "d16d7064ea2d17d2d294fdd2f3d0296459dbb339f6866fb0ecc726ebc60d4b64",
+      "span_sha256": "c68571eeb31f4947e8ffdce0455ce0094410ee246de3be53b2f47291d8074405",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "ui": {
+      "id": "ui",
+      "text": "사용자가 코드를 직접 편집하지 않더라도 사이드바 등에서 작업대 파일을 탐색하고, 파일명과 내용을 검색할 수 있기를 원한다. 에이전트가 남긴 기록과 결과를 사용자가 찾아볼 수 있어야 한다.",
+      "source": "requirements",
+      "source_path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\requirements\\REQUIREMENTS_CODEX.md",
+      "lines": [
+        63,
+        63
+      ],
+      "source_sha256": "d16d7064ea2d17d2d294fdd2f3d0296459dbb339f6866fb0ecc726ebc60d4b64",
+      "span_sha256": "9c62ea455f0f428e51586b0ca41c6f1e818ddef5fcb818d518e5b8e4c9d1ce71",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "installation": {
+      "id": "installation",
+      "text": "| OMP Oh My Pi | `omp` | 18.10.3, 공식 SHA256·버전·도움말 확인 | 터미널 앱 |\n| Chainlit | `chainlit` | 2.12.0, Python 3.12.13, 공식 hello 예제 화면 확인 | http://127.0.0.1:30142/ |",
+      "source": "parent_memory",
+      "source_path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\README.md",
+      "lines": [
+        64,
+        65
+      ],
+      "source_sha256": "c7ca4fd99710126de0273a8d2e63a4e91263f0091122e559ab2e8feb1722d6f1",
+      "span_sha256": "82be1b343d6714c9c7137406d0c56f70a09f51456f29b82536447944cbf69531",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    },
+    "completion": {
+      "id": "completion",
+      "text": "| Claude 조사 완료 통보를 받았지만 작업 기억은 “결과 예정”이었다. | 다음 세션이 이미 끝난 조사를 다시 요청할 수 있다. | 결과 수신 때 상태와 결과 경로를 함께 갱신한다. | 완료 통보와 FINDINGS.ko.md 존재·머리말 확인 후 상태 수정. 실험 독립 재현은 아님. |\n| 기록·저장·강제 방법을 논의하면서 사용자가 기대한 누적 효용을 충분히 붙들지 못했다. | 메모 자체가 목적이 되어 절차만 늘어날 수 있다. | 경험의 가치는 다음 작업에서 줄인 재설명·탐색·재작업으로 평가한다. | README와 외부 조사에 성공 기준 기록. 효과 실측은 아직 없음. |",
+      "source": "lessons",
+      "source_path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\LESSONS_CODEX.md",
+      "lines": [
+        10,
+        11
+      ],
+      "source_sha256": "5efa427b3a39136354ceda9a406382af3b17343181d0737e0c4ec536d42f5a47",
+      "span_sha256": "0294412dd7e306cc5a94684b4bb427f6c9fe93cd951ccd18aeccd5097462a049",
+      "evidence_class": "source_excerpt_for_research_not_universal_rule"
+    }
+  },
+  "sources": {
+    "requirements": {
+      "path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\requirements\\REQUIREMENTS_CODEX.md",
+      "sha256": "d16d7064ea2d17d2d294fdd2f3d0296459dbb339f6866fb0ecc726ebc60d4b64",
+      "raw_bytes": 7907
+    },
+    "parent_memory": {
+      "path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\README.md",
+      "sha256": "c7ca4fd99710126de0273a8d2e63a4e91263f0091122e559ab2e8feb1722d6f1",
+      "raw_bytes": 15261
+    },
+    "lessons": {
+      "path": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch\\Agent_memory\\LESSONS_CODEX.md",
+      "sha256": "5efa427b3a39136354ceda9a406382af3b17343181d0737e0c4ec536d42f5a47",
+      "raw_bytes": 3341
+    },
+    "byul_common": {
+      "path": "C:\\Users\\ms1pk\\dev\\Byul\\versions\\v0.01\\memory\\110_OWNER_IMPLEMENTATION_IDEA_COMMON_VIEW_THEN_PERSONA_VIEW_AS_OPTIONAL_MULTI_STAGE_PIPELINE_2026-08-23_0548_KST.md",
+      "sha256": "fd48be49fc69f8205a5fa04d2502ec4b22486e06f7c220f5b3f18073e55ec6e3",
+      "raw_bytes": 3672
+    },
+    "byul_composition": {
+      "path": "C:\\Users\\ms1pk\\dev\\Byul\\versions\\v0.01\\memory\\97_OWNER_CONFIRMATION_RELATION_COMPOSITION_IS_VIEW_CONDITIONED_2026-08-23_0511_KST.md",
+      "sha256": "90580b28d121aace049386c0218218778207ee545724cb9598ea3b57447d1e4d",
+      "raw_bytes": 2940
+    },
+    "byul_refresh": {
+      "path": "C:\\Users\\ms1pk\\dev\\Byul\\versions\\v0.01\\memory\\119_OWNER_CONFIRMATION_SOURCE_DELETION_REQUIRES_DERIVED_STATE_RECOMPUTATION_FOR_CURRENT_AND_FUTURE_PERSONA_2026-08-23_0608_KST.md",
+      "sha256": "667258c643f256d3c5db19eeb3b9013cb8cac5b1f5da219aead221cfa8d80073",
+      "raw_bytes": 3779
+    },
+    "byul_contract": {
+      "path": "C:\\Users\\ms1pk\\dev\\Byul\\versions\\v0.1\\MODEL_CONTRACT.md",
+      "sha256": "4a667fe84d0f433f9d698831c3788bc09e3323c2d9f2b5218aa0b866204959bb",
+      "raw_bytes": 4938
+    }
+  },
+  "nodes": {
+    "s:requirements": {
+      "kind": "source",
+      "version": "d16d7064ea2d17d2d294fdd2f3d0296459dbb339f6866fb0ecc726ebc60d4b64",
+      "active": true
+    },
+    "s:parent_memory": {
+      "kind": "source",
+      "version": "c7ca4fd99710126de0273a8d2e63a4e91263f0091122e559ab2e8feb1722d6f1",
+      "active": true
+    },
+    "s:lessons": {
+      "kind": "source",
+      "version": "5efa427b3a39136354ceda9a406382af3b17343181d0737e0c4ec536d42f5a47",
+      "active": true
+    },
+    "s:byul_common": {
+      "kind": "source",
+      "version": "fd48be49fc69f8205a5fa04d2502ec4b22486e06f7c220f5b3f18073e55ec6e3",
+      "active": true
+    },
+    "s:byul_composition": {
+      "kind": "source",
+      "version": "90580b28d121aace049386c0218218778207ee545724cb9598ea3b57447d1e4d",
+      "active": true
+    },
+    "s:byul_refresh": {
+      "kind": "source",
+      "version": "667258c643f256d3c5db19eeb3b9013cb8cac5b1f5da219aead221cfa8d80073",
+      "active": true
+    },
+    "s:byul_contract": {
+      "kind": "source",
+      "version": "4a667fe84d0f433f9d698831c3788bc09e3323c2d9f2b5218aa0b866204959bb",
+      "active": true
+    },
+    "m:domain": {
+      "kind": "memory",
+      "version": "439727d8b235045dce2f84daa7c684fc6bdcecb68768add6513e3b0d8cd241d9",
+      "active": true
+    },
+    "m:experience": {
+      "kind": "memory",
+      "version": "391e5d234321f4d3a97c6ffecf8c91cbbdbd70e0be1cf0b3c7daca6d901e9b99",
+      "active": true
+    },
+    "m:relations": {
+      "kind": "memory",
+      "version": "560f1dcef82664682e0562deea38d1a49d36c319d3d8667a9d4809560bde0a11",
+      "active": true
+    },
+    "m:evidence": {
+      "kind": "memory",
+      "version": "52b0dff09b322294fcf2f0b2a160a921edc3032ab3c68a92f02cdab571f03a72",
+      "active": true
+    },
+    "m:common": {
+      "kind": "memory",
+      "version": "717955064c0eda4635d7d53d51f82a0e6aa7008e97ddc17fedfbf8abafa1f483",
+      "active": true
+    },
+    "m:composition": {
+      "kind": "memory",
+      "version": "c79efe351af4e34e17373e79a85c4b0e66b4efbe2e88786b90f0ff9ef09a4634",
+      "active": true
+    },
+    "m:recompute": {
+      "kind": "memory",
+      "version": "ee0bfb9030fa773e8b459b0bbb458bfbfd44f3e4a20773ff9cf5cd1f237c283c",
+      "active": true
+    },
+    "m:prototype": {
+      "kind": "memory",
+      "version": "39c0cc1069b24ad05a03b30029dc7dfd4d2939cfdf7dd48197a7864640d46ee0",
+      "active": true
+    },
+    "m:execution": {
+      "kind": "memory",
+      "version": "c68571eeb31f4947e8ffdce0455ce0094410ee246de3be53b2f47291d8074405",
+      "active": true
+    },
+    "m:ui": {
+      "kind": "memory",
+      "version": "9c62ea455f0f428e51586b0ca41c6f1e818ddef5fcb818d518e5b8e4c9d1ce71",
+      "active": true
+    },
+    "m:installation": {
+      "kind": "memory",
+      "version": "82be1b343d6714c9c7137406d0c56f70a09f51456f29b82536447944cbf69531",
+      "active": true
+    },
+    "m:completion": {
+      "kind": "memory",
+      "version": "0294412dd7e306cc5a94684b4bb427f6c9fe93cd951ccd18aeccd5097462a049",
+      "active": true
+    },
+    "g:core": {
+      "kind": "group",
+      "version": "1",
+      "active": true
+    },
+    "g:graph": {
+      "kind": "group",
+      "version": "1",
+      "active": true
+    },
+    "t:memory_start": {
+      "kind": "task",
+      "version": "1",
+      "active": true
+    },
+    "v:memory_start": {
+      "kind": "view",
+      "version": "1",
+      "active": true
+    },
+    "t:graph_design": {
+      "kind": "task",
+      "version": "1",
+      "active": true
+    },
+    "v:graph_design": {
+      "kind": "view",
+      "version": "1",
+      "active": true
+    },
+    "t:graph_refresh": {
+      "kind": "task",
+      "version": "1",
+      "active": true
+    },
+    "v:graph_refresh": {
+      "kind": "view",
+      "version": "1",
+      "active": true
+    },
+    "t:runtime_handoff": {
+      "kind": "task",
+      "version": "1",
+      "active": true
+    },
+    "v:runtime_handoff": {
+      "kind": "view",
+      "version": "1",
+      "active": true
+    },
+    "t:ui_scope": {
+      "kind": "task",
+      "version": "1",
+      "active": true
+    },
+    "v:ui_scope": {
+      "kind": "view",
+      "version": "1",
+      "active": true
+    },
+    "v:parent_brief": {
+      "kind": "view",
+      "version": "1",
+      "active": true
+    }
+  },
+  "edges": [
+    [
+      "m:domain",
+      "s:requirements",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:experience",
+      "s:requirements",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:relations",
+      "s:requirements",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:evidence",
+      "s:parent_memory",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:common",
+      "s:byul_common",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:composition",
+      "s:byul_composition",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:recompute",
+      "s:byul_refresh",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:prototype",
+      "s:byul_contract",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:execution",
+      "s:requirements",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:ui",
+      "s:requirements",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:installation",
+      "s:parent_memory",
+      "DERIVED_FROM"
+    ],
+    [
+      "m:completion",
+      "s:lessons",
+      "DERIVED_FROM"
+    ],
+    [
+      "g:core",
+      "m:domain",
+      "INCLUDES"
+    ],
+    [
+      "g:core",
+      "m:experience",
+      "INCLUDES"
+    ],
+    [
+      "g:core",
+      "m:relations",
+      "INCLUDES"
+    ],
+    [
+      "g:graph",
+      "m:relations",
+      "INCLUDES"
+    ],
+    [
+      "g:graph",
+      "m:evidence",
+      "INCLUDES"
+    ],
+    [
+      "g:graph",
+      "m:common",
+      "INCLUDES"
+    ],
+    [
+      "g:graph",
+      "m:composition",
+      "INCLUDES"
+    ],
+    [
+      "g:graph",
+      "m:recompute",
+      "INCLUDES"
+    ],
+    [
+      "g:graph",
+      "m:prototype",
+      "INCLUDES"
+    ],
+    [
+      "t:memory_start",
+      "g:core",
+      "SELECTS"
+    ],
+    [
+      "t:memory_start",
+      "m:evidence",
+      "SELECTS"
+    ],
+    [
+      "t:memory_start",
+      "m:completion",
+      "SELECTS"
+    ],
+    [
+      "v:memory_start",
+      "t:memory_start",
+      "QUERIED"
+    ],
+    [
+      "t:graph_design",
+      "g:graph",
+      "SELECTS"
+    ],
+    [
+      "v:graph_design",
+      "t:graph_design",
+      "QUERIED"
+    ],
+    [
+      "t:graph_refresh",
+      "m:recompute",
+      "SELECTS"
+    ],
+    [
+      "t:graph_refresh",
+      "m:prototype",
+      "SELECTS"
+    ],
+    [
+      "t:graph_refresh",
+      "m:evidence",
+      "SELECTS"
+    ],
+    [
+      "v:graph_refresh",
+      "t:graph_refresh",
+      "QUERIED"
+    ],
+    [
+      "t:runtime_handoff",
+      "m:domain",
+      "SELECTS"
+    ],
+    [
+      "t:runtime_handoff",
+      "m:execution",
+      "SELECTS"
+    ],
+    [
+      "t:runtime_handoff",
+      "m:evidence",
+      "SELECTS"
+    ],
+    [
+      "v:runtime_handoff",
+      "t:runtime_handoff",
+      "QUERIED"
+    ],
+    [
+      "t:ui_scope",
+      "m:ui",
+      "SELECTS"
+    ],
+    [
+      "v:ui_scope",
+      "t:ui_scope",
+      "QUERIED"
+    ],
+    [
+      "v:parent_brief",
+      "v:memory_start",
+      "COMPOSED_FROM"
+    ],
+    [
+      "v:parent_brief",
+      "v:graph_design",
+      "COMPOSED_FROM"
+    ],
+    [
+      "g:graph",
+      "m:installation",
+      "MENTIONS"
+    ]
+  ],
+  "expected": {
+    "memory_start": [
+      "completion",
+      "domain",
+      "evidence",
+      "experience",
+      "relations"
+    ],
+    "graph_design": [
+      "common",
+      "composition",
+      "evidence",
+      "prototype",
+      "recompute",
+      "relations"
+    ],
+    "graph_refresh": [
+      "evidence",
+      "prototype",
+      "recompute"
+    ],
+    "runtime_handoff": [
+      "domain",
+      "evidence",
+      "execution"
+    ],
+    "ui_scope": [
+      "ui"
+    ]
+  }
+}

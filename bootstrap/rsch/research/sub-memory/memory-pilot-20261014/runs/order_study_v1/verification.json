@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "run_completed": true,
+    "unique_requests_and_predictions": true,
+    "method_assignments_complete": true,
+    "frozen_data_exact": true,
+    "rendered_order_hashes_match": true,
+    "state_semantics_unchanged": true,
+    "no_reference_fields_in_requests": true,
+    "candidate_order_matches_rendered_request": true,
+    "candidate_membership_unchanged": true,
+    "source_files_unchanged": true,
+    "no_input_truncation": true,
+    "same_input_repeat_exact": true,
+    "reference_labels_still_unreviewed": true
+  },
+  "observations": 282,
+  "independent_new_cases": 0,
+  "independently_reviewed_labels": 0
+}

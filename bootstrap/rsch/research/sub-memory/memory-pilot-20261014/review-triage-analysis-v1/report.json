@@ -1,0 +1,65 @@
+{
+  "analysis_status": "post-hoc exploratory; thresholds not validated",
+  "reference_review_count": 7,
+  "reference_keep_count": 11,
+  "case_count": 18,
+  "source_families": 3,
+  "independently_reviewed_labels": 0,
+  "top_choice_mapping": {
+    "keep_candidates": 8,
+    "keep_candidate_ids": [
+      "L01",
+      "L03",
+      "P01",
+      "P04",
+      "P05",
+      "P06",
+      "S01",
+      "S03"
+    ],
+    "reviewed": 10,
+    "missed_reference_review": 0,
+    "unnecessary_review_against_proposal": 3,
+    "agreements_with_derived_proposal": 15
+  },
+  "pmax_0_5_mapping": {
+    "keep_candidates": 5,
+    "keep_candidate_ids": [
+      "P01",
+      "P04",
+      "P05",
+      "P06",
+      "S01"
+    ],
+    "reviewed": 13,
+    "missed_reference_review": 0,
+    "unnecessary_review_against_proposal": 6,
+    "agreements_with_derived_proposal": 12
+  },
+  "rules_mapping": {
+    "keep_candidates": 6,
+    "keep_candidate_ids": [
+      "L02",
+      "P01",
+      "P04",
+      "P05",
+      "P06",
+      "S01"
+    ],
+    "reviewed": 12,
+    "missed_reference_review": 0,
+    "unnecessary_review_against_proposal": 5,
+    "agreements_with_derived_proposal": 13
+  },
+  "pmax_0_5_keep_not_already_kept_by_rules": [],
+  "higher_confidence_insufficient_cases": [
+    "P03"
+  ],
+  "limitations": [
+    "reference is derived from the same unreviewed labels",
+    "action limited to unchanged preservation",
+    "all analyses are after seeing v1 outcomes",
+    "no new classifier trained or run",
+    "no operational review bypass installed"
+  ]
+}

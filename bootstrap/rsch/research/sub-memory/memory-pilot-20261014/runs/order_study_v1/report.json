@@ -1,0 +1,343 @@
+{
+  "case_count": 18,
+  "question_count": 36,
+  "unique_requests": 282,
+  "methods": [
+    {
+      "method": "original",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 0,
+      "agreements_with_proposal": 5,
+      "mean_max_probability_delta": 0.0,
+      "max_probability_delta": 0.0,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "original",
+      "question_id": "compatibility",
+      "n": 18,
+      "flips_from_original": 0,
+      "agreements_with_proposal": 12,
+      "mean_max_probability_delta": 0.0,
+      "max_probability_delta": 0.0,
+      "review_route_flips": 0,
+      "keep_candidates": 8,
+      "missed_reference_review": 0
+    },
+    {
+      "method": "reverse",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 7,
+      "agreements_with_proposal": 3,
+      "mean_max_probability_delta": 0.0618541364868482,
+      "max_probability_delta": 0.10040128231048584,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "reverse",
+      "question_id": "compatibility",
+      "n": 18,
+      "flips_from_original": 4,
+      "agreements_with_proposal": 8,
+      "mean_max_probability_delta": 0.06735051257742776,
+      "max_probability_delta": 0.14338582754135132,
+      "review_route_flips": 4,
+      "keep_candidates": 4,
+      "missed_reference_review": 0
+    },
+    {
+      "method": "key_asc",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 3,
+      "agreements_with_proposal": 5,
+      "mean_max_probability_delta": 0.0510264246000184,
+      "max_probability_delta": 0.07057459652423859,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "key_asc",
+      "question_id": "compatibility",
+      "n": 18,
+      "flips_from_original": 0,
+      "agreements_with_proposal": 12,
+      "mean_max_probability_delta": 0.0,
+      "max_probability_delta": 0.0,
+      "review_route_flips": 0,
+      "keep_candidates": 8,
+      "missed_reference_review": 0
+    },
+    {
+      "method": "description_length_asc",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 2,
+      "agreements_with_proposal": 5,
+      "mean_max_probability_delta": 0.031992735962073006,
+      "max_probability_delta": 0.09398430585861206,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "description_length_asc",
+      "question_id": "compatibility",
+      "n": 18,
+      "flips_from_original": 3,
+      "agreements_with_proposal": 9,
+      "mean_max_probability_delta": 0.054647685752974615,
+      "max_probability_delta": 0.11311393976211548,
+      "review_route_flips": 3,
+      "keep_candidates": 5,
+      "missed_reference_review": 0
+    },
+    {
+      "method": "random_11",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 5,
+      "agreements_with_proposal": 5,
+      "mean_max_probability_delta": 0.040160695711771645,
+      "max_probability_delta": 0.10067383944988251,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "random_11",
+      "question_id": "compatibility",
+      "n": 18,
+      "flips_from_original": 2,
+      "agreements_with_proposal": 12,
+      "mean_max_probability_delta": 0.04363896366622713,
+      "max_probability_delta": 0.09290686249732971,
+      "review_route_flips": 2,
+      "keep_candidates": 8,
+      "missed_reference_review": 0
+    },
+    {
+      "method": "random_29",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 6,
+      "agreements_with_proposal": 3,
+      "mean_max_probability_delta": 0.04302094421452946,
+      "max_probability_delta": 0.09778571128845215,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "random_29",
+      "question_id": "compatibility",
+      "n": 18,
+      "flips_from_original": 0,
+      "agreements_with_proposal": 12,
+      "mean_max_probability_delta": 0.02754534946547614,
+      "max_probability_delta": 0.07374587655067444,
+      "review_route_flips": 0,
+      "keep_candidates": 8,
+      "missed_reference_review": 0
+    },
+    {
+      "method": "prior_score_desc",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 0,
+      "agreements_with_proposal": 5,
+      "mean_max_probability_delta": 0.025713919351498287,
+      "max_probability_delta": 0.0960589051246643,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "prior_score_desc",
+      "question_id": "compatibility",
+      "n": 18,
+      "flips_from_original": 0,
+      "agreements_with_proposal": 12,
+      "mean_max_probability_delta": 0.026895065274503496,
+      "max_probability_delta": 0.07900926470756531,
+      "review_route_flips": 0,
+      "keep_candidates": 8,
+      "missed_reference_review": 0
+    },
+    {
+      "method": "cycle_1",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 4,
+      "agreements_with_proposal": 4,
+      "mean_max_probability_delta": 0.059758775764041476,
+      "max_probability_delta": 0.1189480721950531,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "cycle_1",
+      "question_id": "compatibility",
+      "n": 18,
+      "flips_from_original": 3,
+      "agreements_with_proposal": 9,
+      "mean_max_probability_delta": 0.054647685752974615,
+      "max_probability_delta": 0.11311393976211548,
+      "review_route_flips": 3,
+      "keep_candidates": 5,
+      "missed_reference_review": 0
+    },
+    {
+      "method": "cycle_2",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 2,
+      "agreements_with_proposal": 5,
+      "mean_max_probability_delta": 0.05138762129677667,
+      "max_probability_delta": 0.0730653703212738,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "cycle_2",
+      "question_id": "compatibility",
+      "n": 18,
+      "flips_from_original": 2,
+      "agreements_with_proposal": 10,
+      "mean_max_probability_delta": 0.03034990280866623,
+      "max_probability_delta": 0.057367295026779175,
+      "review_route_flips": 2,
+      "keep_candidates": 6,
+      "missed_reference_review": 0
+    },
+    {
+      "method": "cycle_3",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 2,
+      "agreements_with_proposal": 5,
+      "mean_max_probability_delta": 0.031992735962073006,
+      "max_probability_delta": 0.09398430585861206,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "memory_b_first",
+      "question_id": "overlap",
+      "n": 18,
+      "flips_from_original": 5,
+      "agreements_with_proposal": 5,
+      "mean_max_probability_delta": 0.03582254300514857,
+      "max_probability_delta": 0.09506317973136902,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "memory_b_first",
+      "question_id": "compatibility",
+      "n": 18,
+      "flips_from_original": 3,
+      "agreements_with_proposal": 13,
+      "mean_max_probability_delta": 0.028726997474829357,
+      "max_probability_delta": 0.06456613540649414,
+      "review_route_flips": 3,
+      "keep_candidates": 11,
+      "missed_reference_review": 1
+    },
+    {
+      "method": "repeat_original",
+      "question_id": "overlap",
+      "n": 3,
+      "flips_from_original": 0,
+      "agreements_with_proposal": 1,
+      "mean_max_probability_delta": 0.0,
+      "max_probability_delta": 0.0,
+      "review_route_flips": null,
+      "keep_candidates": null,
+      "missed_reference_review": null
+    },
+    {
+      "method": "repeat_original",
+      "question_id": "compatibility",
+      "n": 3,
+      "flips_from_original": 0,
+      "agreements_with_proposal": 2,
+      "mean_max_probability_delta": 0.0,
+      "max_probability_delta": 0.0,
+      "review_route_flips": 0,
+      "keep_candidates": 2,
+      "missed_reference_review": 0
+    }
+  ],
+  "option_sensitivity": {
+    "overlap": {
+      "unstable": 10,
+      "stable_wrong": 5,
+      "n": 18
+    },
+    "compatibility": {
+      "unstable": 5,
+      "stable_wrong": 5,
+      "n": 18
+    }
+  },
+  "review_route_unstable_cases": [
+    "L01",
+    "L02",
+    "L03",
+    "P06",
+    "S03"
+  ],
+  "all_tested_orders_keep_cases": [
+    "P01",
+    "P04",
+    "P05",
+    "S01"
+  ],
+  "cycle_mean": {
+    "overlap": {
+      "agreements": 5,
+      "vote_agreements": 5,
+      "vote_ties": 1,
+      "n": 18
+    },
+    "compatibility": {
+      "agreements": 10,
+      "vote_agreements": 10,
+      "vote_ties": 0,
+      "n": 18
+    }
+  },
+  "cycle_mean_keep_candidates": 6,
+  "cycle_mean_missed_reference_review": 0,
+  "inference_seconds": 511.9547937003226,
+  "single_question_median_ms": 1498.3290499949362,
+  "checks": {
+    "complete_requests": true,
+    "no_input_truncation": true,
+    "source_files_unchanged": true,
+    "plan_unchanged": true,
+    "prior_packed_vs_current_single_question_argmax_changes": 0,
+    "prior_packed_vs_current_single_question_max_delta": 3.2782554626464844e-07
+  },
+  "limitations": [
+    "18 examples from 3 source families; unreviewed proposals",
+    "sorts fixed before this run but v1 was already inspected",
+    "no independent test split",
+    "display reorder does not alter identities or event chronology",
+    "not all 24 overlap permutations necessarily covered",
+    "no long-context placement trial",
+    "mean/vote needs K passes per question"
+  ]
+}

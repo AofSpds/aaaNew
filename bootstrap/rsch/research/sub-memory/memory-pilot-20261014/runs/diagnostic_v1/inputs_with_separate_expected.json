@@ -1,0 +1,152 @@
+[
+  {
+    "id": "control_en_open",
+    "request": {
+      "state": "The door is open.",
+      "questions": {
+        "door": {
+          "type": "choice",
+          "instructions": "What is the door's state? Use only the given statement.",
+          "criteria": {
+            "open": "The door is open.",
+            "closed": "The door is closed.",
+            "unknown": "The statement does not specify."
+          }
+        }
+      }
+    },
+    "expected": {
+      "door": "open"
+    }
+  },
+  {
+    "id": "control_en_closed",
+    "request": {
+      "state": "The door is closed.",
+      "questions": {
+        "door": {
+          "type": "choice",
+          "instructions": "What is the door's state? Use only the given statement.",
+          "criteria": {
+            "open": "The door is open.",
+            "closed": "The door is closed.",
+            "unknown": "The statement does not specify."
+          }
+        }
+      }
+    },
+    "expected": {
+      "door": "closed"
+    }
+  },
+  {
+    "id": "control_ko_open",
+    "request": {
+      "state": "문이 열려 있다.",
+      "questions": {
+        "door": {
+          "type": "choice",
+          "instructions": "제시된 문장에 따르면 문은 어떤 상태인가?",
+          "criteria": {
+            "open": "문이 열려 있다.",
+            "closed": "문이 닫혀 있다.",
+            "unknown": "문장에 정보가 없다."
+          }
+        }
+      }
+    },
+    "expected": {
+      "door": "open"
+    }
+  },
+  {
+    "id": "control_ko_closed",
+    "request": {
+      "state": "문이 닫혀 있다.",
+      "questions": {
+        "door": {
+          "type": "choice",
+          "instructions": "제시된 문장에 따르면 문은 어떤 상태인가?",
+          "criteria": {
+            "open": "문이 열려 있다.",
+            "closed": "문이 닫혀 있다.",
+            "unknown": "문장에 정보가 없다."
+          }
+        }
+      }
+    },
+    "expected": {
+      "door": "closed"
+    }
+  },
+  {
+    "id": "L01_en",
+    "request": {
+      "state": {
+        "context": "Both are candidate lessons for the same research role at the start of work.",
+        "memory_a": "At the start of work, verify your role and absolute workspace path, and specify the path in file commands.",
+        "memory_b": "First cross-check the user-designated role, absolute path, current task, and memory entry point."
+      },
+      "questions": {
+        "overlap": {
+          "type": "choice",
+          "instructions": "Compare the specific assertions in memory A and B, including their scope and conditions. Sharing a topic is not the same as making a shared assertion. Do not invent missing conditions.",
+          "criteria": {
+            "equivalent": "Both memories make the same assertions, without unique additional content.",
+            "partial": "They share an assertion, and at least one also contains unique assertions or conditions.",
+            "distinct": "They share no asserted fact or rule. Opposite claims or facts about different subjects also count as distinct.",
+            "insufficient": "Missing subjects or content prevent assessing shared assertions."
+          }
+        },
+        "compatibility": {
+          "type": "choice",
+          "instructions": "Considering the given role, purpose, time and conditions, can both memories be maintained as valid records? Different roles or past and present states may coexist. Do not choose a memory to delete.",
+          "criteria": {
+            "compatible": "Both can be maintained, including equivalent, complementary, unrelated, different-role or different-time claims.",
+            "conflict": "Both cannot hold in the same scope and time.",
+            "insufficient": "Required role, purpose or time information is missing."
+          }
+        }
+      }
+    },
+    "expected": {
+      "overlap": "partial",
+      "compatibility": "compatible"
+    }
+  },
+  {
+    "id": "L04_en",
+    "request": {
+      "state": {
+        "context": "Both rules apply to the same role and situation at the start of work.",
+        "memory_a": "At the start of work, you must verify your role and workspace path.",
+        "memory_b": "At the start of work, you must not verify your role and workspace path."
+      },
+      "questions": {
+        "overlap": {
+          "type": "choice",
+          "instructions": "Compare the specific assertions in memory A and B, including their scope and conditions. Sharing a topic is not the same as making a shared assertion. Do not invent missing conditions.",
+          "criteria": {
+            "equivalent": "Both memories make the same assertions, without unique additional content.",
+            "partial": "They share an assertion, and at least one also contains unique assertions or conditions.",
+            "distinct": "They share no asserted fact or rule. Opposite claims or facts about different subjects also count as distinct.",
+            "insufficient": "Missing subjects or content prevent assessing shared assertions."
+          }
+        },
+        "compatibility": {
+          "type": "choice",
+          "instructions": "Considering the given role, purpose, time and conditions, can both memories be maintained as valid records? Different roles or past and present states may coexist. Do not choose a memory to delete.",
+          "criteria": {
+            "compatible": "Both can be maintained, including equivalent, complementary, unrelated, different-role or different-time claims.",
+            "conflict": "Both cannot hold in the same scope and time.",
+            "insufficient": "Required role, purpose or time information is missing."
+          }
+        }
+      }
+    },
+    "expected": {
+      "overlap": "distinct",
+      "compatibility": "conflict"
+    }
+  }
+]

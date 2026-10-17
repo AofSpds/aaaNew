@@ -1,0 +1,2 @@
+$ErrorActionPreference = 'Stop'
+& "$PSScriptRoot\start.ps1" dashboard --host 127.0.0.1 --port 9119 --no-open --skip-build

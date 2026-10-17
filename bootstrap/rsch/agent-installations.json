@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-14T02:39:14.0017319+09:00",
+  "root": "C:\\Users\\ms1pk\\dev\\aaaNew\\bootstrap\\rsch",
+  "applications": [
+    {
+      "source": "https://opencode.ai/docs/",
+      "verified": "version, HTTP 200, Korean home UI",
+      "version": "1.19.0",
+      "launcher": "opencode/start.ps1",
+      "url": "http://127.0.0.1:4096/",
+      "name": "OpenCode",
+      "directory": "opencode"
+    },
+    {
+      "name": "Hermes Agent",
+      "source": "https://github.com/NousResearch/hermes-agent",
+      "version": "0.21.7+500.g8f81791",
+      "verified": "version, HTTP 200, dashboard UI",
+      "url": "http://127.0.0.1:9119/",
+      "directory": "hermes",
+      "web_launcher": "hermes/dashboard.ps1",
+      "commit": "8f817911723e3ec13e7f47fc022fdcc9e2149354",
+      "launcher": "hermes/start.ps1",
+      "pending": "Windows cua-driver autostart registration requires interactive UAC; provider login not configured"
+    },
+    {
+      "source": "https://github.com/can1357/oh-my-pi",
+      "verified": "official SHA256, version, help",
+      "version": "18.10.3",
+      "pending": "provider login and model connection",
+      "launcher": "omp/start.ps1",
+      "name": "Oh My Pi",
+      "directory": "omp"
+    },
+    {
+      "name": "Chainlit",
+      "source": "https://docs.chainlit.io/get-started/installation",
+      "version": "2.12.0",
+      "python": "3.12.13",
+      "verified": "version, official hello example UI showing What is your name?",
+      "url": "http://127.0.0.1:30142/",
+      "directory": "chainlit",
+      "note": "Chat UI framework; official sample only, no model backend connected",
+      "launcher": "chainlit/start.ps1"
+    }
+  ]
+}

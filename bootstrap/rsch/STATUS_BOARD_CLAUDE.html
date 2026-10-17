@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- 원본: Claude 세션 scratchpad rsch_status_board.html, 게시본 https://claude.ai/artifact/AjsvhwLZb8k45Y3aNGDc2a -->
+</head>
+<body>
+<title>aaa 재구축 rsch 현황판</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: one column of stacked panels; each panel is a scannable table or chip list. Summary strip first, detail after. */
+  :root {
+    --bg: #f2f4f7;
+    --panel: #ffffff;
+    --fg: #1a2230;
+    --muted: #5b6678;
+    --line: #d9dee6;
+    --accent: #0f6f7a;
+    --accent-soft: #dff1f3;
+    --ok: #1f7a4d;   --ok-soft: #e1f3e8;
+    --run: #1d5fb8;  --run-soft: #e0eaf9;
+    --wait: #9a6400; --wait-soft: #fbefd4;
+    --warn: #b23a2c; --warn-soft: #fae3df;
+    --font-body: "IBM Plex Sans KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #131920; --panel: #1b232d; --fg: #e6eaf0; --muted: #9aa6b6; --line: #2d3845;
+      --accent: #5fc3cc; --accent-soft: #163a3f;
+      --ok: #6cd29a; --ok-soft: #173627; --run: #8ab4f2; --run-soft: #192c4a;
+      --wait: #e6b65c; --wait-soft: #3d2f10; --warn: #f08a7c; --warn-soft: #461f1a;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #131920; --panel: #1b232d; --fg: #e6eaf0; --muted: #9aa6b6; --line: #2d3845;
+    --accent: #5fc3cc; --accent-soft: #163a3f;
+    --ok: #6cd29a; --ok-soft: #173627; --run: #8ab4f2; --run-soft: #192c4a;
+    --wait: #e6b65c; --wait-soft: #3d2f10; --warn: #f08a7c; --warn-soft: #461f1a;
+    color-scheme: dark;
+  }
+  body {
+    background: var(--bg); color: var(--fg);
+    font-family: var(--font-body); font-size: 14px; line-height: 1.5;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 20px 40px;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; display: grid; gap: 18px; }
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 18px; }
+  header h1 { font-size: 22px; font-weight: 700; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+  header .stamp { color: var(--muted); font-size: 13px; }
+  .mono { font-family: var(--font-mono); font-size: 12.5px; }
+  h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 10px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; min-width: 0; }
+  .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .tile { display: grid; gap: 4px; padding: 12px 14px; border-radius: 8px; background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); min-width: 0; }
+  .tile .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .tile .value { font-size: 17px; font-weight: 600; }
+  .tile .sub { font-size: 12.5px; color: var(--muted); }
+  .tile.ok { border-left-color: var(--ok); } .tile.run { border-left-color: var(--run); }
+  .tile.wait { border-left-color: var(--wait); } .tile.warn { border-left-color: var(--warn); }
+  .chip { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 500; white-space: nowrap; }
+  .chip.ok { background: var(--ok-soft); color: var(--ok); }
+  .chip.run { background: var(--run-soft); color: var(--run); }
+  .chip.wait { background: var(--wait-soft); color: var(--wait); }
+  .chip.warn { background: var(--warn-soft); color: var(--warn); }
+  .chip.na { background: var(--accent-soft); color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th, td { text-align: left; vertical-align: top; padding: 7px 8px; border-top: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--muted); font-size: 12px; border-top: none; }
+  td.num { font-variant-numeric: tabular-nums; }
+  .scroll { overflow-x: auto; }
+  .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+  ul.list { margin: 0; padding-left: 18px; display: grid; gap: 5px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 12.5px; color: var(--muted); }
+  .note { color: var(--muted); font-size: 12.5px; }
+  a { color: var(--accent); }
+  @media (max-width: 480px) { th:nth-child(4), td:nth-child(4) { display: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>aaa 재구축 rsch 현황판</h1>
+    <span class="stamp">갱신 2026-10-17 · 작성 aaa_new_rsch (Claude) · 작업대 <span class="mono">aaaNew/bootstrap/rsch</span></span>
+  </header>
+
+  <section class="summary">
+    <div class="tile run">
+      <span class="label">지금 진행 중</span>
+      <span class="value">Owner 결정 대기</span>
+      <span class="sub">문서·.gitignore 모두 원격 반영. 다음은 D1–D21·E1–E9 결정 후 단계 1</span>
+    </div>
+    <div class="tile wait">
+      <span class="label">Owner 결정 대기</span>
+      <span class="value">D1–D21 (21건)</span>
+      <span class="sub">반박 검토 완료: 유지 7·변경 5·Owner 선택 1·신규 8. 착수에 필요한 최소 6건</span>
+    </div>
+    <div class="tile warn">
+      <span class="label">Git</span>
+      <span class="value">main 푸시 완료 (b4dc621)</span>
+      <span class="sub">Claude 커밋 5건 원격 반영(.gitignore 포함). Codex 산출물 약 4 MB·legacy 이동 2건 미커밋</span>
+    </div>
+    <div class="tile ok">
+      <span class="label">이번 주 완료</span>
+      <span class="value">문서 7편</span>
+      <span class="sub">진입 접점 · 실행 중 개입점 · jevlike 갭 · 계획 · 선행 대조 · D1–D21 · 역할 설계 v0.2</span>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>세션과 통신</h2>
+    <div class="scroll"><table>
+      <tr><th>세션</th><th>역할</th><th>마지막 활동</th><th>식별자</th><th>상태</th></tr>
+      <tr><td>Claude aaa_new_rsch</td><td>Claude Code 접점·실행 중 개입점·관계 엔진 계획</td><td class="num">10-17 (지금)</td><td class="mono">e3bfd5a5…</td><td><span class="chip run">활성</span></td></tr>
+      <tr><td>Codex rsch</td><td>연구 총괄, 요구사항, Codex 접점 조사</td><td class="num">10-14 12:08</td><td class="mono">01a13598…</td><td><span class="chip wait">대기</span></td></tr>
+      <tr><td>Codex rsch_sub_memory</td><td>기억 관계 연구, Kev 실험, 백업</td><td class="num">10-14 20:03 (기록 10-16)</td><td class="mono">01a1385f…</td><td><span class="chip wait">대기</span></td></tr>
+      <tr><td>Claude format_rec</td><td>노트북 포맷 전 백업</td><td class="num">10-14</td><td class="mono">local_5beddf3b…</td><td><span class="chip warn">결과 미확인</span></td></tr>
+    </table></div>
+    <p class="note">통신: Claude→Codex는 queue DB로 전달 확인. Codex→Claude는 queue가 없어 화면 입력으로 1회 수신, 이후 <span class="mono">requests/REQUEST_CLAUDE.md</span> 파일 경로 제안.</p>
+  </section>
+
+  <section class="panel">
+    <h2>rsch 폴더 구조 (2026-10-17 정리)</h2>
+    <div class="scroll"><table>
+      <tr><th>폴더</th><th>내용</th><th>소유</th></tr>
+      <tr><td class="mono">STATUS_BOARD_CLAUDE.html</td><td>이 현황판</td><td>Claude</td></tr>
+      <tr><td class="mono">requirements/</td><td>요구사항 원본 R01–R08</td><td>Codex rsch</td></tr>
+      <tr><td class="mono">memory/codex-rsch/</td><td>Codex rsch 작업 기억·교훈 (구 Agent_memory)</td><td>Codex rsch</td></tr>
+      <tr><td class="mono">memory/codex-sub-memory/</td><td>서브 세션 지속 기억·지침 (구 sub)</td><td>Codex sub</td></tr>
+      <tr><td class="mono">requests/</td><td>세션별 요청·접수 기록</td><td>Codex rsch</td></tr>
+      <tr><td class="mono">research/runtime/</td><td>claude-entry / codex-entry / runtime-intervention 조사</td><td>Claude·Codex</td></tr>
+      <tr><td class="mono">research/relation-engine/</td><td>jevlike 갭, 관계 엔진 계획, JEV-BYUL 대조, D1–D21</td><td>Claude</td></tr>
+      <tr><td class="mono">research/memory-external/</td><td>외부 기억 사례 조사</td><td>Codex rsch</td></tr>
+      <tr><td class="mono">research/sub-memory/</td><td>기억 관계 보고서 12편, Kev·그래프 실험, 백업(Git 제외) (구 rsch_sub_memory)</td><td>Codex sub</td></tr>
+      <tr><td class="mono">design/</td><td>역할·워크플로 설계 v0.2</td><td>Claude</td></tr>
+      <tr><td class="mono">legacy/</td><td>옛 문서·OMP 검토</td><td>—</td></tr>
+      <tr><td class="mono">pi/ opencode/ hermes/ omp/ chainlit/</td><td>설치한 실행기 (그대로 둠, 본체 Git 제외)</td><td>Codex rsch</td></tr>
+    </table></div>
+  </section>
+
+  <section class="panel">
+    <h2>요구사항 진행</h2>
+    <div class="scroll"><table>
+      <tr><th>요구</th><th>내용</th><th>상태</th><th>근거·산출물</th></tr>
+      <tr><td class="mono">R01</td><td>역할별 작업대</td><td><span class="chip ok">조사 완료</span> <span class="chip na">구현 전</span></td><td>작업대 도달은 cwd가 결정. 훅은 cwd의 <span class="mono">.claude</span>만 읽음</td></tr>
+      <tr><td class="mono">R02</td><td>시작 시 기억 전달</td><td><span class="chip ok">조사 완료</span></td><td>claude-entry-research, codex-entry-research</td></tr>
+      <tr><td class="mono">R03</td><td>실행 옵션(OAuth 직결 / Codex / Claude)</td><td><span class="chip run">후보 설치</span> <span class="chip wait">로그인 미설정</span></td><td>Pi(pi-web)·OpenCode·Hermes·OMP·Chainlit 설치</td></tr>
+      <tr><td class="mono">R04</td><td>실제 통제 경계</td><td><span class="chip ok">조사 완료</span> <span class="chip wait">Codex 실측 미완</span></td><td>runtime-intervention-research (Claude 실측, 나머지 문서·코드)</td></tr>
+      <tr><td class="mono">R05</td><td>경험 축적·역할별 view</td><td><span class="chip run">계획 수립</span></td><td>RELATION_ENGINE_PLAN 단계 4</td></tr>
+      <tr><td class="mono">R06</td><td>jevlike 기반 관계 엔진</td><td><span class="chip ok">갭·계획·선행 대조</span> <span class="chip na">구현 전</span></td><td>JEVLIKE_GAP, RELATION_ENGINE_PLAN, JEV_BYUL_COMPARISON</td></tr>
+      <tr><td class="mono">R07</td><td>작업대 UI</td><td><span class="chip na">미착수</span></td><td>UI 제품 미정</td></tr>
+      <tr><td class="mono">R08</td><td>요구사항 별도 보관</td><td><span class="chip ok">완료</span></td><td><span class="mono">rsch/requirements/</span></td></tr>
+    </table></div>
+  </section>
+
+  <div class="two">
+    <section class="panel">
+      <h2>산출물 — Claude</h2>
+      <div class="scroll"><table>
+        <tr><th>문서</th><th>내용</th><th>커밋</th></tr>
+        <tr><td>claude-entry-research/FINDINGS</td><td>SessionStart·CLAUDE.md·cwd·실패·재개/압축 (실측)</td><td><span class="chip ok mono">86f8b06</span></td></tr>
+        <tr><td>runtime-intervention-research/FINDINGS</td><td>5개 실행기의 실행 중 훅·steer·관찰 비교, 3겹 제안</td><td><span class="chip ok mono">86f8b06</span></td></tr>
+        <tr><td>JEVLIKE_GAP_CLAUDE</td><td>로컬 Kev·그래프 프로토타입이 하는 것 / 추가할 12항목</td><td><span class="chip ok mono">86f8b06</span></td></tr>
+        <tr><td>RELATION_ENGINE_PLAN_CLAUDE</td><td>저장소→관계→검토→view, Judge 교체 가능, D1–D13</td><td><span class="chip ok mono">70e0fc6</span></td></tr>
+        <tr><td>JEV_BYUL_COMPARISON_CLAUDE</td><td>선행 연구 대조: 차용/배제 목록, D10–D13</td><td><span class="chip ok mono">70e0fc6</span></td></tr>
+        <tr><td>DECISIONS_D1_D21_CLAUDE</td><td>기본값 반박 검토(유지 7·변경 5·Owner 1) + 신규 D14–D21</td><td><span class="chip ok mono">0caf450</span></td></tr>
+        <tr><td>ROLE_WORKFLOW_DESIGN_CLAUDE v0.2</td><td>AAA 역할·워크플로 벤치마크, 역할 4+iva, 워크플로 7, E1–E9</td><td><span class="chip ok mono">0d84100</span></td></tr>
+        <tr><td>.gitignore</td><td>백업 zip·.venv·캐시·설치 폴더·로컬 권한 파일 제외 → 커밋 대상 4 MB</td><td><span class="chip ok mono">b4dc621</span></td></tr>
+      </table></div>
+    </section>
+    <section class="panel">
+      <h2>산출물 — Codex (미커밋)</h2>
+      <div class="scroll"><table>
+        <tr><th>문서</th><th>내용</th><th>상태</th></tr>
+        <tr><td>requirements/REQUIREMENTS_CODEX</td><td>R01–R08</td><td><span class="chip warn">미커밋</span></td></tr>
+        <tr><td>codex-entry-research/FINDINGS</td><td>Codex 진입 접점 + protocol-0.157.1 타입</td><td><span class="chip warn">미커밋</span></td></tr>
+        <tr><td>research/sub-memory/ 보고서 12편</td><td>Kev 실험, 순서 민감도, 그래프 연구, 외부 비교, 정교화</td><td><span class="chip warn">미커밋</span></td></tr>
+        <tr><td>memory/codex-rsch/, memory/codex-sub-memory/, research/memory-external/</td><td>작업 기억·교훈·외부 조사</td><td><span class="chip warn">미커밋</span></td></tr>
+        <tr><td>research/sub-memory/backups/…full.zip</td><td>6.47 GB 백업 (해시 검증 통과)</td><td><span class="chip ok">gitignore 제외</span></td></tr>
+        <tr><td>legacy/ 이동 2건</td><td>SESSION_PREPARATION, LIFECYCLE_legacy (10-15)</td><td><span class="chip wait">삭제+신규로 보임</span></td></tr>
+      </table></div>
+    </section>
+  </div>
+
+  <section class="panel">
+    <h2>Owner 결정 — D1~D21 <span class="chip ok">반박 검토 완료</span> <span class="chip wait">결정 대기</span></h2>
+    <div class="scroll"><table>
+      <tr><th>#</th><th>결정</th><th>권고안 (검토 후)</th><th>판정</th></tr>
+      <tr><td class="mono">D1</td><td>저장 형식</td><td>jsonl 추가 전용 + SQLite 투영. index.sqlite gitignore, jsonl은 주체별 스트림 분할</td><td><span class="chip ok">유지</span></td></tr>
+      <tr><td class="mono">D2</td><td>관계 종류</td><td>9종 + COEXISTS{scope} 추가, 완전 중복 = OVERLAPS(unique ∅), SUPPORTS·SIMILAR_TO 예약</td><td><span class="chip run">변경</span></td></tr>
+      <tr><td class="mono">D3</td><td>후보 생성</td><td>임베딩 없음 유지. 작업대·역할 필터 제거 → 전체 쌍 순위화, 트리거는 측정 가능 조건</td><td><span class="chip run">변경</span></td></tr>
+      <tr><td class="mono">D4</td><td>자동 변경 범위</td><td>모델 자동 변경 없음. 정규화 digest 동일 출처 병합·사람 지시 supersede로 한정, 첫 사례까진 후보 기록</td><td><span class="chip run">변경</span></td></tr>
+      <tr><td class="mono">D5</td><td>검토 주체</td><td>첫 사례까지 Owner 단독 + 한 줄 응답. 미응답 지속 시 계층 분리 여부</td><td><span class="chip wait">Owner 선택</span></td></tr>
+      <tr><td class="mono">D6</td><td>필수/선택 누락 bundle</td><td>유지. 선택 누락 MD 본문 표시, blocked 하류 명시. 세션 잠금 여부는 R04</td><td><span class="chip ok">유지</span></td></tr>
+      <tr><td class="mono">D7</td><td>생성 view 수정</td><td>읽기 전용. PreToolUse 거부로 강제, 제안은 추가 전용 큐</td><td><span class="chip ok">유지</span></td></tr>
+      <tr><td class="mono">D8</td><td>저장소 위치</td><td><span class="mono">bootstrap/memory-store/</span>. .gitignore·쓰기 주체 선행</td><td><span class="chip ok">유지</span></td></tr>
+      <tr><td class="mono">D9</td><td>구현 담당</td><td>단계 1–4 Claude 단일 담당. Codex sub는 원천·독립 검증·KevJudge만</td><td><span class="chip run">변경</span></td></tr>
+      <tr><td class="mono">D10</td><td>UNKNOWN 처리</td><td>abstention 유지. 모델 class / 시스템 abstain enum / 사람 open 세 층</td><td><span class="chip ok">유지</span></td></tr>
+      <tr><td class="mono">D11</td><td>error budget</td><td>모델 hard block 없음. head별 재정의, 수치 예산은 라벨 30건 전 미정</td><td><span class="chip ok">유지</span></td></tr>
+      <tr><td class="mono">D12</td><td>판정 기록 영속</td><td>유지 + redact 정정 기록, pilot 원장 동결 후 1회 import</td><td><span class="chip ok">유지</span></td></tr>
+      <tr><td class="mono">D13</td><td>관계 분류 고정</td><td>schema_version + taxonomy_version으로 추적. 단계 2 v0, 첫 라벨·첫 전달 후 v1</td><td><span class="chip run">변경</span></td></tr>
+      <tr><td class="mono">D14</td><td>식별자 체계</td><td><span class="mono">&lt;type&gt;_&lt;ULID&gt;</span>, 정수 version, 상대 경로 슬러그, label 선택</td><td><span class="chip na">신규·구현자</span></td></tr>
+      <tr><td class="mono">D15</td><td>동시 쓰기·Git</td><td>쓰기는 엔진 CLI 하나, merge=union, 자동 커밋 없음</td><td><span class="chip wait">신규·Owner</span></td></tr>
+      <tr><td class="mono">D16</td><td>삭제·보존·교정</td><td>만료 없음, retire는 투영 제외, redact tombstone만(Owner 권한)</td><td><span class="chip wait">신규·Owner</span></td></tr>
+      <tr><td class="mono">D17</td><td>언어·정규화</td><td>본문 원문 그대로, 필드 영어, view·INBOX 한국어, NFC·LF 정규화</td><td><span class="chip na">신규·확인 1줄</span></td></tr>
+      <tr><td class="mono">D18</td><td>첫 사례 전달 경로</td><td>bootstrap/rsch에 CLAUDE.md+views/ 생성, --settings 훅, CLI 자식 세션으로 검증</td><td><span class="chip wait">신규·Owner</span></td></tr>
+      <tr><td class="mono">D19</td><td>기억 단위</td><td>문장·목록 항목·표 행 1개, 자동 분할 없음</td><td><span class="chip wait">신규·승인</span></td></tr>
+      <tr><td class="mono">D20</td><td>민감 정보·공개</td><td>상대 경로만, 세션 ID·이메일 거부, sensitivity {repo, local}</td><td><span class="chip wait">신규·Owner</span></td></tr>
+      <tr><td class="mono">D21</td><td>코드 위치·이관</td><td><span class="mono">bootstrap/memory-engine/</span>, rules() 재작성, vendor/kev 경로 import</td><td><span class="chip wait">신규·Owner</span></td></tr>
+    </table></div>
+    <p class="note">착수에 필요한 최소 결정: D5·D9·D15·D16·D18·D20. 상세는 <span class="mono">research/relation-engine/DECISIONS_D1_D21_CLAUDE.md</span>.</p>
+  </section>
+
+  <div class="two">
+    <section class="panel">
+      <h2>다음 단계</h2>
+      <ul class="list">
+        <li>D1–D21 Owner 결정 (최소 6건: D5·D9·D15·D16·D18·D20) + 역할 설계 E1–E9</li>
+        <li>Codex 산출물(약 4 MB) 커밋 여부 결정 — Codex 세션 동의 필요</li>
+        <li>단계 1(저장소) 착수: D1·D8 결정이 선행</li>
+        <li>단계 4 첫 사례: rsch 업무 view 하나를 이 세션에 실제 전달</li>
+        <li>Planning Context의 CONTEXT_MANIFEST / EXPERIENCE_PROJECTION과 이름 충돌 대조 (미수행)</li>
+      </ul>
+    </section>
+    <section class="panel">
+      <h2>미확인·미완</h2>
+      <ul class="list">
+        <li>Codex 훅 실측 (PreToolUse deny, Stop block) — Codex rsch 담당 권장</li>
+        <li>Pi <span class="mono">before_provider_request</span>로 모델 호출 보류 가능 여부</li>
+        <li>L01 사례 검토 응답 (검토된 라벨 0건)</li>
+        <li>노트북 포맷 진행 여부, format_rec 세션 결과</li>
+        <li>데스크톱 앱이 실행기를 다시 띄우는 시점</li>
+        <li>설치한 실행기 5종의 로그인·모델 연결</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="panel">
+    <h2>범례</h2>
+    <div class="legend">
+      <span><span class="chip ok">완료</span> 실측 또는 커밋됨</span>
+      <span><span class="chip run">진행</span> 지금 하는 중</span>
+      <span><span class="chip wait">대기</span> 결정·응답 필요</span>
+      <span><span class="chip warn">주의</span> 미커밋·미확인·차단</span>
+      <span><span class="chip na">예정</span> 착수 전</span>
+    </div>
+    <p class="note">이 현황판은 이 세션이 수동으로 갱신한다. 세션 식별자와 커밋 해시는 2026-10-17 기준.</p>
+  </section>
+</div>
+
+</body>
+</html>

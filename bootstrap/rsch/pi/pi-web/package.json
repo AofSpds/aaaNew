@@ -1,0 +1,11 @@
+{
+  "name": "local-pi-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pi-web --hostname 127.0.0.1 --port 30141 --no-open"
+  },
+  "dependencies": {
+    "@agegr/pi-web": "0.12.1"
+  }
+}
