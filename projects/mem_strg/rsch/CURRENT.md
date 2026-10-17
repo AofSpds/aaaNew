@@ -1,8 +1,8 @@
 # CURRENT — mem_strg / rsch
 
 - 상태: ACTIVE · 2026-10-17
-- 현재 work act: REQ-001 — S0 수집 완료([research/S0_SOURCES.md](research/S0_SOURCES.md)). Pro 의뢰서 초안 [P1](pro/P1_STORAGE_ENGINE_ARCH_REQUEST_v0.1.md)·[P2](pro/P2_OPERATIONS_REQUEST_v0.1.md) 작성, 보내지 않음
-- 다음 한 단계: Owner 결정 Q1(입력 전달: 커밋·푸시 링크 / 본문 첨부)·Q2(누가 보내나) → Pro 전송
+- 현재 work act: REQ-001 — S0 수집 완료([research/S0_SOURCES.md](research/S0_SOURCES.md)). Pro 의뢰서 v1.0 [P1](pro/P1_STORAGE_ENGINE_ARCH_REQUEST_v1.0.md)·[P2](pro/P2_OPERATIONS_REQUEST_v1.0.md) 완성(입력 커밋 2506468 고정), 아직 보내지 않음
+- 다음 한 단계: Owner 결정 Q2(누가 Pro에 보내나) → 전송 → 답 회수·검토
 - Owner 방침(2026-10-17): "너무 혼자 딮써치 하지 마시고, 연구 결과를 모으고 기록한 후 초벌 연구와 프로챗으로 연구 외주줄 계획을 세우시면 됩니다." / "웹 프로챗에 연구 의뢰를 할것입니다."
 - 막힘: 없음. Byul 최신본 위치는 Owner 답이 없어 로컬 `dev/Byul`(main 79c00bf, 2026-08-26) 기준으로 진행 [미확인: 더 새 판 존재 여부]
 - 작성 세션: AAA/NEW/RSCH/MEM_STRG (local_edac275f-…, 2026-10-17 개설)
